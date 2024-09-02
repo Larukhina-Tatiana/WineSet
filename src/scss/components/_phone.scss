@@ -1,0 +1,114 @@
+.phones {
+  position: relative;
+
+  &__spoller {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 500;
+    text-align: center;
+    color: $white;
+    @include transition ($transition-property: color);
+
+    @media (any-hover: hover) {
+      &:hover {
+        background: rgba(122, 0, 0, 0.85);
+        color: $white;
+      }
+    }
+
+    svg {
+      margin-top: 3px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    // font-variant: all-small-caps;
+    font-size: 16;
+    // color: var(--black);
+    @include transition($transition-property: color);
+
+    @media (any-hover: hover) {
+      &:hover {}
+
+      &:hover .phone__svg {
+        // fill: var(--accent);
+      }
+    }
+
+    // &:hover,
+    // &:focus,
+    // &:active {
+    //   color: var(--accent);
+    // }
+  }
+
+  &__arrow:hover {
+    .phones__spoller-svg {
+      fill: var(--accent);
+    }
+  }
+
+  &__arrow-svg {
+    @include transition ($transition-property: fill);
+    // fill: inherit;
+  }
+
+  &__arrow {
+    margin-left: rem(5);
+  }
+
+  &__arrow.active {
+    rotate: 180deg;
+  }
+
+  &__list {
+    display: none;
+  }
+
+  &__list.active {
+    min-width: rem(187);
+    padding: rem(20);
+    position: absolute;
+    display: block;
+    color: $white;
+    background: rgba(122, 0, 0, 0.85);
+    border-radius: rem(3);
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.14);
+    top: rem(35);
+    right: rem(-10);
+    z-index: 1;
+    @include transition ($transition-property: all);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: rem(-10);
+      right: rem(7);
+
+      width: 0;
+      height: 0;
+      border: 8px solid transparent;
+      border-top: none;
+      border-bottom: 10px solid var(--white);
+      box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.14);
+      filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, 0.1));
+    }
+  }
+
+  & li:not(:last-child) {
+    margin-bottom: rem(11);
+  }
+
+  @media screen and (width < 480.01px) {
+    &__arrow {
+      margin-left: rem(1);
+    }
+
+
+  }
+}

@@ -1,0 +1,36 @@
+.header {
+
+  &__container {
+    max-width: 1682px;
+  }
+
+  &__top-bg {
+    padding-top: 16px;
+    padding-right: 160px;
+    padding-bottom: 18px;
+    padding-left: 67px;
+    background: $main-color;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+  }
+
+  &__search {
+    margin-left: auto;
+  }
+
+  &__btn {
+    margin-left: 130px;
+  }
+
+  &__contacts {
+    margin-left: 50px;
+  }
+
+
+  &__bottom {
+    display: flex;
+  }
+}

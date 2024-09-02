@@ -1,0 +1,22 @@
+.btn {
+  border-radius: 3px;
+  // width: 220px;
+  // height: 50px;
+  font-weight: 600;
+  text-align: center;
+
+  &--bg-red {
+    padding: 15px 44px;
+    color: $white;
+    background: linear-gradient(135deg, #7a0000 0%, #900 100%);
+    @include transition ($transition-property: (background-color, color, border));
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: var(--solid);
+        background: $white;
+        border: 1px solid var(--solid);
+      }
+    }
+  }
+}
