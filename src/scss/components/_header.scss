@@ -1,13 +1,13 @@
 .header {
 
   &__container {
-    max-width: 1682px;
+    max-width: 1781px;
   }
 
   &__top-bg {
     padding-top: 16px;
-    padding-right: 160px;
-    padding-bottom: 18px;
+    padding-right: 50px;
+    padding-bottom: 16px;
     padding-left: 67px;
     background: $main-color;
   }
@@ -22,7 +22,8 @@
   }
 
   &__btn {
-    margin-left: 130px;
+    margin-left: auto;
+    // margin-left: 80px;
   }
 
   &__contacts {
@@ -33,4 +34,18 @@
   &__bottom {
     display: flex;
   }
+}
+
+.header-item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  &:not(:last-child) {
+    border-bottom: 0.50px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 10px;
+  }
+}
+
+.header-link {
+  font-size: clamp(0.875rem, 0.844rem + 0.16vw, 1rem);
 }
