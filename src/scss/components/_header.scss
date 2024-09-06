@@ -6,9 +6,11 @@
 
   &__top-bg {
     padding-top: 16px;
-    padding-right: 50px;
+    // padding-right: 50px;
+    padding-right: clamp(1.875rem, 0.446rem + 2.23vw, 3.125rem);
     padding-bottom: 16px;
-    padding-left: 67px;
+    // padding-left: 67px;
+    padding-left: clamp(1.875rem, -0.768rem + 4.13vw, 4.188rem);
     background: $main-color;
   }
 
@@ -23,29 +25,40 @@
 
   &__btn {
     margin-left: auto;
-    // margin-left: 80px;
   }
 
   &__contacts {
-    margin-left: 50px;
+    margin-left: clamp(1.875rem, 0.446rem + 2.23vw, 3.125rem);
   }
 
 
   &__bottom {
+    padding-left: 136px;
+    padding-right: 172px;
     display: flex;
+    // justify-content: space-between;
+    align-items: center;
+  }
+
+  &__actions {
+    display: flex;
+    gap: 45px;
+    font-weight: 500;
+    margin-left: auto;
   }
 }
 
 .header-item {
   padding-top: 10px;
   padding-bottom: 10px;
-
-  &:not(:last-child) {
-    border-bottom: 0.50px solid rgba(255, 255, 255, 0.5);
-    margin-bottom: 10px;
-  }
+  border-bottom: 0.50px solid rgba(255, 255, 255, 0.5);
 }
 
 .header-link {
   font-size: clamp(0.875rem, 0.844rem + 0.16vw, 1rem);
+}
+
+.header-arrow {
+  fill: currentColor;
+  @include transition ($transition-property: (rotate, color));
 }

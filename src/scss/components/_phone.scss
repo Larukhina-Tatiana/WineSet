@@ -19,11 +19,7 @@
 
   &__arrow {
     margin-top: 3px;
-    @include transition ($transition-property: (rotate, color));
-  }
 
-  &__svg {
-    fill: $white;
   }
 
   &__link {
@@ -62,7 +58,9 @@
     position: absolute;
     width: 100%;
     padding: 20px;
-    display: block;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
     color: $white;
     background: rgba(122, 0, 0, 0.85);
     border-radius: rem(3);

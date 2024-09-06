@@ -1,0 +1,28 @@
+.header-cart {
+
+  &__link {
+    position: relative;
+  }
+
+  &__quantity {
+    padding: 4px;
+    display: inline-flex;
+    // display: none;
+    position: absolute;
+    top: 1px;
+    right: -9px;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+
+    font-size: 7px;
+    color: $white;
+    background-color: $accent;
+    border-radius: 100%;
+  }
+
+  &__summ {
+    display: none;
+  }
+}

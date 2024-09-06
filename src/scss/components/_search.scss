@@ -1,5 +1,7 @@
 .search {
-  width: 512px;
+  // max-width: 512px;
+  // width: 100%;
+  width: clamp(12.5rem, -9.786rem + 34.82vw, 32rem);
   display: flex;
   align-items: center;
 

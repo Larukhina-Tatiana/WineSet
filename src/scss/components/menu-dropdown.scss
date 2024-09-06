@@ -1,0 +1,33 @@
+.menu-dropdown {
+	position: absolute;
+	padding: 24px 15px 34px 22px;
+	left: 0;
+	top: 100%;
+	background-color: rgba(122, 0, 0, 0.85);
+	opacity: 0;
+	visibility: hidden;
+	@include transition ($transition-property: (opacity, visibility));
+
+
+	&--active {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	&__list {
+		width: 375px;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px 47px;
+	}
+
+	&__item {
+		width: 164px;
+	}
+
+	&__link {
+		display: block;
+		width: 100%;
+		color: #fff;
+	}
+}

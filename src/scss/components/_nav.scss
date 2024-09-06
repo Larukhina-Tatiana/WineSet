@@ -1,0 +1,24 @@
+.nav {
+  &__list {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__btn {
+    padding: 20px 20px;
+    font-weight: 500;
+    color: $main-color;
+    cursor: pointer;
+    @include transition ($transition-property: (background-color, color));
+
+
+    &--active {
+      color: $white;
+      background-color: $accent;
+    }
+  }
+}
