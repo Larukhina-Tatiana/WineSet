@@ -1,0 +1,8 @@
+.title-h3 {
+  font-weight: 600;
+  // font-size: 32px;
+  font-size: clamp(1.125rem, 0.95rem + 0.88vw, 2rem);
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: $white;
+}

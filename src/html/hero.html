@@ -1,0 +1,81 @@
+<section class="hero">
+  <div class="hero__content">
+    <p class="hero__text">Special offer</p>
+    <h1 class="hero__title">glasses &amp;&nbsp;сandles</h1>
+    <button class="hero__btn">СОЗДАЙ СВОЙ ВИННЫЙ СЕТ</button>
+  </div>
+  <div class="splide" role="group" aria-label="Слайдер">
+    <div class="splide__arrows splide__arrows--ltr">
+      <button class="splide__arrow splide__arrow--prev" type="button" aria-label="Предыдущий слайд">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="18" fill="none">
+          <path stroke="#000" stroke-miterlimit="10" d="M14.213.273S16.953 6.676 27 8.963" />
+          <path stroke="#000" stroke-miterlimit="10" d="M14.213 17.652s2.74-6.403 12.787-8.69M27 8.963H.514" />
+        </svg>
+      </button>
+
+      <button class="splide__arrow splide__arrow--next" type="button" aria-label="Следующий слайд">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="18" fill="none">
+          <path stroke="#000" stroke-miterlimit="10" d="M14.213.273S16.953 6.676 27 8.963" />
+          <path stroke="#000" stroke-miterlimit="10" d="M14.213 17.652s2.74-6.403 12.787-8.69M27 8.963H.514" />
+        </svg>
+      </button>
+    </div>
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <div class="hero__images images-thumb">
+            <picture>
+              <source type="image/avif" srcset="
+                ./images/hero/hero1@1x.avif 1x,
+                ./images/hero/hero1@2x.avif 2x">
+              <source type="image/webp" srcset="
+                ./images/hero/hero1@1x.webp 1x,
+                ./images/hero/hero1@2x.webp 2x">
+              <img class="images-img" src="
+                ./images/hero/hero1@1x.jpg" loading="lazy" decoding="async" alt="News cover">
+            </picture>
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="images-thumb">
+            <picture>
+              <source type="image/avif" srcset="
+                ./images/hero/hero2@1x.avif 1x">
+              <source type="image/webp" srcset="
+                ./images/hero/hero2@1x.webp 1x">
+              <img class="images-img" src="
+                ./images/hero/hero2@1x.jpg" loading="lazy" decoding="async" alt="News cover">
+            </picture>
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="images-thumb">
+            <picture>
+              <source type="image/avif" srcset="
+                ./images/hero/hero4@1x.avif 1x">
+              <source type="image/webp" srcset="
+                ./images/hero/hero4@1x.webp 1x">
+              <img class="images-img" src="
+                ./images/hero/hero4@1x.jpg" loading="lazy" decoding="async" alt="News cover">
+            </picture>
+          </div>
+
+        </li>
+        <li class="splide__slide">
+          <div class="images-thumb">
+            <picture>
+              <source type="image/avif" srcset="
+                ./images/hero/hero5@1x.avif 1x">
+              <source type="image/webp" srcset="
+                ./images/hero/hero5@1x.webp 1x">
+              <img class="images-img" src="
+                ./images/hero/hero5@1x.jpg" loading="lazy" decoding="async" alt="News cover">
+            </picture>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  @include('hero-links.html')
+</section>

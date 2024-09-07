@@ -1,0 +1,61 @@
+.splide {
+  margin-bottom: 10px;
+
+  &__pagination {
+    bottom: 4%;
+
+    li {
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
+    }
+  }
+
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  &__arrow {
+    width: 51px;
+    height: 51px;
+    background: rgba(#ffffff, .5);
+
+    svg {
+      width: 28px;
+      height: 18px;
+    }
+
+    &--next {
+      right: 2.4%;
+    }
+
+    &--prev {
+      left: 2.4%;
+    }
+  }
+
+
+  &__pagination__page {
+    position: relative;
+    display: inline-block;
+
+    margin: 0;
+
+
+
+    padding: 0;
+    width: 9px;
+    height: 9px;
+    background: $white;
+    border: 0;
+    border-radius: 50%;
+    opacity: 1;
+    transition: transform .2s linear;
+  }
+
+  &__pagination__page.is-active {
+    background: $sangria;
+    transform: scale(1.4);
+    z-index: 1;
+  }
+}

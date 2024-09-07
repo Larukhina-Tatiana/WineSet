@@ -2,6 +2,7 @@
 @import "./modern-normalize.min";
 @import "./utils/vars";
 // @import "././libs/swiper/swiper-bundle.min";
+@import "././libs/splide/splide.min";
 // @import "././libs/simplebar/simplebar";
 // @import "././libs/tooltip/uikit.min";
 // @import "././libs/slick/slick";
@@ -22,5 +23,15 @@
 @import "./components/nav";
 @import "./components/menu-dropdown";
 @import "./components/header-cart";
+
+
+@import "./components/hero";
+@import "./components/images";
+@import "./components/splide";
+@import "./components/hero-links";
+@import "./components/title";
+
+
+@import "./components/peculiarities";
 
 // @import "./components/dropdown-menu";

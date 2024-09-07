@@ -1,0 +1,62 @@
+.hero-links {
+
+  &__list {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+
+  &__item {
+    flex-basis: calc((100% - 20px) / 3);
+  }
+
+  &__link {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    // height: 248px;
+    // width: 636px;
+    overflow: hidden;
+    @include transition ($transition-property: (box-shadow));
+
+    &::after {
+      position: absolute;
+      inset: 0;
+      content: '';
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.35);
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        box-shadow: -7px 0 22px 0 rgba(0, 0, 0, 0.35);
+
+        .hero-links__link-bg {
+          scale: 1.5;
+        }
+      }
+    }
+  }
+
+  &__link-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    @include transition ($transition-property: (scale));
+  }
+
+  &__title {
+    position: relative;
+    z-index: 3;
+    padding-top: 103px;
+    padding-bottom: 104px;
+  }
+}
