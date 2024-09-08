@@ -1,1 +1,32 @@
-.peculiarities {}
+.peculiarities {
+  margin-top: 140px;
+  padding-bottom: 140px;
+
+  &__title {
+    max-width: 419px;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  &__box {
+    display: flex;
+    // gap: 160px;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 320px;
+
+    &--one {
+      width: 640px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 207px;
+  }
+
+  &__link {
+    margin-top: 10px;
+  }
+}

@@ -1,3 +1,10 @@
+.title-h2 {
+  @extend %third-family-700;
+  font-size: 48px;
+  text-transform: uppercase;
+  // color: $main-color;
+}
+
 .title-h3 {
   font-weight: 600;
   // font-size: 32px;
