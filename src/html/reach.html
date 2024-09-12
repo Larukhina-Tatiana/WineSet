@@ -1,14 +1,31 @@
 <div class="reach">
-  <div class="container">
+  <div class="reach__container">
     <div class="reach__inner">
       <form action="#" class="reach-form">
-
-        <h3 class="reach__title title-h3">
-          связаться с нами
-        </h3>
+        <fieldset class="reach-form__fieldset">
+          <p class="reach-form__title">связаться с нами</p>
+          <label class="reach-form__label" for="first-name">
+            <input class="reach-form__input" type="text" name="first-name" id="first-name"
+              placeholder="Введите своe имя...">
+          </label>
+          <label class="reach-form__label" for="e-mail">
+            <input class="reach-form__input" type="email" name="e-mail" id="e-mail" placeholder="Введите свой email..."
+              required>
+          </label>
+          <label class="reach-form__label" for="comment">
+            <textarea class="reach-form__textarea form__input" id="comment" placeholder="Ваше сообщение..."
+              required></textarea>
+          </label>
+        </fieldset>
+        <button class="reach-form__btn btn btn--bg-red" type="submit">Отправить</button>
       </form>
-
-
+      <div class="reach__images images-thumb images-thumb--reach">
+        <picture>
+          <source type="image/avif" srcset="./images/reach/image1@1x.avif 1x, ./images/reach/image1@2x.avif 2x">
+          <source type="image/webp" srcset="./images/reach/image1@1x.webp 1x, ./images/reach/image1@2x.webp 2x">
+          <img class="images-img" src="./images/reach/image1@1x.jpg" loading="lazy" decoding="async" alt="image">
+        </picture>
+      </div>
     </div>
   </div>
 </div>

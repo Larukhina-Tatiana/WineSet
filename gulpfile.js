@@ -206,7 +206,7 @@ function images() {
       .pipe(newer("images"))
       .pipe(imagemin())
 
-      .pipe(dest("images/delivery"))
+      .pipe(dest("images/reach"))
   );
 }
 
