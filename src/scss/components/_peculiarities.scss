@@ -1,11 +1,11 @@
 .peculiarities {
   margin-top: 140px;
-  padding-bottom: 140px;
+  background: url(../images/peculiarities/bg1@2x.png) bottom 52% right -1.5% / 360px 360px no-repeat;
 
   &__title {
     max-width: 419px;
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 54px;
   }
 
   &__box {
@@ -20,13 +20,21 @@
     &--one {
       width: 640px;
     }
+
+    &--mt {
+      margin-top: -110px;
+    }
   }
 
   &__text {
-    margin-bottom: 207px;
+    margin-bottom: 216px;
+    line-height: 140%;
   }
 
   &__link {
-    margin-top: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000;
+    margin-top: 12px;
   }
 }

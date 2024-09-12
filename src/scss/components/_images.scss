@@ -2,49 +2,31 @@
 
   &-thumb {
     overflow: hidden;
-    width: 1920px;
-    height: 424px;
 
-    &--services {
-      width: 575px;
-      height: 420px;
+    &--hero {
+      width: 1920px;
+      height: 424px;
     }
 
-    &--weoffer {
-      grid-column: 7 span;
-      width: 705px;
-      height: 440px;
+    &--w640 {
+      width: 640px;
+      height: 553px;
     }
 
-    &--avatar {
-      border-radius: 100%;
-      width: 72px;
-      height: 72px;
-      margin-bottom: 25px;
+    &--320 {
+      width: 320px;
+      height: auto;
     }
 
-    &--decisions {
-      grid-column: 5 span;
-      width: 495px;
-      height: 550px;
+    &--partners {
+      width: 640px;
+      height: 428px;
     }
 
-    &--history {
-      width: 810px;
-      height: 450px;
-      margin-bottom: 36px;
+    &--delivery {
+      width: 640px;
+      height: 429px;
     }
-
-    &--team {
-      width: 285px;
-      height: 340px;
-    }
-
-    &--news {
-      width: 600px;
-      height: 306px;
-    }
-
   }
 
   &-img {

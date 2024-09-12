@@ -1,0 +1,39 @@
+.partners {
+  padding-top: 158px;
+
+  &__title {
+    margin-bottom: 50px;
+    width: 728px;
+  }
+
+  &__title-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .splide__inner {
+    position: relative;
+  }
+
+  // .splide__arrows {
+  //   position: relative;
+  // }
+
+
+  .splide__arrow {
+    top: -10%;
+    width: 54px;
+    height: 54px;
+    background: transparent;
+    border: 1px solid $accent;
+
+    &--next {
+      right: 16%;
+    }
+
+    &--prev {
+      left: 76%;
+    }
+  }
+}

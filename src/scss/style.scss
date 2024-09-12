@@ -1,7 +1,7 @@
 // @import "././libs/graph-modal/graph-modal.min";
 @import "./modern-normalize.min";
 @import "./utils/vars";
-// @import "././libs/swiper/swiper-bundle.min";
+@import "././libs/swiper/swiper-bundle.min";
 @import "././libs/splide/splide.min";
 // @import "././libs/simplebar/simplebar";
 // @import "././libs/tooltip/uikit.min";
@@ -33,5 +33,9 @@
 
 
 @import "./components/peculiarities";
+
+@import "./components/partners";
+@import "./components/delivery";
+@import "./components/reach";
 
 // @import "./components/dropdown-menu";
