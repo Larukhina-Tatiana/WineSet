@@ -13,3 +13,14 @@
   text-align: center;
   color: $white;
 }
+
+.title-h4 {
+  font-weight: 600;
+  // font-size: clamp(1.125rem, 0.95rem + 0.88vw, 2rem);
+  font-size: 19px;
+  color: $black;
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}

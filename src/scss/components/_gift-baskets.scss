@@ -1,0 +1,79 @@
+.gift-baskets {
+  padding-top: 140px;
+  padding-bottom: 140px;
+
+  &__swiper-container {
+    position: relative;
+    width: 1930px;
+    overflow: hidden;
+  }
+
+
+  &__list {
+    &:not(:last-child) {
+      margin-bottom: 60px;
+    }
+  }
+
+  .swiper-button {
+    top: 3%;
+  }
+
+  .swiper-wrapper {
+    margin-top: 51px;
+    padding-top: 46px;
+    padding-left: 30px;
+  }
+
+  .swiper-slide {
+    opacity: 0.5;
+    // background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 80%);
+    @include transition ($transition-property: (scale, box-shadow));
+
+  }
+
+
+  .swiper-slide-active,
+  .swiper-slide-next {
+    opacity: 1;
+  }
+
+  .swiper-slide-next + .swiper-slide {
+    opacity: 1;
+  }
+
+
+
+  .swiper-slide-active {
+    transform: scale(1.1);
+
+    .gift-baskets-card__link {
+      box-shadow: 0 5px 15px 5px rgba(0, 0, 0, 0.05);
+    }
+  }
+
+}
+
+.gift-baskets-card {
+  width: 418px;
+  // width: auto;
+  // height: 559px;
+  background-color: $white;
+
+  &__inner {
+    padding: 0 15px 43px 15px;
+  }
+
+  &__link {
+    border: 3px solid var(--bg);
+    @include transition ($transition-property: (scale, box-shadow));
+
+    @media (any-hover: hover) {
+      // &:hover {
+      //   box-shadow: 0 5px 15px 5px rgba(0, 0, 0, 0.05);
+      // }
+    }
+  }
+
+
+}

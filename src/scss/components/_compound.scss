@@ -1,0 +1,16 @@
+.compound {
+  list-style-type: disc;
+  padding-left: inherit;
+
+  &__item {
+    font-size: 14px;
+    color: $black;
+    margin-left: 15px;
+    margin-bottom: 2px;
+
+    &--title {
+      list-style-type: none;
+      margin-left: 0;
+    }
+  }
+}

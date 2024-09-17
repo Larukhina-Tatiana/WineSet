@@ -1,0 +1,28 @@
+.swiper-button {
+  top: 10%;
+  left: auto;
+  right: auto;
+  width: 54px;
+  height: 54px;
+  background-color: transparent;
+  border-radius: 100%;
+  border: 1px solid $accent;
+
+  svg {
+    width: auto;
+    height: auto;
+  }
+
+  &-next {
+    right: 17%;
+  }
+
+  &-prev {
+    right: 20.8%;
+  }
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}

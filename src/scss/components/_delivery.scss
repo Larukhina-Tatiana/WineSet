@@ -1,14 +1,14 @@
 .delivery {
   position: relative;
-  padding-top: 165px;
+  padding-top: 142px;
 
   &::before {
     position: absolute;
     content: '';
     width: 635px;
     height: 494px;
-    bottom: -212px;
-    left: 4px;
+    left: 0;
+    bottom: -209px;
     z-index: -1;
     background-image: -webkit-image-set(url(../images/delivery/bg1@1x.png) type('image/png') 1x,
         url(../images/delivery/bg1@2x.png) type('image/png') 2x);
@@ -35,7 +35,7 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    padding: 34px 58px;
+    padding: 37px 48px;
     align-self: flex-end;
     font-weight: 600;
     // font-size: 16px;

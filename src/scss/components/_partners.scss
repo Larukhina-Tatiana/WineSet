@@ -1,39 +1,70 @@
 .partners {
   padding-top: 158px;
 
+
+  &__swiper-container {
+    position: relative;
+    width: 1930px;
+    overflow: hidden;
+  }
+
   &__title {
-    margin-bottom: 50px;
     width: 728px;
   }
 
-  &__title-box {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  &__images {
+    margin-bottom: 15px;
   }
 
-  .splide__inner {
+  &__link {
+    font-weight: 500;
+    font-size: 18px;
+    color: $black;
+  }
+
+  .swiper-wrapper {
+    margin-top: 51px;
+    padding-bottom: 30px;
+  }
+
+  .swiper-scrollbar {
+    border-radius: 0;
     position: relative;
+    touch-action: none;
+    background: $wild-sand;
+    opacity: 1 !important;
   }
 
-  // .splide__arrows {
-  //   position: relative;
-  // }
-
-
-  .splide__arrow {
-    top: -10%;
-    width: 54px;
-    height: 54px;
-    background: transparent;
-    border: 1px solid $accent;
-
-    &--next {
-      right: 16%;
-    }
-
-    &--prev {
-      left: 76%;
-    }
+  .swiper-horizontal > .swiper-scrollbar,
+  .swiper-scrollbar.swiper-scrollbar-horizontal {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: var(--swiper-scrollbar-top, auto);
+    z-index: 50;
+    height: 3px;
+    width: calc(100% - 2* var(--swiper-scrollbar-sides-offset, 1%));
   }
+
+  .swiper-scrollbar-drag {
+    height: 5px;
+    // width: 320px !important;
+    position: relative;
+    background: $accent;
+    border-radius: 0;
+    left: 0;
+    top: 0;
+  }
+
+  .swiper-slide {
+    opacity: 0.5;
+    // background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 80%);
+    @include transition ($transition-property: (scale, box-shadow));
+  }
+
+  .swiper-slide-active,
+  .swiper-slide-next {
+    opacity: 1;
+  }
+
 }

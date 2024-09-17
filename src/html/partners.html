@@ -1,29 +1,22 @@
 <section class="partners">
   <div class="container">
-    <div class="partners__top">
+    <div class="partners__swiper-container">
       <h2 class="title-h2 partners__title">
         Корпоративным клиентам и&nbsp;партнерам
       </h2>
-      <div class="slider-nav">
-        <div class="slider-nav">
-          <button class="slider-nav__btn slider-btn partners__prev">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="21" fill="none">
-              <path stroke="#7A0000" stroke-miterlimit="10"
-                d="M16 20s-3.214-7.368-15-10M16 1s-3.214 6.632-15 9M1 10h31" />
-            </svg>
-          </button>
-          <button class="slider-nav__btn slider-btn partners__next">
-            <svg xmlns="http://www.w3.org/2000/svg" width="31" height="21" fill="none">
-              <path stroke="#7A0000" stroke-miterlimit="10" d="M16 1s3 7.368 14 10M16 20s3-6.632 14-9M30 11H0" />
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
 
-    <div class="swiper partners-swiper">
+      <button class="swiper-button swiper-button-prev">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="21" fill="none">
+          <path stroke="#7A0000" stroke-miterlimit="10" d="M16 20s-3.214-7.368-15-10M16 1s-3.214 6.632-15 9M1 10h31" />
+        </svg>
+      </button>
+      <button class="swiper-button swiper-button-next">
+        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="21" fill="none">
+          <path stroke="#7A0000" stroke-miterlimit="10" d="M16 1s3 7.368 14 10M16 20s3-6.632 14-9M30 11H0" />
+        </svg>
+      </button>
+
       <ul class="swiper-wrapper">
-        <!-- Slides -->
         <li class="swiper-slide">
           <div class="partners__images images-thumb images-thumb--partners">
             <picture>
@@ -68,10 +61,58 @@
             <picture>
               <source type="image/avif" srcset="./images/hero/hero5@1x.avif 1x">
               <source type="image/webp" srcset="./images/hero/hero5@1x.webp 1x">
-              <img class="images-img" src="./images/hero/hero5@1x.jpg" loading="lazy" decoding="async" alt="News cover">
+              <img class="images-img" src="./images/hero/hero5@1x.jpg" loading="lazy" decoding="async"
+                alt="Свадебным агенствам">
+            </picture>
+          </div>
+          <a class="partners__link" href="">Свадебным агенствам</a>
+        </li>
+        <li class="swiper-slide">
+          <div class="partners__images images-thumb images-thumb--partners">
+            <picture>
+              <source type="image/avif"
+                srcset="./images/partners/image1@1x.avif 1x, ./images/partners/image1@2x.avif 2x">
+              <source type="image/webp"
+                srcset="./images/partners/image1@1x.webp 1x, ./images/partners/image1@2x.webp 2x">
+              <img class="images-img" src="./images/partners/image1@1x.jpg" loading="lazy" decoding="async" alt="image">
+            </picture>
+          </div>
+          <a class="partners__link" href="">Цветочным магазинам</a>
+        </li>
+        <li class="swiper-slide">
+          <div class="partners__images images-thumb images-thumb--partners">
+            <picture>
+              <source type="image/avif"
+                srcset="./images/partners/image2@1x.avif 1x, ./images/partners/image2@2x.avif 2x">
+              <source type="image/webp"
+                srcset="./images/partners/image2@1x.webp 1x, ./images/partners/image2@2x.webp 2x">
+              <img class="images-img" src="./images/partners/image2@1x.jpg" loading="lazy" decoding="async" alt="image">
             </picture>
           </div>
           <a class="partners__link" href="">Корпоративным клиентам</a>
+        </li>
+        <li class="swiper-slide">
+          <div class="partners__images images-thumb images-thumb--partners">
+            <picture>
+              <source type="image/avif"
+                srcset="./images/partners/image3@1x.avif 1x, ./images/partners/image3@2x.avif 2x">
+              <source type="image/webp"
+                srcset="./images/partners/image3@1x.webp 1x, ./images/partners/image3@2x.webp 2x">
+              <img class="images-img" src="./images/partners/image3@1x.jpg" loading="lazy" decoding="async"
+                alt="News cover">
+            </picture>
+          </div>
+          <a class="partners__link" href="">Свадебным агенствам</a>
+        </li>
+        <li class="swiper-slide">
+          <div class="partners__images images-thumb images-thumb--partners">
+            <picture>
+              <source type="image/avif" srcset="./images/hero/hero5@1x.avif 1x">
+              <source type="image/webp" srcset="./images/hero/hero5@1x.webp 1x">
+              <img class="images-img" src="./images/hero/hero5@1x.jpg" loading="lazy" decoding="async" alt="News cover">
+            </picture>
+          </div>
+          <a class="partners__link" href="">Цветочным магазинам</a>
         </li>
         <li class="swiper-slide">
           <div class="partners__images images-thumb images-thumb--partners">
@@ -86,15 +127,9 @@
           </div>
           <a class="partners__link" href="">Корпоративным клиентам</a>
         </li>
-
       </ul>
-      <div class="swiper-pagination"></div>
-
-      <!-- If we need navigation buttons -->
-      <!-- <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div> -->
-
-      <!-- If we need scrollbar -->
       <div class="swiper-scrollbar"></div>
     </div>
+  </div>
+
 </section>

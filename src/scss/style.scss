@@ -1,8 +1,8 @@
 // @import "././libs/graph-modal/graph-modal.min";
 @import "./modern-normalize.min";
-@import "./utils/vars";
 @import "././libs/swiper/swiper-bundle.min";
 @import "././libs/splide/splide.min";
+@import "./utils/vars";
 // @import "././libs/simplebar/simplebar";
 // @import "././libs/tooltip/uikit.min";
 // @import "././libs/slick/slick";
@@ -12,6 +12,7 @@
 @import "./utils/global";
 @import "./utils/fonts";
 @import "./utils/container";
+
 
 // @import "./components/_mixins";
 
@@ -30,6 +31,7 @@
 @import "./components/splide";
 @import "./components/hero-links";
 @import "./components/title";
+@import "./components/swiper-button";
 
 
 @import "./components/peculiarities";
@@ -37,5 +39,9 @@
 @import "./components/partners";
 @import "./components/delivery";
 @import "./components/reach";
+@import "./components/map";
+
+@import "./components/gift-baskets";
+@import "./components/compound";
 
 // @import "./components/dropdown-menu";
