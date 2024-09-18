@@ -59,4 +59,16 @@
     padding-top: 103px;
     padding-bottom: 104px;
   }
+
+  @media screen and (width < 1024.99px) {
+    &__item {
+      flex-basis: calc((100% - 10px) / 2);
+    }
+  }
+
+  @media screen and (width < 578.99px) {
+    &__item {
+      flex-basis: 100%;
+    }
+  }
 }

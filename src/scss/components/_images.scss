@@ -4,8 +4,9 @@
     overflow: hidden;
 
     &--hero {
-      width: 1920px;
-      height: 424px;
+      max-width: 1920px;
+      // height: 424px;
+      height: clamp(16.125rem, 14.05rem + 10.38vw, 26.5rem);
     }
 
     &--w640 {
