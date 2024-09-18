@@ -206,7 +206,7 @@ function images() {
       .pipe(newer("images"))
       .pipe(imagemin())
 
-      .pipe(dest("images/gift-baskets"))
+      .pipe(dest("images/instagram"))
   );
 }
 

@@ -1,0 +1,58 @@
+.сonsultation {
+  position: relative;
+  margin-top: 59px;
+  color: $white;
+  min-height: 424px;
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: -15px;
+    right: 0;
+    width: 1206px;
+    height: 454px;
+    background-image: url('../images/сonsultation/bg.svg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: top right;
+  }
+
+  &__content {
+    position: absolute;
+    top: 66px;
+    // right: 240px;
+    right: 61px;
+    z-index: 3;
+    text-align: center;
+  }
+
+  &__text {
+    margin-bottom: 13px;
+    @extend %second-family-400;
+    font-size: 53px;
+  }
+
+  &__title {
+    max-width: 893px;
+    margin-bottom: 50px;
+    font-weight: 500;
+    font-size: 56px;
+    letter-spacing: 0.05em;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  &__btn {
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.25em;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+  }
+
+  &__images {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

@@ -1,0 +1,40 @@
+.instagram {
+  padding-top: 151px;
+  position: relative;
+  padding-bottom: 201px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 410px;
+    height: 472px;
+    right: 0;
+    bottom: 32px;
+    z-index: -1;
+    background-image: -webkit-image-set(url(../images/instagram/bg1@1x.png) type("image/png") 1x, url(../images/instagram/bg1@2x.png) type("image/png") 2x);
+  }
+
+  &__top {
+    position: relative;
+    margin-bottom: 50px;
+  }
+
+  &__btn {
+    position: absolute;
+    top: -10px;
+    right: 25px;
+    padding: 28px 71px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $accent;
+    border-radius: 70%;
+    border: 1px solid $accent;
+  }
+
+
+  &__list {
+    display: flex;
+    gap: 6px;
+    // flex-wrap: wrap;
+  }
+}
