@@ -1,45 +1,49 @@
 .hero {
-  position: relative;
   color: $white;
+
+  &__box {
+    position: relative;
+  }
 
   &__content {
     position: absolute;
     // top: 93px;
-    top: clamp(1.25rem, 0.338rem + 4.56vw, 5.813rem);
+    top: 50%;
+    transform: translateY(-50%);
     // right: 240px;
     right: 12.5%;
     z-index: 3;
     text-align: center;
   }
-
-  &__text {
-    margin-bottom: 13px;
-    @extend %second-family-400;
-    // font-size: 53px;
-    font-size: clamp(2rem, 1.738rem + 1.31vw, 3.313rem);
-  }
-
-  &__title {
-    max-width: 381px;
-    margin-bottom: 26px;
-    font-weight: 500;
-    // font-size: 56px;
-    font-size: clamp(1.688rem, 1.325rem + 1.81vw, 3.5rem);
-    line-height: 1.4;
-    text-transform: uppercase;
-  }
-
-  &__btn {
-    font-weight: 600;
-    // font-size: 14px;
-    font-size: clamp(0.75rem, 0.725rem + 0.13vw, 0.875rem);
-    letter-spacing: 0.25em;
-    text-decoration: underline;
-    text-underline-offset: 5px;
-  }
-
-  // &__images {
-  //   top: 0;
-  //   left: 0;
-  // }
 }
+
+.hero-text {
+  margin-bottom: 13px;
+  @extend %second-family-400;
+  // font-size: 53px;
+  font-size: clamp(2rem, 1.738rem + 1.31vw, 3.313rem);
+}
+
+.hero-title {
+  max-width: 381px;
+  margin-bottom: 26px;
+  font-weight: 500;
+  // font-size: 56px;
+  font-size: clamp(1.688rem, 1.325rem + 1.81vw, 3.5rem);
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.hero-btn {
+  font-weight: 600;
+  // font-size: 14px;
+  font-size: clamp(0.75rem, 0.725rem + 0.13vw, 0.875rem);
+  letter-spacing: 0.25em;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+// &__images {
+//   top: 0;
+//   left: 0;
+// }
