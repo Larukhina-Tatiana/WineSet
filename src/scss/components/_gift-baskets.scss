@@ -8,7 +8,7 @@
 
   &__swiper-container {
     position: relative;
-    // max-width: 1930px;
+    max-width: 1930px;
     overflow: hidden;
   }
 
@@ -55,6 +55,11 @@
     .gift-baskets-card__link {
       box-shadow: 0 5px 15px 5px rgba(0, 0, 0, 0.05);
     }
+  }
+
+  .swiper-horizontal > .swiper-scrollbar,
+  .swiper-scrollbar.swiper-scrollbar-horizontal {
+    bottom: 34px;
   }
 }
 

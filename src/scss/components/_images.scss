@@ -2,9 +2,9 @@
 
   &-thumb {
     overflow: hidden;
-    background-color: $accent;
 
     &--hero {
+      background-color: $accent;
       width: 100%;
       // height: 424px;
       // height: clamp(16.125rem, 14.05rem + 10.38vw, 26.5rem);
@@ -51,8 +51,9 @@
     }
 
     &--instagram {
-      width: 397px;
-      height: 385px;
+      max-width: 397px;
+      // height: 385px;
+      height: auto;
     }
   }
 

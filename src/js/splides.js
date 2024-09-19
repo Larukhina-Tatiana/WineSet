@@ -50,21 +50,30 @@ let partnersSlider = new Swiper(slider, {
 });
 
 let giftbasketsSlider = new Swiper(slider1, {
-  slidesPerView: 1.1,
+  slidesPerView: 1,
   spaceBetween: 5,
   loop: true,
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    hide: true,
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  // breakpoints: {
-  //   576: {
-  //     slidesPerView: 2,
-  //   },
-  //   868: {
-  //     slidesPerView: 3,
-  //   },
-  // },
+  breakpoints: {
+    425: {
+      navigation: false,
+      slidesPerView: 1.3,
+      spaceBetween: 10,
+    },
+    768: {
+      scrollbar: false,
+      navigation: true,
+      slidesPerView: 1.7,
+      spaceBetween: 12,
+    },
+  },
 });
 
 // const sliders = document.querySelectorAll(".swiper");

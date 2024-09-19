@@ -28,7 +28,8 @@
   }
 
   @media screen and (width < 425.99px) {
-    top: 27%;
+    // top: 27%;
+    display: none;
   }
 }
 
