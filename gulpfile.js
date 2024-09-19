@@ -149,6 +149,7 @@ function scripts() {
       "node_modules/jquery/dist/jquery.js",
       "node_modules/swiper/swiper-bundle.js",
       // "node_modules/mixitup/dist/mixitup.js",
+      "libs/splide/splide.min.js",
       // "libs/mixitup3/mixitup.min.js",
       // "libs/smoothscroll/smooth-scroll.min.js",
       // "libs/choices/choices.min.js",
@@ -206,7 +207,7 @@ function images() {
       .pipe(newer("images"))
       .pipe(imagemin())
 
-      .pipe(dest("images/instagram"))
+      .pipe(dest("images/hero"))
   );
 }
 

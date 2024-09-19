@@ -2,25 +2,10 @@
   position: relative;
   color: $white;
 
-  &::after {
-    position: absolute;
-    content: '';
-    top: -24px;
-    // right: -16px;
-    right: clamp(-41.563rem, -49.675rem + 40.56vw, -1rem);
-    width: 938px;
-    // height: 100%;
-    height: clamp(17.625rem, 15.85rem + 8.88vw, 26.5rem);
-    background-image: url('../images/hero/bg-banner.png');
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: top right;
-  }
-
   &__content {
     position: absolute;
-    // top: 71px;
-    top: clamp(0.313rem, -0.513rem + 4.13vw, 4.438rem);
+    // top: 93px;
+    top: clamp(1.25rem, 0.338rem + 4.56vw, 5.813rem);
     // right: 240px;
     right: 12.5%;
     z-index: 3;

@@ -1,21 +1,14 @@
 .splide {
-  margin-bottom: 10px;
-  // height: 425px;
-  height: clamp(16.125rem, 14.038rem + 10.44vw, 26.563rem);
   position: relative;
 
   &__pagination {
-    bottom: 4%;
+    bottom: 40px;
 
     li {
       &:not(:last-child) {
         margin-right: 15px;
       }
     }
-  }
-
-  &:not(:last-child) {
-    margin-right: 15px;
   }
 
   &__arrow {
