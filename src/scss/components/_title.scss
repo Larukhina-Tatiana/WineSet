@@ -17,10 +17,12 @@
 .title-h4 {
   font-weight: 600;
   // font-size: clamp(1.125rem, 0.95rem + 0.88vw, 2rem);
-  font-size: 19px;
+  // font-size: 19px;
+  font-size: clamp(1rem, 0.963rem + 0.19vw, 1.188rem);
   color: $black;
 
   &:not(:last-child) {
-    margin-bottom: 25px;
+    // margin-bottom: 25px;
+    margin-bottom: clamp(0.938rem, 0.813rem + 0.63vw, 1.563rem);
   }
 }

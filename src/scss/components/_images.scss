@@ -2,6 +2,7 @@
 
   &-thumb {
     overflow: hidden;
+    background-color: $accent;
 
     &--hero {
       width: 100%;
@@ -39,8 +40,9 @@
     }
 
     &--gift-baskets {
-      width: 410px;
-      height: 377px;
+      max-width: 410px;
+      // height: 377px;
+      height: auto;
     }
 
     &--сonsultation {

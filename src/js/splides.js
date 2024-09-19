@@ -50,8 +50,8 @@ let partnersSlider = new Swiper(slider, {
 });
 
 let giftbasketsSlider = new Swiper(slider1, {
-  slidesPerView: 3.9,
-  // spaceBetween: 12,
+  slidesPerView: 1.1,
+  spaceBetween: 5,
   loop: true,
   navigation: {
     nextEl: ".swiper-button-next",

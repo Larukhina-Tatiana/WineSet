@@ -1,9 +1,14 @@
 .gift-baskets {
-  padding-top: 140px;
+  // padding-top: 140px;
+  padding-top: clamp(3.75rem, 2.75rem + 5vw, 8.75rem);
+
+  &__title {
+    position: absolute;
+  }
 
   &__swiper-container {
     position: relative;
-    width: 1930px;
+    // max-width: 1930px;
     overflow: hidden;
   }
 
@@ -21,7 +26,8 @@
   .swiper-wrapper {
     margin-top: 51px;
     padding-top: 46px;
-    padding-left: 30px;
+    // padding-left: 30px;
+    padding-left: 14px;
   }
 
   .swiper-slide {
@@ -50,17 +56,17 @@
       box-shadow: 0 5px 15px 5px rgba(0, 0, 0, 0.05);
     }
   }
-
 }
 
 .gift-baskets-card {
-  width: 418px;
+  max-width: 418px;
   // width: auto;
   // height: 559px;
   background-color: $white;
 
   &__inner {
-    padding: 0 15px 43px 15px;
+    // padding: 0 15px 43px 15px;
+    padding: 0 clamp(0.5rem, 0.412rem + 0.44vw, 0.938rem) clamp(1.438rem, 1.188rem + 1.25vw, 2.688rem);
   }
 
   &__link {
