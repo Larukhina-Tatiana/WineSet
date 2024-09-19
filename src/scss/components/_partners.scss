@@ -1,15 +1,18 @@
 .partners {
-  padding-top: 158px;
-
+  // padding-top: 158px;
+  padding-top: clamp(3.75rem, 2.525rem + 6.13vw, 9.875rem);
+  // padding-left: calc(100vw - 91.67vw);
 
   &__swiper-container {
     position: relative;
-    width: 1930px;
+    padding-top: 111px;
+    // width: 1930px;
     overflow: hidden;
   }
 
   &__title {
-    width: 728px;
+    position: absolute;
+    max-width: 728px;
   }
 
   &__images {

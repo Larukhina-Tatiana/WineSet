@@ -1,9 +1,11 @@
 .swiper-button {
   top: 10%;
   left: auto;
-  right: auto;
-  width: 54px;
-  height: 54px;
+  right: 17%;
+  // width: 54px;
+  // height: 54px;
+  width: clamp(2.25rem, 2.025rem + 1.13vw, 3.375rem);
+  height: clamp(2.25rem, 2.025rem + 1.13vw, 3.375rem);
   background-color: transparent;
   border-radius: 100%;
   border: 1px solid $accent;
@@ -18,7 +20,15 @@
   }
 
   &-prev {
-    right: 20.8%;
+    margin-right: 60px;
+  }
+
+  @media screen and (width < 1024.99px) {
+    top: 20%;
+  }
+
+  @media screen and (width < 425.99px) {
+    top: 27%;
   }
 }
 

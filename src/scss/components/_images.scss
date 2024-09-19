@@ -12,18 +12,20 @@
     }
 
     &--w640 {
-      width: 640px;
-      height: 553px;
+      max-width: 640px;
+      // height: 553px;
+      height: auto;
     }
 
-    &--320 {
+    &--w320 {
       width: 320px;
       height: auto;
     }
 
     &--partners {
-      width: 640px;
-      height: 428px;
+      // width: 640px;
+      // height: 428px;
+      height: clamp(14.875rem, 12.5rem + 11.88vw, 26.75rem);
     }
 
     &--delivery {

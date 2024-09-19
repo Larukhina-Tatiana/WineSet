@@ -23,7 +23,7 @@ const slider = document.querySelector(".partners__swiper-container");
 const slider1 = document.querySelector(".gift-baskets__swiper-container");
 
 let partnersSlider = new Swiper(slider, {
-  slidesPerView: 2.5,
+  slidesPerView: 1,
   spaceBetween: 5,
   scrollbar: {
     el: ".swiper-scrollbar",
@@ -34,11 +34,17 @@ let partnersSlider = new Swiper(slider, {
     prevEl: ".swiper-button-prev",
   },
   breakpoints: {
-    576: {
-      slidesPerView: 2,
+    425: {
+      slidesPerView: 1.3,
     },
-    868: {
-      slidesPerView: 3,
+    576: {
+      slidesPerView: 1.8,
+    },
+    768: {
+      slidesPerView: 2.3,
+    },
+    1440: {
+      slidesPerView: 2.7,
     },
   },
 });

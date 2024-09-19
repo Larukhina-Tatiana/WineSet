@@ -1,17 +1,19 @@
 .peculiarities {
-  margin-top: 140px;
+  // margin-top: 140px;
+  margin-top: clamp(3.75rem, 2.75rem + 5vw, 8.75rem);
   background: url(../images/peculiarities/bg1@2x.png) bottom 40% right -1.7% / 360px 360px no-repeat;
 
   &__title {
     max-width: 419px;
     width: 100%;
-    margin-bottom: 54px;
+    // margin-bottom: 54px;
+    margin-bottom: clamp(2rem, 1.725rem + 1.38vw, 3.375rem);
   }
 
   &__box {
     display: flex;
-    // gap: 160px;
     justify-content: space-between;
+    gap: 40px;
   }
 
   &__item {
@@ -27,7 +29,8 @@
   }
 
   &__text {
-    margin-bottom: 216px;
+    // margin-bottom: 216px;
+    margin-bottom: clamp(3.125rem, 1.05rem + 10.38vw, 13.5rem);
     line-height: 140%;
   }
 
@@ -36,5 +39,19 @@
     font-size: 18px;
     color: #000;
     margin-top: 12px;
+  }
+
+  @media screen and (width < 768.99px) {
+    &__box {
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      width: 100%;
+
+      &--mt {
+        margin-top: 0;
+      }
+    }
   }
 }
