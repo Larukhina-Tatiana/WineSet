@@ -1,24 +1,36 @@
 .footer {
   color: $white;
   background-color: $black;
-  padding-top: 119px;
+  // padding-top: 119px;
+  padding-top: clamp(3.75rem, 3.013rem + 3.69vw, 7.438rem);
   padding-bottom: 20px;
 
   &__inner {
     display: flex;
-    padding-left: 57px;
+
+    @media screen and (width > 1144.99px) {
+      padding-left: 57px;
+      padding-right: 30px;
+    }
+
     margin-bottom: 72px;
+    gap: 40px 20px;
   }
 
   &__nav {
     display: flex;
-    margin-left: 155px;
     font-weight: 500;
+
+    @media screen and (width > 1144.99px) {
+      margin-left: auto;
+    }
   }
 
   &__list {
     &--mr {
-      margin-right: 76px;
+      @media screen and (width > 1144.99px) {
+        margin-right: 76px;
+      }
     }
   }
 
@@ -46,7 +58,9 @@
   }
 
   &__address-inner {
-    margin-left: auto;
+    @media screen and (width > 1144.99px) {
+      margin-left: auto;
+    }
   }
 
   &__btn {
@@ -61,4 +75,31 @@
     text-transform: uppercase;
     text-align: center;
   }
+
+  @media screen and (width < 1144.99px) {
+    &__inner {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__nav {
+      flex-direction: column;
+      gap: 40px;
+      text-align: center;
+      order: 3;
+    }
+
+    &__address-inner {
+      text-align: center;
+    }
+
+    &__social {
+      justify-content: center;
+    }
+
+  }
+
+
+
 }
