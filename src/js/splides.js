@@ -67,11 +67,24 @@ let giftbasketsSlider = new Swiper(slider1, {
       slidesPerView: 1.3,
       spaceBetween: 10,
     },
-    768: {
+    484: {
+      slidesPerView: 1.7,
+      spaceBetween: 15,
+    },
+    672: {
+      slidesPerView: 2.2,
+    },
+    980: {
       scrollbar: false,
       navigation: true,
-      slidesPerView: 1.7,
-      spaceBetween: 12,
+      slidesPerView: 2.7,
+    },
+    1180: {
+      slidesPerView: 3.2,
+    },
+    1440: {
+      slidesPerView: 3.7,
+      spaceBetween: 5,
     },
   },
 });

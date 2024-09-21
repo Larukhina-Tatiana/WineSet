@@ -4,6 +4,10 @@
     touch-action: none;
     background: $wild-sand;
     opacity: 1 !important;
+
+    @media screen and (width > 767.99px) {
+      display: none;
+    }
   }
 
   .swiper-horizontal > .swiper-scrollbar,

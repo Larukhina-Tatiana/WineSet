@@ -12,7 +12,6 @@
     overflow: hidden;
   }
 
-
   &__list {
     &:not(:last-child) {
       margin-bottom: 60px;
@@ -20,13 +19,12 @@
   }
 
   .swiper-button {
-    top: 3%;
+    top: 4%;
   }
 
   .swiper-wrapper {
     margin-top: 51px;
     padding-top: 46px;
-    // padding-left: 30px;
     padding-left: 14px;
   }
 
@@ -34,7 +32,6 @@
     opacity: 0.5;
     // background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 80%);
     @include transition ($transition-property: (scale, box-shadow));
-
   }
 
 
@@ -48,6 +45,17 @@
   }
 
 
+  @media screen and (width < 1180.99px) {
+    .swiper-slide-next + .swiper-slide {
+      opacity: 0.5;
+    }
+  }
+
+  @media screen and (width < 672.99px) {
+    .swiper-slide-next {
+      opacity: 0.5;
+    }
+  }
 
   .swiper-slide-active {
     transform: scale(1.1);
@@ -84,6 +92,4 @@
       // }
     }
   }
-
-
 }

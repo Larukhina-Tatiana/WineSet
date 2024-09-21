@@ -36,6 +36,10 @@
     &--prev {
       left: 2.4%;
     }
+
+    @media screen and (width < 1024.99px) {
+      display: none;
+    }
   }
 
 

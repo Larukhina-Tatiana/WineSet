@@ -32,7 +32,6 @@
 
   .swiper-slide {
     opacity: 0.5;
-    // background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 80%);
     @include transition ($transition-property: (scale, box-shadow));
   }
 
@@ -41,4 +40,9 @@
     opacity: 1;
   }
 
+  @media screen and (width < 767.99px) {
+    .swiper-slide-next {
+      opacity: 0.5;
+    }
+  }
 }
