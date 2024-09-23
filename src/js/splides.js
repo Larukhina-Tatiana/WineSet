@@ -92,7 +92,7 @@ let giftbasketsSlider = new Swiper(slider1, {
 const slider2 = document.querySelector(".glasses__swiper-container");
 let glassesSlider = new Swiper(slider2, {
   slidesPerView: 1,
-  spaceBetween: 80,
+  spaceBetween: 5,
   loop: true,
   // scrollbar: {
   //   el: ".swiper-scrollbar",
@@ -103,25 +103,28 @@ let glassesSlider = new Swiper(slider2, {
     prevEl: ".swiper-button-prev",
   },
   breakpoints: {
-    425: {
-      navigation: false,
-      slidesPerView: 1.3,
-      spaceBetween: 10,
-    },
-    484: {
-      slidesPerView: 1.7,
+    // 425: {
+    //   navigation: false,
+    //   slidesPerView: 1.3,
+    //   spaceBetween: 10,
+    // },
+    525: {
+      slidesPerView: 1.5,
       spaceBetween: 15,
     },
-    672: {
-      slidesPerView: 2.2,
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
     },
-    980: {
-      scrollbar: false,
-      navigation: true,
-      slidesPerView: 2.7,
+    768: {
+      // scrollbar: false,
+      // navigation: true,
+      slidesPerView: 2.5,
+      spaceBetween: 30,
     },
-    1180: {
-      slidesPerView: 3.2,
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 60,
     },
     1440: {
       slidesPerView: 4,

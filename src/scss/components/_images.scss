@@ -78,9 +78,9 @@
 
     &--glasses {
       // position: relative;
-      width: 256px;
-      height: 303px;
-      // height: auto;
+      max-width: 256px;
+      // height: 303px;
+      height: auto;
     }
   }
 

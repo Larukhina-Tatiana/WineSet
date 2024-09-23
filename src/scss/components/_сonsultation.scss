@@ -12,7 +12,8 @@
     top: 49%;
     transform: translateY(-50%);
     // right: 240px;
-    right: 59px;
+    // right: 59px;
+    right: clamp(0.313rem, -0.363rem + 3.38vw, 3.688rem);
     z-index: 3;
     text-align: center;
   }

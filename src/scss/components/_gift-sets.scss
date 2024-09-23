@@ -18,6 +18,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 40px;
 
     &:not(:last-child) {
       margin-bottom: 50px;
@@ -28,7 +29,8 @@
     max-width: 320px;
 
     &:last-child {
-      margin-left: 160px;
+      margin-left: clamp(1.25rem, -0.5rem + 8.75vw, 10rem);
+      // margin-left: 160px;
     }
 
     &:not(:last-child) {
@@ -67,5 +69,11 @@
 
   &__link {
     margin-top: 10px;
+  }
+
+  @media screen and (width < 768.99px) {
+    &__top {
+      flex-direction: column;
+    }
   }
 }
