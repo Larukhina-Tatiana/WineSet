@@ -1,0 +1,46 @@
+.section-link {
+  font-weight: 500;
+  font-size: 18px;
+  color: $black;
+}
+
+.section-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.section-text {
+  width: 320px;
+  line-height: 140%;
+}
+
+.section-btn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 39px 58px;
+  align-self: flex-end;
+  font-weight: 600;
+  // font-size: 16px;
+  font-size: clamp(0.75rem, 0.7rem + 0.25vw, 1rem);
+  text-transform: uppercase;
+  color: $accent;
+  border-radius: 70%;
+  border: 1px solid $accent;
+}
+
+@media screen and (width < 768.99px) {
+  .section-box {
+    flex-direction: column;
+  }
+
+  .section-text {
+    width: 100%;
+  }
+
+  .section-btn {
+    position: static;
+  }
+}

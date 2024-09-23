@@ -9,7 +9,7 @@
       // height: 424px;
       // height: clamp(16.125rem, 14.05rem + 10.38vw, 26.5rem);
       min-height: 319px;
-      height: 100%;
+      height: 426px;
     }
 
     &--w640 {
@@ -61,11 +61,33 @@
       // height: 385px;
       height: auto;
     }
+
+    &--gift-sets {
+      max-width: 480px;
+      // height: 385px;
+      height: auto;
+      border: 3px solid var(--bg);
+      @include transition ($transition-property: box-shadow);
+    }
+
+    &--candles {
+      max-width: 640px;
+      // height: 385px;
+      height: auto;
+    }
+
+    &--glasses {
+      // position: relative;
+      width: 256px;
+      height: 303px;
+      // height: auto;
+    }
   }
 
   &-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    @include transition ($transition-property: scale);
   }
 }

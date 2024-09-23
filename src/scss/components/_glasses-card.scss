@@ -1,0 +1,79 @@
+.glasses-card {
+  position: relative;
+  max-width: 320px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &__link {
+    padding: 13px 16px;
+    border: 3px solid var(--bg);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    @include transition ($transition-property: (scale, box-shadow));
+
+    @media (any-hover: hover) {
+      &:hover {
+        box-shadow: 0 8px 15px 5px rgba(0, 0, 0, .03);
+        // scale: 1.02;
+        transform: translateY(-13px);
+      }
+    }
+  }
+
+  &__img {
+    margin-left: 14px;
+  }
+
+  &__content {
+    margin-top: 33px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+
+  &__list {
+    margin-top: 16px;
+  }
+
+  &__item {
+    padding-left: 27px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    color: rgba(0, 0, 0, 0.5);
+
+    &--glasses {
+      background: url(../images/glasses/icon-glasses.png) left center / 17px 17px no-repeat;
+    }
+
+    &--grape {
+      background: url(../images/glasses/icon-grape.png) left center / 17px 17px no-repeat;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__price {
+    margin-top: 33px;
+    font-weight: 600;
+    line-height: 130%;
+  }
+
+  &__price-new {
+    font-size: 18px;
+    color: $accent;
+    margin-right: 25px;
+  }
+
+  &__price-old {
+    font-size: 14px;
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.5);
+  }
+}

@@ -21,46 +21,7 @@
     }
   }
 
-  &__box {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-  }
-
-  &__text {
-    width: 320px;
-    line-height: 140%;
-  }
-
-  &__btn {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    padding: 37px 48px;
-    align-self: flex-end;
-    font-weight: 600;
-    // font-size: 16px;
-    font-size: clamp(0.75rem, 0.7rem + 0.25vw, 1rem);
-    text-transform: uppercase;
-    color: $accent;
-    border-radius: 70%;
-    border: 1px solid $accent;
-  }
-
   @media screen and (width < 768.99px) {
-    &__box {
-      flex-direction: column;
-    }
-
-    &__text {
-      width: 100%;
-    }
-
-    &__btn {
-      position: static;
-    }
-
     &::before {
       bottom: 48%;
     }

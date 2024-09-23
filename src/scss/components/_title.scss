@@ -26,3 +26,17 @@
     margin-bottom: clamp(0.938rem, 0.813rem + 0.63vw, 1.563rem);
   }
 }
+
+.title-h5 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  text-transform: capitalize;
+  color: $black;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

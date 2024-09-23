@@ -1,0 +1,1 @@
+{"version":3,"sources":["components/section-slider.min.css"],"names":[],"mappings":"AAAA,wBACE,cAAA,KACA,aAAA,KAEF,+BACE,SAAA,SACA,IAAA,GACA,MAAA","file":"section-slider.min.css","sourcesContent":[".section-slider .swiper {\n  padding-right: 40px;\n  padding-left: 40px;\n}\n.section-slider .swiper-button {\n  position: absolute;\n  top: 4%;\n  right: 0;\n}"]}

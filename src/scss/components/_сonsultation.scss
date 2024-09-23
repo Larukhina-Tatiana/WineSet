@@ -3,13 +3,16 @@
   margin-top: 59px;
   color: $white;
   min-height: 320px;
+  height: 425px;
 
   &__content {
     position: absolute;
-    top: 50%;
+    max-width: 893px;
+    width: 100%;
+    top: 49%;
     transform: translateY(-50%);
     // right: 240px;
-    right: 61px;
+    right: 59px;
     z-index: 3;
     text-align: center;
   }

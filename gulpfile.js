@@ -39,7 +39,7 @@ function fonts() {
 }
 
 function htmlInclude() {
-  return src(["./src/html/index.html"])
+  return src(["./src/html/index.html", "./src/html/page-gift-sets.html"])
     .pipe(
       fileinclude({
         prefix: "@",
@@ -207,7 +207,7 @@ function images() {
       .pipe(newer("images"))
       .pipe(imagemin())
 
-      .pipe(dest("images/hero"))
+      .pipe(dest("images/gift-sets"))
   );
 }
 

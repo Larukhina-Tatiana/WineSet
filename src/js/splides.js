@@ -89,6 +89,47 @@ let giftbasketsSlider = new Swiper(slider1, {
   },
 });
 
+const slider2 = document.querySelector(".glasses__swiper-container");
+let glassesSlider = new Swiper(slider2, {
+  slidesPerView: 1,
+  spaceBetween: 80,
+  loop: true,
+  // scrollbar: {
+  //   el: ".swiper-scrollbar",
+  //   hide: true,
+  // },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    425: {
+      navigation: false,
+      slidesPerView: 1.3,
+      spaceBetween: 10,
+    },
+    484: {
+      slidesPerView: 1.7,
+      spaceBetween: 15,
+    },
+    672: {
+      slidesPerView: 2.2,
+    },
+    980: {
+      scrollbar: false,
+      navigation: true,
+      slidesPerView: 2.7,
+    },
+    1180: {
+      slidesPerView: 3.2,
+    },
+    1440: {
+      slidesPerView: 4,
+      spaceBetween: 80,
+    },
+  },
+});
+
 // const sliders = document.querySelectorAll(".swiper");
 
 // sliders.forEach((el) => {
