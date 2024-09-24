@@ -94,20 +94,16 @@ let glassesSlider = new Swiper(slider2, {
   slidesPerView: 1,
   spaceBetween: 5,
   loop: true,
-  // scrollbar: {
-  //   el: ".swiper-scrollbar",
-  //   hide: true,
-  // },
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    hide: true,
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+    hide: true,
   },
   breakpoints: {
-    // 425: {
-    //   navigation: false,
-    //   slidesPerView: 1.3,
-    //   spaceBetween: 10,
-    // },
     525: {
       slidesPerView: 1.5,
       spaceBetween: 15,
@@ -117,8 +113,8 @@ let glassesSlider = new Swiper(slider2, {
       spaceBetween: 20,
     },
     768: {
-      // scrollbar: false,
-      // navigation: true,
+      scrollbar: false,
+      navigation: true,
       slidesPerView: 2.5,
       spaceBetween: 30,
     },
@@ -131,6 +127,38 @@ let glassesSlider = new Swiper(slider2, {
       spaceBetween: 80,
     },
   },
+});
+
+const slider3 = document.querySelector(".gift-sets__slider-container");
+let mySwiper;
+function mobileSlider() {
+  if (window.innerWidth <= 768 && slider3.dataset.mobile == "false") {
+    mySwiper = new Swiper(slider3, {
+      slidesPerView: 1,
+      spaceBetween: 5,
+      loop: true,
+      slideClass: "gift-sets__item",
+      // pagination: {
+      // 	el: '.swiper-pagination',
+      // 	clickable: true,
+      // },
+    });
+
+    slider3.dataset.mobile = "true";
+  }
+
+  if (window.innerWidth > 768) {
+    slider3.dataset.mobile = "false";
+    if (slider3.classList.contains("gift-sets__slider-container-initialized")) {
+      mySwiper.destroy();
+    }
+  }
+}
+
+mobileSlider();
+
+window.addEventListener("resize", () => {
+  mobileSlider();
 });
 
 // const sliders = document.querySelectorAll(".swiper");

@@ -71,9 +71,25 @@
     margin-top: 10px;
   }
 
-  @media screen and (width < 768.99px) {
+  @media screen and (width < 1024.99px) {
     &__top {
       flex-direction: column;
+    }
+  }
+
+  @media screen and (width < 768.99px) {
+    &__list {
+      gap: 0;
+    }
+
+    &__item {
+      flex-shrink: 0;
+      margin: 0 auto;
+
+    }
+
+    &__item:nth-child(even) {
+      margin-top: 0;
     }
   }
 }
