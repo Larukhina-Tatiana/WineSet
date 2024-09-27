@@ -1,12 +1,6 @@
 .candles {
-  // padding-top: clamp(3.75rem, 2.725rem + 5.13vw, 8.875rem);
-  padding-top: 161px;
-
-  &__title {
-    &:not(:last-child) {
-      margin-bottom: 50px;
-    }
-  }
+  padding-top: clamp(3.75rem, 2.487rem + 6.31vw, 10.063rem);
+  // padding-top: 161px;
 
   .section-btn {
     bottom: 138px;

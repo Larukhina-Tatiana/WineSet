@@ -39,7 +39,12 @@ function fonts() {
 }
 
 function htmlInclude() {
-  return src(["./src/html/index.html", "./src/html/page-gift-sets.html"])
+  return src([
+    "./src/html/index.html",
+    "./src/html/page-gift-sets.html",
+    "./src/html/page-glasses.html",
+    "./src/html/page-delicacies.html",
+  ])
     .pipe(
       fileinclude({
         prefix: "@",
@@ -159,7 +164,7 @@ function scripts() {
       // "node_modules/simplelightbox/dist/simple-lightbox.min.js",
       // "node_modules/siema/dist/siema.min.js",
       // "node_modules/aos/dist/aos.js",
-      // "libs/formstyler/jquery.formstyler.min.js",
+      "libs/formstyler/jquery.formstyler.min.js",
       // "libs/tooltip/uikit.min.js",
       // "js/ion.rangeSlider.min.js",
       // "js/jquery.rateyo.js",

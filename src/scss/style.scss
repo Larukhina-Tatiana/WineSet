@@ -7,8 +7,8 @@
 // @import "././libs/tooltip/uikit.min";
 // @import "././libs/slick/slick";
 // @import "././libs/choices/choices.min";
-// @import "././libs/formstyler/jquery.formstyler";
-// @import "././libs/formstyler/jquery.formstyler.theme";
+@import "././libs/formstyler/jquery.formstyler";
+@import "././libs/formstyler/jquery.formstyler.theme";
 @import "./utils/global";
 @import "./utils/fonts";
 @import "./utils/container";
@@ -63,5 +63,7 @@
 @import "./components/sale";
 @import "./components/section-slider";
 @import "./components/glasses-card";
+
+@import "./components/filter";
 
 // @import "./components/dropdown-menu";

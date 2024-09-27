@@ -1,0 +1,169 @@
+.filter {
+
+  &__list {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__item:nth-child(2) {
+    @media screen and (width >=1290.99px) {
+      margin-left: auto;
+    }
+  }
+
+  &__btn {
+    display: block;
+    margin: 30px auto 0;
+    margin-top: 30px;
+  }
+
+  .jq-checkbox,
+  .jq-radio {
+    padding: 3px;
+    border-radius: 2px;
+    vertical-align: -4px;
+    width: 20px;
+    height: 20px;
+    margin: 0 20px 0 0;
+    border: 1px solid $white;
+    background: transparent;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  .jq-checkbox.checked .jq-checkbox__div {
+    width: 11px;
+    height: 8px;
+    margin: 1px 0 0 1px;
+    border: none;
+    transform: rotate(0);
+    background-image: url(../images/icons/checked.svg);
+  }
+
+  @media screen and (width <=1200px) {
+
+    &__list {
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (width <=768px) {
+    position: absolute;
+    backdrop-filter: blur(10px);
+    z-index: 4;
+  }
+}
+
+.filter-content {
+  position: absolute;
+  width: 194px;
+  z-index: 3;
+  margin-top: -5px;
+  padding: 8px 18px 30px;
+  background: rgba(122, 0, 0, 0.85);
+  color: $white;
+  display: none;
+
+  &--bacis {
+    @media screen and (width >=1200px) {
+      width: 320px;
+    }
+  }
+
+  @media screen and (width <=1200px) {
+    position: static;
+  }
+
+}
+
+.filter-content-box {
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: 400;
+  font-size: 14px;
+
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 136px;
+    height: 0.5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    right: -18px;
+    bottom: 0;
+  }
+
+  &--bacis::after {
+    @media screen and (width >=1200px) {
+      width: 260px;
+    }
+  }
+}
+
+
+.filter-title {
+  position: relative;
+  pointer-events: all;
+  width: 194px;
+  padding: 19px 25px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162%;
+  letter-spacing: -0.01em;
+  color: $accent;
+  background-color: $white;
+  border-radius: 7px;
+  border: 1px solid rgba(122, 0, 0, 0.35);
+  cursor: pointer;
+
+  &::after {
+    position: absolute;
+    content: url(../images/icons/filter-arrow-accent.svg);
+    width: 8px;
+    height: 4px;
+    top: 29%;
+    transform: translateY(-50%);
+    right: clamp(0.938rem, 0.813rem + 0.63vw, 1.563rem);
+    // right: 25px;
+    // cursor: pointer;
+    @include transition ($transition-property: transform);
+  }
+
+
+  &--bacis {
+    color: $white;
+    background-color: $accent;
+
+    &::after {
+      content: url(../images/icons/filter-arrow.svg);
+    }
+
+    @media screen and (width >=1200px) {
+      width: 320px;
+    }
+  }
+
+
+  &--active {
+
+    &::before {
+      position: absolute;
+      content: '';
+      // max-width: 176px;
+      width: 88%;
+      height: 3px;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 0 0 3px 3px;
+      background: $accent;
+    }
+
+    &::after {
+      top: 66%;
+      transform: rotate(-180deg);
+    }
+  }
+}

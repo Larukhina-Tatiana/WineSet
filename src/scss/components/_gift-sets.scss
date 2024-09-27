@@ -1,6 +1,7 @@
 .gift-sets {
   position: relative;
-  padding-top: 80px;
+  // padding-top: 80px;
+  padding-top: clamp(2.5rem, 2rem + 2.5vw, 5rem);
 
   &::after {
     position: absolute;
@@ -38,6 +39,9 @@
     }
   }
 
+  &__slider-container {
+    overflow: hidden;
+  }
 
   &__list {
     display: flex;
