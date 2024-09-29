@@ -1,0 +1,18 @@
+.card {
+  padding-top: 80px;
+
+
+  &__top {
+    margin-top: 30px;
+  }
+
+  &__title {
+    max-width: 888px;
+    @extend %third-family-600;
+    font-size: 56px;
+    text-transform: uppercase;
+    color: $black;
+  }
+
+
+}

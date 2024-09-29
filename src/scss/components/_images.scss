@@ -76,12 +76,34 @@
       height: auto;
     }
 
-    &--glasses,
-    &--delicacies {
+    &--glasses {
       // position: relative;
       max-width: 256px;
       // height: 303px;
-      height: auto;
+      height: 328px;
+      // height: auto;
+    }
+
+    &--delicacies {
+      // position: relative;
+      max-width: 256px;
+      height: 328px;
+      // height: 303px;
+      // height: auto;
+    }
+
+    &--wine {
+      // position: relative;
+      max-width: 270px;
+      height: 328px;
+      // height: auto;
+    }
+
+    &--card-secondary {
+      // position: relative;
+      max-width: 122px;
+      height: 122px;
+      // height: auto;
     }
   }
 
