@@ -2,13 +2,6 @@
   // padding-top: 79px;
   padding-top: clamp(2.5rem, 2.012rem + 2.44vw, 4.938rem);
 
-  &__top {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-  }
-
   &__btn {
     position: static;
 
@@ -17,101 +10,8 @@
     }
   }
 
-  &__list {
-    display: flex;
-    justify-content: space-between;
-    gap: clamp(3.75rem, 3.1rem + 3.25vw, 7rem);
-
-    // gap: 112px;
-    @media screen and (width >=768px) {
-      margin-left: auto;
-    }
-  }
-
-  &__item {
-    max-width: 320px;
-    line-height: 140%;
-  }
-
-  &__content {
-    &:not(:last-child) {
-      margin-bottom: 50px;
-    }
-  }
-
-  &__filter {
+  .filter {
     margin-top: 101px;
-  }
-
-  &__btn-filter {
-    display: none;
-  }
-
-  &__catalog {
-    margin-top: 50px;
-  }
-
-  @media screen and (width <=1200px) {
-    &__wrapper {
-      display: flex;
-      gap: 40px;
-    }
-  }
-
-  @media screen and (width <=768px) {
-    &__top {
-      flex-direction: column;
-    }
-
-    &__list {
-      flex-direction: column;
-    }
-
-    &__item {
-      max-width: fit-content;
-      width: 100%;
-    }
-
-    &__wrapper {
-      display: block;
-      margin-top: 40px;
-    }
-
-    &__btn-filter {
-      display: block;
-      position: relative;
-      pointer-events: all;
-      width: 194px;
-      padding: 19px 25px;
-
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 162%;
-      letter-spacing: -0.01em;
-      color: $accent;
-      background-color: rgba(122, 0, 0, 0.35);
-      border-radius: 7px;
-      border: 1px solid rgba(122, 0, 0, 0.35);
-
-      &::after {
-        position: absolute;
-        content: url(../images/icons/filter-arrow-accent.svg);
-        width: 8px;
-        height: 4px;
-        top: 29%;
-        transform: translateY(-50%);
-        // right: clamp(0.375rem, -0.982rem + 2.12vw, 1.563rem);
-        right: clamp(0.938rem, 0.813rem + 0.63vw, 1.563rem);
-        // right: 25px;
-        // cursor: pointer;
-        transform: rotate(180deg);
-        @include transition ($transition-property: transform);
-      }
-    }
-
-    &__filter {
-      margin-top: 10px;
-    }
   }
 }
 
@@ -120,13 +20,4 @@
   padding-top: clamp(2.5rem, 1.162rem + 6.69vw, 9.188rem);
   // padding-bottom: 81px;
   padding-bottom: clamp(0.625rem, -0.262rem + 4.44vw, 5.063rem);
-}
-
-.glasses-catalog {
-  padding-right: clamp(0.125rem, -0.35rem + 2.38vw, 2.5rem);
-  padding-left: clamp(0.125rem, -0.35rem + 2.38vw, 2.5rem);
-  display: flex;
-  // gap: 125px 80px;
-  gap: clamp(2.5rem, 1.438rem + 5.31vw, 7.813rem) 80px;
-  flex-wrap: wrap;
 }

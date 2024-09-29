@@ -89,7 +89,7 @@ let giftbasketsSlider = new Swiper(slider1, {
   },
 });
 
-const slider2 = document.querySelector(".glasses__swiper-container");
+const slider2 = document.querySelector(".products__swiper-container");
 let glassesSlider = new Swiper(slider2, {
   slidesPerView: 1,
   spaceBetween: 5,

@@ -1,4 +1,5 @@
 .filter {
+  margin-top: 50px;
 
   &__list {
     display: flex;
@@ -6,7 +7,7 @@
   }
 
   &__item:nth-child(2) {
-    @media screen and (width >=1290.99px) {
+    @media screen and (width >=1290px) {
       margin-left: auto;
     }
   }
@@ -48,6 +49,8 @@
   }
 
   @media screen and (width <=768px) {
+    display: none;
+    margin-top: 10px;
     position: absolute;
     backdrop-filter: blur(10px);
     z-index: 4;
