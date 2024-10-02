@@ -100,10 +100,16 @@
     }
 
     &--card-secondary {
-      // position: relative;
-      max-width: 122px;
-      height: 122px;
+      // width: 122px;
+      width: clamp(5.375rem, 3.768rem + 8.04vw, 7.625rem);
+      height: clamp(5.375rem, 3.768rem + 8.04vw, 7.625rem);
       // height: auto;
+    }
+
+    &--card {
+      width: 438px;
+      // height: 122px;
+      height: auto;
     }
   }
 

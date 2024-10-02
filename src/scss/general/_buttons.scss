@@ -45,3 +45,23 @@
   color: $white;
   text-transform: capitalize;
 }
+
+.see-all-specifications {
+  padding-right: 11px;
+  margin-top: 20px;
+  font-weight: 500;
+  // font-size: 18px;
+  font-size: clamp(0.875rem, 0.654rem + 0.39vw, 1.125rem);
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  color: $accent;
+  background: url('../images/icons/arrow-down-6-4.svg') right center / 6px 4px no-repeat;
+
+  // &::after {
+  //   display: inline-block;
+  //   width: 6px;
+  //   height: 4px;
+  //   content: '';
+  //   background-image: url('../images/icons/arrow-down-6-4.svg');
+  // }
+}

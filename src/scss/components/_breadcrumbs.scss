@@ -14,8 +14,6 @@
   &__link {
     display: flex;
     align-items: center;
-    // font-family: 'Roboto', sans-serif;
-    // font-weight: 400;
     @extend %font3-400;
     font-size: 14px;
     color: $main-color;

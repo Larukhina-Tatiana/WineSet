@@ -1,0 +1,39 @@
+.counter {
+  padding: 10px;
+  // width: 129px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  background-color: $white;
+
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 130%;
+  color: $black;
+  border-radius: 3px;
+
+  &__control {
+    background-color: transparent;
+    cursor: pointer;
+    // outline: 1px solid red;
+    @include transition ($transition-property: background-color);
+
+    & svg {
+      @include transition ($transition-property: color);
+      color: $black;
+      pointer-events: none;
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: $accent;
+
+
+        & svg {
+          color: $white;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.card-pictogram {
+  display: flex;
+  gap: 22px;
+
+  &:not(:last-child) {
+    margin-bottom: 43px;
+  }
+}

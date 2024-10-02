@@ -1,0 +1,13 @@
+.card-definitions {
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  & dt,
+  & dd {
+    display: inline-block;
+  }
+}
