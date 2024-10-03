@@ -1,6 +1,7 @@
 .card {
   // padding-top: 80px;
   padding-top: clamp(2.5rem, 2rem + 2.5vw, 5rem);
+  padding-bottom: 48px;
 
 
   &__top {

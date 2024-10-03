@@ -1,0 +1,50 @@
+.characteristics {
+  background: var(--bg);
+  padding-top: 86px;
+  padding-bottom: 80px;
+  display: none;
+  font-weight: 500;
+
+  &.active {
+    display: block;
+  }
+
+  &__title {
+    font-family: var(--third-family);
+    font-weight: 500;
+    // font-size: 48px;
+    font-size: clamp(1.875rem, 1.65rem + 1.13vw, 3rem);
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 75px;
+    margin-top: 63px;
+  }
+
+  &__descr {
+    margin-top: -6px;
+  }
+
+  &__img {
+    margin-top: -10px;
+    margin-right: 26px;
+    align-self: baseline;
+  }
+
+  @media screen and (width <=1200px) {
+    &__wrapper {
+      flex-wrap: wrap;
+    }
+
+    &__img {
+      order: -1;
+    }
+  }
+
+  @media screen and (width <=798px) {
+    &__img {
+      display: none;
+    }
+  }
+}

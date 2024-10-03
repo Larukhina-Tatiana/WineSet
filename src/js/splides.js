@@ -129,37 +129,41 @@ let glassesSlider = new Swiper(slider2, {
   },
 });
 
-const slider3 = document.querySelector(".gift-sets__slider-container");
-let mySwiper;
-function mobileSlider() {
-  if (window.innerWidth <= 768 && slider3.dataset.mobile == "false") {
-    mySwiper = new Swiper(slider3, {
-      slidesPerView: 1,
-      spaceBetween: 5,
-      loop: true,
-      slideClass: "gift-sets__item",
-      // pagination: {
-      // 	el: '.swiper-pagination',
-      // 	clickable: true,
-      // },
-    });
+if (document.querySelector(".gift-sets__slider-container")) {
+  const slider3 = document.querySelector(".gift-sets__slider-container");
+  let mySwiper;
+  function mobileSlider() {
+    if (window.innerWidth <= 768 && slider3.dataset.mobile == "false") {
+      mySwiper = new Swiper(slider3, {
+        slidesPerView: 1,
+        spaceBetween: 5,
+        loop: true,
+        slideClass: "gift-sets__item",
+        // pagination: {
+        // 	el: '.swiper-pagination',
+        // 	clickable: true,
+        // },
+      });
 
-    slider3.dataset.mobile = "true";
-  }
+      slider3.dataset.mobile = "true";
+    }
 
-  if (window.innerWidth > 768) {
-    slider3.dataset.mobile = "false";
-    if (slider3.classList.contains("gift-sets__slider-container-initialized")) {
-      mySwiper.destroy();
+    if (window.innerWidth > 768) {
+      slider3.dataset.mobile = "false";
+      if (
+        slider3.classList.contains("gift-sets__slider-container-initialized")
+      ) {
+        mySwiper.destroy();
+      }
     }
   }
-}
 
-mobileSlider();
-
-window.addEventListener("resize", () => {
   mobileSlider();
-});
+
+  window.addEventListener("resize", () => {
+    mobileSlider();
+  });
+}
 
 // const sliders = document.querySelectorAll(".swiper");
 

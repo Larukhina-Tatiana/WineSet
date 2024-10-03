@@ -1,0 +1,38 @@
+.effect {
+
+
+  &__item {
+    width: 406px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 38px;
+    }
+  }
+
+  &__item-text {
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  &__line {
+    position: relative;
+    max-width: 244px;
+    width: 100%;
+    border-bottom: 7px solid $bg;
+    border-radius: 10px;
+  }
+
+  &__line-secondary {
+    position: absolute;
+    content: '';
+    bottom: -6px;
+    width: 85%;
+    height: 7px;
+    border-radius: 10px;
+    background-color: $accent;
+  }
+}
