@@ -214,7 +214,7 @@ function images() {
       .pipe(newer("images"))
       .pipe(imagemin())
 
-      .pipe(dest("images/icon"))
+      .pipe(dest("images/reviews"))
   );
 }
 

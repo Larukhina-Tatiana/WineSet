@@ -1,9 +1,7 @@
 .stars {
-  &:not(:last-child) {
-    margin-bottom: 20px;
-  }
 
-  &__title {
+
+  &-title {
     display: block;
 
     &:not(:last-child) {
@@ -11,23 +9,23 @@
     }
   }
 
-  &__inner {
+  &-inner {
     display: flex;
   }
 
-  &__num {
+  &-num {
     margin-right: 15px;
     display: inline-block;
     font-weight: 600;
     font-size: 18px;
   }
 
-  &__list {
+  &-list {
     display: flex;
     gap: 4px;
   }
 
-  &__item {
+  &-item {
     width: 20px;
     height: 20px;
     background: url(../images/icons/star.svg) left center / 20px 20px no-repeat;

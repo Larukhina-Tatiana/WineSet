@@ -165,6 +165,77 @@ if (document.querySelector(".gift-sets__slider-container")) {
   });
 }
 
+if (document.querySelector(".reviews__swiper-container")) {
+  const slider4 = document.querySelector(".reviews__swiper-container");
+  let Slider = new Swiper(slider4, {
+    slidesPerView: 1,
+    spaceBetween: 5,
+    loop: true,
+    scrollbar: {
+      el: ".swiper-scrollbar",
+      hide: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+      hide: true,
+    },
+    breakpoints: {
+      525: {
+        slidesPerView: 1.5,
+        spaceBetween: 15,
+      },
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        scrollbar: false,
+        navigation: true,
+        slidesPerView: 2.5,
+        spaceBetween: 30,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 60,
+      },
+      1440: {
+        slidesPerView: 4,
+        spaceBetween: 160,
+      },
+    },
+  });
+  // function mobileSlider() {
+  //   if (window.innerWidth <= 768 && slider3.dataset.mobile == "false") {
+  //     mySwiper = new Swiper(slider4, {
+  //       slidesPerView: 1,
+  //       spaceBetween: 5,
+  //       loop: true,
+  //       slideClass: "reviews-item",
+  //       // pagination: {
+  //       // 	el: '.swiper-pagination',
+  //       // 	clickable: true,
+  //       // },
+  //     });
+
+  //     slider4.dataset.mobile = "true";
+  //   }
+
+  //   if (window.innerWidth > 768) {
+  //     slider3.dataset.mobile = "false";
+  //     if (slider3.classList.contains("reviews__swiper-container-initialized")) {
+  //       mySwiper.destroy();
+  //     }
+  //   }
+  // }
+
+  // mobileSlider();
+
+  // window.addEventListener("resize", () => {
+  //   mobileSlider();
+  // });
+}
+
 // const sliders = document.querySelectorAll(".swiper");
 
 // sliders.forEach((el) => {

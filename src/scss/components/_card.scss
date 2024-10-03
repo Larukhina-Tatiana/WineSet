@@ -57,6 +57,12 @@
     color: $black;
   }
 
+  &__stars {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
   &__content-cart {
     margin-top: 54px;
     width: calc(100% - 1120px);
