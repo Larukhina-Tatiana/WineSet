@@ -168,8 +168,8 @@ if (document.querySelector(".gift-sets__slider-container")) {
 if (document.querySelector(".reviews__swiper-container")) {
   const slider4 = document.querySelector(".reviews__swiper-container");
   let Slider = new Swiper(slider4, {
-    slidesPerView: 1,
-    spaceBetween: 5,
+    slidesPerView: 1.2,
+    spaceBetween: 20,
     loop: true,
     scrollbar: {
       el: ".swiper-scrollbar",
@@ -181,27 +181,29 @@ if (document.querySelector(".reviews__swiper-container")) {
       hide: true,
     },
     breakpoints: {
-      525: {
+      425: {
         slidesPerView: 1.5,
-        spaceBetween: 15,
+        spaceBetween: 40,
       },
-      640: {
-        slidesPerView: 2,
+      575: {
+        slidesPerView: 1.7,
         spaceBetween: 20,
       },
-      768: {
-        scrollbar: false,
-        navigation: true,
-        slidesPerView: 2.5,
+      656: {
+        slidesPerView: 2.2,
+        spaceBetween: 20,
+      },
+      960: {
+        slidesPerView: 2.7,
         spaceBetween: 30,
       },
       1024: {
-        slidesPerView: 3,
-        spaceBetween: 60,
+        slidesPerView: 3.5,
+        spaceBetween: 40,
       },
       1440: {
         slidesPerView: 4,
-        spaceBetween: 160,
+        spaceBetween: 140,
       },
     },
   });

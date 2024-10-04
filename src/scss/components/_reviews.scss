@@ -2,26 +2,57 @@
   padding-top: 140px;
   font-weight: 500;
 
+  &__top {
+    margin-right: max(15px, (100% - 1600px) / 2);
+  }
+
   &__title {
     text-transform: none;
   }
 
   .swiper-button {
-    top: 40%;
-    right: 0;
+    top: 22px;
+    right: 15px;
   }
 }
 
 .reviews {
 
   &__swiper-container {
-    margin-top: 91px;
     padding-left: max(15px, (100% - 1600px) / 2);
+
+    .swiper-slide {
+      opacity: 0.5;
+      @include transition ($transition-property: (box-shadow));
+    }
+
+
+    .swiper-slide-active,
+    .swiper-slide-next {
+      opacity: 1;
+    }
+
+    .swiper-slide-next + .swiper-slide {
+      opacity: 1;
+    }
+
+
+    @media screen and (width <=1024px) {
+      .swiper-slide-next + .swiper-slide {
+        opacity: 0.5;
+      }
+    }
+
+    @media screen and (width <=655px) {
+      .swiper-slide-next {
+        opacity: 0.5;
+      }
+    }
   }
 
   &-list {
-    display: flex;
-
+    margin-top: 91px;
+    padding-bottom: 30px;
   }
 
   &-header {
@@ -53,10 +84,5 @@
     &:not(:last-child) {
       margin-bottom: 12px;
     }
-  }
-
-  &-body {
-    max-width: 318px;
-    width: 100%;
   }
 }

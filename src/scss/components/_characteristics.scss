@@ -27,9 +27,12 @@
   }
 
   &__img {
-    margin-top: -10px;
-    margin-right: 26px;
     align-self: baseline;
+
+    @media screen and (width >=1200px) {
+      margin-top: -10px;
+      margin-right: 26px;
+    }
   }
 
   @media screen and (width <=1200px) {

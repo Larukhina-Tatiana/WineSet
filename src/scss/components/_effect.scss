@@ -2,7 +2,7 @@
 
 
   &__item {
-    width: 406px;
+    width: 414px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,8 +20,8 @@
 
   &__line {
     position: relative;
-    max-width: 244px;
-    width: 100%;
+    // max-width: 244px;
+    width: 59%;
     border-bottom: 7px solid $bg;
     border-radius: 10px;
   }
@@ -34,5 +34,18 @@
     height: 7px;
     border-radius: 10px;
     background-color: $accent;
+  }
+
+  @media screen and (width <=425px) {
+
+    &__item {
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
   }
 }
