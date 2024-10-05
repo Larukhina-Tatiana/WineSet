@@ -46,6 +46,7 @@ function htmlInclude() {
     "./src/html/page-delicacies.html",
     "./src/html/page-wine.html",
     "./src/html/page-card.html",
+    "./src/html/page-constructor.html",
   ])
     .pipe(
       fileinclude({
@@ -214,7 +215,7 @@ function images() {
       .pipe(newer("images"))
       .pipe(imagemin())
 
-      .pipe(dest("images/reviews"))
+      .pipe(dest("images/constructor"))
   );
 }
 

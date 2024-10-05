@@ -30,7 +30,7 @@
       width: 580px;
       height: 205px;
       right: 4px;
-      bottom: -51px;
+      bottom: clamp(-11.25rem, -12.863rem + 8.06vw, -3.188rem);
       z-index: -1;
       background-image: -webkit-image-set(url(../images/card/card-bg1@1x.png) type("image/png") 1x, url(../images/card/card-bg1@2x.png) type("image/png") 2x);
     }

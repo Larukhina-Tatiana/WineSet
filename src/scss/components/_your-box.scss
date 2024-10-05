@@ -1,0 +1,130 @@
+.your-box {
+  // padding-top: 80px;
+  padding-top: clamp(2.5rem, 2rem + 2.5vw, 5rem);
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 547px;
+    height: 816px;
+    left: 0;
+    bottom: -28px;
+    z-index: -1;
+    background-image: -webkit-image-set(url(../images/your-box/bg1@1x.png) type("image/png") 1x, url(../images/your-box/bg1@2x.png) type("image/png") 2x);
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__title {
+    width: 340px;
+
+  }
+
+  &__body {
+    // margin-top: 140px;
+    margin-top: clamp(3.75rem, 2.612rem + 5.69vw, 9.438rem);
+    max-width: 956px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    position: relative;
+    max-width: 530px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    &:not(:last-child) {
+      // margin-bottom: 110px;
+      margin-bottom: clamp(2.5rem, -3.778rem + 31.39vw, 6.875rem);
+    }
+  }
+
+  &__circle {
+    // padding: 22px 40px;
+    font-family: var(--third-family);
+    font-weight: 500;
+    // font-size: 48px;
+    // font-size: clamp(1.75rem, 1.5rem + 1.25vw, 3rem);
+    font-size: clamp(1.25rem, 0.9rem + 1.75vw, 3rem);
+    // width: 102px;
+    // height: 102px;
+    width: clamp(3rem, -1.843rem + 24.22vw, 6.375rem);
+    height: clamp(3rem, -1.843rem + 24.22vw, 6.375rem);
+    color: $white;
+    background-color: $accent;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+
+  @media screen and (width >=1004px) {
+    &__item:nth-child(1)::after {
+      position: absolute;
+      content: '';
+      width: 1px;
+      height: 610px;
+      top: 93px;
+      right: 54px;
+      background-color: $accent;
+    }
+  }
+
+
+  &__item:nth-child(even) {
+    align-self: flex-end;
+  }
+
+
+  &__content {
+    width: clamp(10.313rem, -7.625rem + 89.69vw, 22.813rem);
+
+  }
+
+
+
+
+  &__content-title {
+    font-family: var(--third-family);
+    font-size: clamp(1.75rem, 1.5rem + 1.25vw, 3rem);
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    line-height: 140%;
+  }
+
+  @media screen and (width <=768px) {
+    @media screen and (width <=768px) {
+      &__top {
+        flex-direction: column;
+      }
+    }
+
+    &__body {
+      max-width: none;
+      width: 100%;
+    }
+  }
+
+  @media screen and (width <=543px) {
+
+    &__text {
+      font-size: clamp(0.875rem, 0.696rem + 0.9vw, 1rem);
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.page-card {
+  .section-slider {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 398px;
+      height: 430px;
+      left: 2px;
+      bottom: -89px;
+      z-index: -1;
+      background-image: -webkit-image-set(url(../images/page/bg2@1x.png) type("image/png") 1x, url(../images/page/bg2@2x.png) type("image/png") 2x);
+    }
+  }
+}
