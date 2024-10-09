@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-  <meta name="viewport" content="width=360, initial-scale=1, shrink-to-fit=no">
-  <title>Интернет-магазин WiNESET Конструктор</title>
-  <link rel="stylesheet" href="css/style.min.css">
-</head>
+@include('head.html', {"title": "Интернет-магазин WiNESET Конструктор"})
 
-<body class="page-card">
+<body class="page-constructor">
 
   <!-- @include('header.html') -->
   <main>
     <!-- @include('breadcrumbs-card.html') -->
     @include('hero-constructor.html')
     @include('your-box.html')
+    @include('choose-box.html')
+    @include('add-products.html')
+    @include('add-items.html')
+    @include('your-order.html')
+    @include('gift-baskets.html', {'h2': "Для тех, кто ищет готовые решения"})
 
-    @include('section-slider.html')
-    @include('сonsultation.html')
-    @include('instagram.html')
+    @include('assistance.html')
+    @include('section-instagram.html')
 
   </main>
 

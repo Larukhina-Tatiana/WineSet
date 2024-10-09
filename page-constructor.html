@@ -4,13 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
   <meta name="viewport" content="width=360, initial-scale=1, shrink-to-fit=no">
   <title>Интернет-магазин WiNESET Конструктор</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body class="page-card">
+<body class="page-constructor">
 
   
   <main>
@@ -81,51 +80,396 @@
     </ul>
   </div>
 </section>
-
-    <section class="section-slider products-slider">
-  <div class="container">
-    <div class="products__swiper-container swiper">
-      <div class="section-slider__top">
-        <h2 class="title-h2 section-slider__title">
-          Рекомендуемые товары
-        </h2>
-
-        <button class="swiper-button swiper-button-prev"></button>
-        <button class="swiper-button swiper-button-next"></button>
-
-      </div>
-      <ul class="products-slider__list swiper-wrapper">
-        <li class="products-slider__item swiper-slide">
-          <article class="products-card">
-            <div class="sale">-30%</div>
-            <a class="products-card__link" href="#">
-              <div class="images-thumb images-thumb--glasses">
-                <img class="images-img products-card__img" src="image/png"
-                  srcset="./images/glasses/image1@1x.png 1x, ./images/glasses/image1@2x.png 2x" loading="lazy"
-                  decoding="async" alt='image'>
-              </div>
-              <div class="products-card__content">
-                <h5 class="products-card__title title-h5">
-                  Riedel Extrime Riesling Wine Glasses
-                </h5>
-                <ul class="products-card__list">
-                  <li class="products-card__item products-card__item--glasses">
-                    Бокал для белого вина
-                  </li>
-                  <li class="products-card__item products-card__item--grape">
-                    Рислинг, Совиньйон Блан +
-                  </li>
-                </ul>
-              </div>
-              <div class="products-card__price">
-                <span class="products-card__price-new">4 500 ₴</span>
-                <span class="products-card__price-old">5 300 ₴</span>
-              </div>
-            </a>
-            <button class="btn btn--bg-red btn-buy">Купить</button>
-          </article>
+    <section class="choose-box">
+  <div class="container choose-box__container">
+    <div class="your-box__top choose-box__top">
+      <h2 class="title-h2 choose-box__title">Выбери коробочку</h2>
+      <ul class="products__list">
+        <li class="products__item">
+          <p class="products__content">
+            Форма чаши каждого бокала уникальна, благодаря этому вы&nbsp;можете ощутить самые тонкие нюансы вкуса своих
+            напитков.
+          </p>
         </li>
-        <li class="products-catalog__item swiper-slide">
+        <li class="products__item">
+          <p class="products__content">
+            Бокалы Вы&nbsp;можете приобрести как отдельно, так и&nbsp;в&nbsp;красивой подарочной упаковке.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <ul class="choose-box__list">
+      <li class="choose-box__item">
+        <article class="choose-box-card">
+          <a class="choose-box-card__link" href="#">
+            <picture>
+              <source type="image/avif"
+                srcset="./images/constructor/image2@1x.avif 1x, ./images/constructor/image2@2x.avif 2x">
+              <source type="image/webp"
+                srcset="./images/constructor/image2@1x.webp 1x, ./images/constructor/image2@2x.webp 2x">
+              <img class="choose-box-card-img" src="./images/constructor/image2@1x.jpg" width="384" height="347"
+                loading="lazy" decoding="async" alt='Подарочный набор Juve Camps'>
+            </picture>
+
+            <div class="choose-box-card__content">
+              <h4 class="gift-baskets-card__title title-h4">
+                Подарочный набор Juve Camps
+              </h4>
+              <ul class="compound">
+                <li class="compound__item compound__item--title">
+                  Состав:
+                </li>
+                <li class="compound__item">
+                  Вино Primitivo, Feudi di San Gregorio 0,750
+                </li>
+                <li class="compound__item">
+                  Сыр Montanari Gruzza 16 мес. выдержки 250г
+                </li>
+                <li class="compound__item">
+                  Чатни к сыру 300г, Mrs Bridges
+                </li>
+                <li class="compound__item">
+                  Печенье вафельное 200г, Belgian Butters
+                </li>
+              </ul>
+            </div>
+          </a>
+          <button class="btn btn--bg-red btn-buy choose-box-card__btn">выбрать</button>
+        </article>
+      </li>
+      <li class="choose-box__item">
+        <article class="choose-box-card">
+          <a class="choose-box-card__link" href="#">
+
+            <picture>
+              <source type="image/avif"
+                srcset="./images/constructor/image1@1x.avif 1x, ./images/constructor/image1@2x.avif 2x">
+              <source type="image/webp"
+                srcset="./images/constructor/image1@1x.webp 1x, ./images/constructor/image1@2x.webp 2x">
+              <img class="choose-box-card-img" src="./images/constructor/image1@1x.jpg" width="384" height="347"
+                loading="lazy" decoding="async" alt='Подарочный набор Juve Camps'>
+            </picture>
+
+            <div class="choose-box-card__content">
+              <h4 class="gift-baskets-card__title title-h4"
+                title="Подарочный набор Juve Camps Подарочный набор Juve Camps">
+                Подарочный набор Juve Camps
+                Подарочный набор Juve Camps
+              </h4>
+              <ul class="compound">
+                <li class="compound__item compound__item--title">
+                  Состав:
+                </li>
+                <li class="compound__item">
+                  Вино Primitivo, Feudi di San Gregorio 0,750
+                </li>
+                <li class="compound__item">
+                  Сыр Montanari Gruzza 16 мес. выдержки 250г
+                </li>
+              </ul>
+            </div>
+          </a>
+          <button class="btn btn--bg-red btn-buy choose-box-card__btn">выбрать</button>
+        </article>
+      </li>
+      <li class="choose-box__item">
+        <article class="choose-box-card">
+          <a class="choose-box-card__link" href="#">
+            <picture>
+              <source type="image/avif"
+                srcset="./images/constructor/image3@1x.avif 1x, ./images/constructor/image3@2x.avif 2x">
+              <source type="image/webp"
+                srcset="./images/constructor/image3@1x.webp 1x, ./images/constructor/image3@2x.webp 2x">
+              <img class="choose-box-card-img" src="./images/constructor/image3@1x.jpg" width="384" height="347"
+                loading="lazy" decoding="async" alt='Подарочный набор Juve Camps'>
+            </picture>
+            <div class="choose-box-card__content">
+              <h4 class="gift-baskets-card__title title-h4">
+                Подарочный набор Juve Camps
+              </h4>
+              <ul class="compound">
+                <li class="compound__item compound__item--title">
+                  Состав:
+                </li>
+                <li class="compound__item">
+                  Вино Primitivo, Feudi di San Gregorio 0,750
+                </li>
+                <li class="compound__item">
+                  Сыр Montanari Gruzza 16 мес. выдержки 250г
+                </li>
+                <li class="compound__item">
+                  Чатни к сыру 300г, Mrs Bridges
+                </li>
+                <li class="compound__item">
+                  Печенье вафельное 200г, Belgian Butters
+                </li>
+                <!-- <li class="compound__item">
+                  Чатни к сыру 300г, Mrs Bridges
+                </li>
+                <li class="compound__item">
+                  Печенье вафельное 200г, Belgian Butters
+                </li> -->
+              </ul>
+            </div>
+          </a>
+          <button class="btn btn--bg-red btn-buy choose-box-card__btn">выбрать</button>
+        </article>
+      </li>
+      <!--<li class="choose-box__item">
+        <article class="choose-box-card">
+          <a class="choose-box-card__link" href="#">
+            <picture>
+              <source type="image/avif"
+                srcset="./images/partners/image3@1x.avif 1x, ./images/partners/image3@2x.avif 2x">
+              <source type="image/webp"
+                srcset="./images/partners/image3@1x.webp 1x, ./images/partners/image3@2x.webp 2x">
+              <img class="choose-box-card-img" src="./images/partners/image3@1x.jpg" width="384" height="347"
+                loading="lazy" decoding="async" alt='Подарочный набор Juve Camps'>
+            </picture>
+
+            <div class="choose-box-card__content">
+              <h4 class="gift-baskets-card__title title-h4">
+                Подарочный набор Juve Camps
+              </h4>
+              <ul class="compound">
+                <li class="compound__item compound__item--title">
+                  Состав:
+                </li>
+                <li class="compound__item">
+                  Вино Primitivo, Feudi di San Gregorio 0,750
+                </li>
+                <li class="compound__item">
+                  Сыр Montanari Gruzza 16 мес. выдержки 250г
+                </li>
+                <li class="compound__item">
+                  Чатни к сыру 300г, Mrs Bridges
+                </li>
+                <li class="compound__item">
+                  Печенье вафельное 200г, Belgian Butters
+                </li>
+              </ul>
+            </div>
+          </a>
+          <button class="btn btn--bg-red btn-buy choose-box-card__btn">выбрать</button>
+        </article>
+      </li> -->
+    </ul>
+  </div>
+</section>
+    <section class="add-products">
+  <div class="container add-products__container">
+    <div class="your-box__top">
+      <h2 class="title-h2 choose-box__title">Добавь продукты</h2>
+      <ul class="products__list">
+        <li class="products__item">
+          <p class="products__content">
+            Форма чаши каждого бокала уникальна, благодаря этому вы&nbsp;можете ощутить самые тонкие нюансы вкуса своих
+            напитков.
+          </p>
+        </li>
+        <li class="products__item">
+          <p class="products__content">
+            Бокалы Вы&nbsp;можете приобрести как отдельно, так и&nbsp;в&nbsp;красивой подарочной упаковке.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="products__wrapper">
+      <div class="products__btn-filter filter-title">Фильтр</div>
+<form class="filter">
+  <ul class="filter__list">
+    <li class="filter__item filter__item--basic">
+      <div class="filter-title filter-title--bacis">Осн фильтр</div>
+      <div class="filter-content filter-content--bacis">
+        <div class="filter-content-box filter-content-box--bacis">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 1
+          </label>
+        </div>
+        <div class="filter-content-box filter-content-box--bacis">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 2
+          </label>
+        </div>
+        <div class="filter-content-box filter-content-box--bacis">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 3
+          </label>
+        </div>
+        <div class="filter-content-box filter-content-box--bacis">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 4
+          </label>
+        </div>
+        <div class="filter-content-box filter-content-box--bacis">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 5
+          </label>
+        </div>
+        <div class="filter-content-box filter-content-box--bacis">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 6
+          </label>
+        </div>
+        <div class="filter-content-box filter-content-box--bacis">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 7
+          </label>
+        </div>
+        <button class="filter__btn apply">применить</button>
+      </div>
+    </li>
+    <li class="filter__item">
+      <p class="filter-title title-form">Фильтр 1</p>
+      <div class="filter-content">
+        <div class="filter-content-box">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 1
+          </label>
+        </div>
+        <div class="filter-content-box">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 2
+          </label>
+        </div>
+        <div class="filter-content-box">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 3
+          </label>
+        </div>
+        <div class="filter-content-box">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 4
+          </label>
+        </div>
+        <div class="filter-content-box">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 5
+          </label>
+        </div>
+        <div class="filter-content-box">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 6
+          </label>
+        </div>
+        <div class="filter-content-box">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 7
+          </label>
+        </div>
+        <button class="filter__btn apply">применить</button>
+      </div>
+    </li>
+    <li class="filter__item">
+      <p class="filter-title title-form aside__btn title-form--active">Фильтр 2</p>
+      <div class="filter-content">
+        <div class="filter-content-box">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 1
+          </label>
+        </div>
+        <div class="filter-content-box">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 2
+          </label>
+        </div>
+        <div class="filter-content-box">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 3
+          </label>
+        </div>
+        <div class="filter-content-box">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 4
+          </label>
+        </div>
+        <button class="filter__btn apply">применить</button>
+      </div>
+    </li>
+    <li class="filter__item">
+      <p class="filter-title title-form aside__btn title-form--active">Фильтр 3</p>
+      <div class="filter-content">
+        <div class="filter-content-box">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 1
+          </label>
+        </div>
+        <div class="filter-content-box">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 2
+          </label>
+        </div>
+        <div class="filter-content-box">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 3
+          </label>
+        </div>
+        <div class="filter-content-box">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 4
+          </label>
+        </div>
+        <button class="filter__btn apply">применить</button>
+      </div>
+    </li>
+    <li class="filter__item">
+      <p class="filter-title title-form aside__btn title-form--active">Фильтр 4</p>
+      <div class="filter-content">
+        <div class="filter-content-box">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 1
+          </label>
+        </div>
+        <div class="filter-content-box">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 2
+          </label>
+        </div>
+        <div class="filter-content-box">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 3
+          </label>
+        </div>
+        <div class="filter-content-box">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 4
+          </label>
+        </div>
+        <button class="filter__btn apply">применить</button>
+      </div>
+    </li>
+
+  </ul>
+</form>
+
+      <ul class="products-catalog">
+        <li class="products-catalog__item">
           <article class="products-card">
             <a class="products-card__link" href="./page-card.html">
               <div class="products-card__wine-box">
@@ -152,14 +496,120 @@
                 </ul>
               </div>
               <div class="products-card__price">
-                <span class="products-card__price-new products-card__price-new--no-sale">14 500 ₴</span>
+                <strong class="products-card__price-new products-card__price-new--no-sale">14 500 ₴</strong>
                 <span class="products-card__price-old"></span>
               </div>
             </a>
             <button class="btn btn--bg-red btn-buy">Купить</button>
           </article>
         </li>
-        <li class="products-catalog__item swiper-slide">
+        <li class="products-catalog__item">
+          <article class="products-card">
+            <div class="sale">-30%</div>
+            <a class="products-card__link" href="#">
+              <div class="products-card__wine-box">
+                <span class="products-card__wine">14,5%</span>
+                <span class="products-card__wine">0,75 Л</span>
+                <span class="products-card__wine">Италия</span>
+              </div>
+              <div class="images-thumb images-thumb--wine">
+                <img class="images-img products-card__img" src="image/png"
+                  srcset="./images/wine/image1@1x.png 1x, ./images/wine/image1@2x.png 2x" loading="lazy"
+                  decoding="async" alt='image'>
+              </div>
+              <div class="products-card__content">
+                <h5 class="products-card__title title-h5">
+                  Tenuta argentiera bolgheri superiore
+                </h5>
+                <ul class="products-card__list">
+                  <li class="products-card__item products-card__item--glasses">
+                    Вино красное сухое
+                  </li>
+                  <li class="products-card__item products-card__item--grape">
+                    каберне совиньйон +
+                  </li>
+                </ul>
+              </div>
+              <div class="products-card__price">
+                <strong class="products-card__price-new">4 500 ₴</strong>
+                <span class="products-card__price-old">5 300 ₴</span>
+              </div>
+            </a>
+            <button class="btn btn--bg-red btn-buy">Купить</button>
+          </article>
+        </li>
+        <li class="products-catalog__item">
+          <article class="products-card">
+            <a class="products-card__link" href="#">
+              <div class="products-card__wine-box">
+                <span class="products-card__wine">14,5%</span>
+                <span class="products-card__wine">0,75 Л</span>
+                <span class="products-card__wine">Италия</span>
+              </div>
+              <div class="images-thumb images-thumb--wine">
+                <img class="images-img products-card__img" src="image/png"
+                  srcset="./images/wine/image1@1x.png 1x, ./images/wine/image1@2x.png 2x" loading="lazy"
+                  decoding="async" alt='image'>
+              </div>
+              <div class="products-card__content">
+                <h5 class="products-card__title title-h5">
+                  Tenuta argentiera bolgheri superiore
+                </h5>
+                <ul class="products-card__list">
+                  <li class="products-card__item products-card__item--glasses">
+                    Вино красное сухое
+                  </li>
+                  <li class="products-card__item products-card__item--grape">
+                    каберне совиньйон +
+                  </li>
+                </ul>
+              </div>
+              <div class="products-card__price">
+                <strong class="products-card__price-new products-card__price-new--no-sale">6 500 ₴</strong>
+                <span class="products-card__price-old"></span>
+              </div>
+            </a>
+            <button class="btn btn--bg-red btn-buy">Купить</button>
+          </article>
+        </li>
+        <li class="products-catalog__item">
+          <article class="products-card">
+            <div class="sale">-30%</div>
+            <a class="products-card__link" href="#">
+              <div class="products-card__wine-box">
+                <span class="products-card__wine">14,5%</span>
+                <span class="products-card__wine">0,75 Л</span>
+                <span class="products-card__wine">Италия</span>
+              </div>
+              <div class="images-thumb images-thumb--wine">
+                <img class="images-img products-card__img" src="image/png"
+                  srcset="./images/wine/image1@1x.png 1x, ./images/wine/image1@2x.png 2x" loading="lazy"
+                  decoding="async" alt='image'>
+              </div>
+              <div class="products-card__content">
+                <h5 class="products-card__title title-h5">
+                  Tenuta argentiera bolgheri superiore
+                </h5>
+                <ul class="products-card__list">
+                  <li class="products-card__item products-card__item--glasses">
+                    Вино красное сухое
+                  </li>
+                  <li class="products-card__item products-card__item--grape">
+                    каберне совиньйон +
+                  </li>
+                </ul>
+              </div>
+              <div class="products-card__price">
+                <strong class="products-card__price-new">4 500 ₴</strong>
+                <span class="products-card__price-old">5 300 ₴</span>
+              </div>
+            </a>
+            <button class="btn btn--bg-red btn-buy">Купить</button>
+          </article>
+        </li>
+
+
+        <li class="products-catalog__item">
           <article class="products-card">
             <div class="sale">-30%</div>
             <a class="products-card__link" href="#">
@@ -182,217 +632,233 @@
                 </ul>
               </div>
               <div class="products-card__price">
-                <span class="products-card__price-new">4 500 ₴</span>
+                <strong class="products-card__price-new">4 500 ₴</strong>
                 <span class="products-card__price-old">5 300 ₴</span>
               </div>
             </a>
             <button class="btn btn--bg-red btn-buy">Купить</button>
           </article>
         </li>
-        <li class="products-slider__item swiper-slide">
+        <li class="products-catalog__item">
           <article class="products-card">
-            <div class="sale">-30%</div>
             <a class="products-card__link" href="#">
-              <div class="images-thumb images-thumb--glasses">
+              <div class="images-thumb images-thumb--delicacies">
                 <img class="images-img products-card__img" src="image/png"
-                  srcset="./images/glasses/image1@1x.png 1x, ./images/glasses/image1@2x.png 2x" loading="lazy"
+                  srcset="./images/delicacies/image1@1x.png 1x, ./images/delicacies/image1@2x.png 2x" loading="lazy"
                   decoding="async" alt='image'>
               </div>
               <div class="products-card__content">
                 <h5 class="products-card__title title-h5">
-                  Riedel Extrime Riesling Wine Glasses
+                  Riedel Extrime Riesling Wine products
                 </h5>
                 <ul class="products-card__list">
-                  <li class="products-card__item products-card__item--glasses">
-                    Бокал для белого вина
+                  <li class="products-card__item products-card__item--delicacies">
+                    Мясо
                   </li>
-                  <li class="products-card__item products-card__item--grape">
-                    Рислинг, Совиньйон Блан +
+                  <li class="products-card__item">
+                    Хамон
                   </li>
                 </ul>
               </div>
               <div class="products-card__price">
-                <span class="products-card__price-new">4 500 ₴</span>
+                <strong class="products-card__price-new products-card__price-new--no-sale">5 300 ₴</strong>
+                <span class="products-card__price-old"></span>
+              </div>
+            </a>
+            <button class="btn btn--bg-red btn-buy">Купить</button>
+          </article>
+        </li>
+        <li class="products-catalog__item">
+          <article class="products-card">
+            <a class="products-card__link" href="#">
+              <div class="images-thumb images-thumb--delicacies">
+                <img class="images-img products-card__img" src="image/png"
+                  srcset="./images/delicacies/image1@1x.png 1x, ./images/delicacies/image1@2x.png 2x" loading="lazy"
+                  decoding="async" alt='image'>
+              </div>
+              <div class="products-card__content">
+                <h5 class="products-card__title title-h5">
+                  Riedel Extrime Riesling Wine products
+                </h5>
+                <ul class="products-card__list">
+                  <li class="products-card__item products-card__item--delicacies">
+                    Мясо
+                  </li>
+                  <li class="products-card__item">
+                    Хамон
+                  </li>
+                </ul>
+              </div>
+              <div class="products-card__price">
+                <strong class="products-card__price-new products-card__price-new--no-sale">5 300 ₴</strong>
+                <span class="products-card__price-old"></span>
+              </div>
+            </a>
+            <button class="btn btn--bg-red btn-buy">Купить</button>
+          </article>
+        </li>
+        <li class="products-catalog__item">
+          <article class="products-card">
+            <a class="products-card__link" href="#">
+              <div class="images-thumb images-thumb--delicacies">
+                <img class="images-img products-card__img" src="image/png"
+                  srcset="./images/delicacies/image1@1x.png 1x, ./images/delicacies/image1@2x.png 2x" loading="lazy"
+                  decoding="async" alt='image'>
+              </div>
+              <div class="products-card__content">
+                <h5 class="products-card__title title-h5">
+                  Riedel Extrime Riesling Wine products
+                </h5>
+                <ul class="products-card__list">
+                  <li class="products-card__item products-card__item--delicacies">
+                    Мясо
+                  </li>
+                  <li class="products-card__item">
+                    Хамон
+                  </li>
+                </ul>
+              </div>
+              <div class="products-card__price">
+                <strong class="products-card__price-new products-card__price-new--no-sale">5 300 ₴</strong>
+                <span class="products-card__price-old"></span>
+              </div>
+            </a>
+            <button class="btn btn--bg-red btn-buy">Купить</button>
+          </article>
+        </li>
+
+        <li class="products-catalog__item">
+          <article class="products-card">
+            <a class="products-card__link" href="./page-card.html">
+              <div class="products-card__wine-box">
+                <span class="products-card__wine">14,5%</span>
+                <span class="products-card__wine">0,75 Л</span>
+                <span class="products-card__wine">Италия</span>
+              </div>
+              <div class="images-thumb images-thumb--wine">
+                <img class="images-img products-card__img" src="image/png"
+                  srcset="./images/wine/image1@1x.png 1x, ./images/wine/image1@2x.png 2x" loading="lazy"
+                  decoding="async" alt='image'>
+              </div>
+              <div class="products-card__content">
+                <h5 class="products-card__title title-h5">
+                  Tenuta argentiera bolgheri superiore
+                </h5>
+                <ul class="products-card__list">
+                  <li class="products-card__item products-card__item--glasses">
+                    Вино красное сухое
+                  </li>
+                  <li class="products-card__item products-card__item--grape">
+                    каберне совиньйон +
+                  </li>
+                </ul>
+              </div>
+              <div class="products-card__price">
+                <strong class="products-card__price-new products-card__price-new--no-sale">14 500 ₴</strong>
+                <span class="products-card__price-old"></span>
+              </div>
+            </a>
+            <button class="btn btn--bg-red btn-buy">Купить</button>
+          </article>
+        </li>
+        <li class="products-catalog__item">
+          <article class="products-card">
+            <div class="sale">-30%</div>
+            <a class="products-card__link" href="#">
+              <div class="products-card__wine-box">
+                <span class="products-card__wine">14,5%</span>
+                <span class="products-card__wine">0,75 Л</span>
+                <span class="products-card__wine">Италия</span>
+              </div>
+              <div class="images-thumb images-thumb--wine">
+                <img class="images-img products-card__img" src="image/png"
+                  srcset="./images/wine/image1@1x.png 1x, ./images/wine/image1@2x.png 2x" loading="lazy"
+                  decoding="async" alt='image'>
+              </div>
+              <div class="products-card__content">
+                <h5 class="products-card__title title-h5">
+                  Tenuta argentiera bolgheri superiore
+                </h5>
+                <ul class="products-card__list">
+                  <li class="products-card__item products-card__item--glasses">
+                    Вино красное сухое
+                  </li>
+                  <li class="products-card__item products-card__item--grape">
+                    каберне совиньйон +
+                  </li>
+                </ul>
+              </div>
+              <div class="products-card__price">
+                <strong class="products-card__price-new">4 500 ₴</strong>
                 <span class="products-card__price-old">5 300 ₴</span>
               </div>
             </a>
             <button class="btn btn--bg-red btn-buy">Купить</button>
           </article>
         </li>
-        <li class="products-slider__item swiper-slide">
+        <li class="products-catalog__item">
           <article class="products-card">
-            <div class="sale">-30%</div>
             <a class="products-card__link" href="#">
-              <div class="images-thumb images-thumb--glasses">
+              <div class="products-card__wine-box">
+                <span class="products-card__wine">14,5%</span>
+                <span class="products-card__wine">0,75 Л</span>
+                <span class="products-card__wine">Италия</span>
+              </div>
+              <div class="images-thumb images-thumb--wine">
                 <img class="images-img products-card__img" src="image/png"
-                  srcset="./images/glasses/image1@1x.png 1x, ./images/glasses/image1@2x.png 2x" loading="lazy"
+                  srcset="./images/wine/image1@1x.png 1x, ./images/wine/image1@2x.png 2x" loading="lazy"
                   decoding="async" alt='image'>
               </div>
               <div class="products-card__content">
                 <h5 class="products-card__title title-h5">
-                  Riedel Extrime Riesling Wine Glasses
+                  Tenuta argentiera bolgheri superiore
                 </h5>
                 <ul class="products-card__list">
                   <li class="products-card__item products-card__item--glasses">
-                    Бокал для белого вина
+                    Вино красное сухое
                   </li>
                   <li class="products-card__item products-card__item--grape">
-                    Рислинг, Совиньйон Блан +
+                    каберне совиньйон +
                   </li>
                 </ul>
               </div>
               <div class="products-card__price">
-                <span class="products-card__price-new">4 500 ₴</span>
-                <span class="products-card__price-old">5 300 ₴</span>
+                <strong class="products-card__price-new products-card__price-new--no-sale">6 500 ₴</strong>
+                <span class="products-card__price-old"></span>
               </div>
             </a>
             <button class="btn btn--bg-red btn-buy">Купить</button>
           </article>
         </li>
-        <li class="products-slider__item swiper-slide">
+        <li class="products-catalog__item">
           <article class="products-card">
             <div class="sale">-30%</div>
             <a class="products-card__link" href="#">
-              <div class="images-thumb images-thumb--glasses">
+              <div class="products-card__wine-box">
+                <span class="products-card__wine">14,5%</span>
+                <span class="products-card__wine">0,75 Л</span>
+                <span class="products-card__wine">Италия</span>
+              </div>
+              <div class="images-thumb images-thumb--wine">
                 <img class="images-img products-card__img" src="image/png"
-                  srcset="./images/glasses/image1@1x.png 1x, ./images/glasses/image1@2x.png 2x" loading="lazy"
+                  srcset="./images/wine/image1@1x.png 1x, ./images/wine/image1@2x.png 2x" loading="lazy"
                   decoding="async" alt='image'>
               </div>
               <div class="products-card__content">
                 <h5 class="products-card__title title-h5">
-                  Riedel Extrime Riesling Wine Glasses
+                  Tenuta argentiera bolgheri superiore
                 </h5>
                 <ul class="products-card__list">
                   <li class="products-card__item products-card__item--glasses">
-                    Бокал для белого вина
+                    Вино красное сухое
                   </li>
                   <li class="products-card__item products-card__item--grape">
-                    Рислинг, Совиньйон Блан +
+                    каберне совиньйон +
                   </li>
                 </ul>
               </div>
               <div class="products-card__price">
-                <span class="products-card__price-new">4 500 ₴</span>
-                <span class="products-card__price-old">5 300 ₴</span>
-              </div>
-            </a>
-            <button class="btn btn--bg-red btn-buy">Купить</button>
-          </article>
-        </li>
-        <li class="products-slider__item swiper-slide">
-          <article class="products-card">
-            <div class="sale">-30%</div>
-            <a class="products-card__link" href="#">
-              <div class="images-thumb images-thumb--glasses">
-                <img class="images-img products-card__img" src="image/png"
-                  srcset="./images/glasses/image1@1x.png 1x, ./images/glasses/image1@2x.png 2x" loading="lazy"
-                  decoding="async" alt='image'>
-              </div>
-              <div class="products-card__content">
-                <h5 class="products-card__title title-h5">
-                  Riedel Extrime Riesling Wine Glasses
-                </h5>
-                <ul class="products-card__list">
-                  <li class="products-card__item products-card__item--glasses">
-                    Бокал для белого вина
-                  </li>
-                  <li class="products-card__item products-card__item--grape">
-                    Рислинг, Совиньйон Блан +
-                  </li>
-                </ul>
-              </div>
-              <div class="products-card__price">
-                <span class="products-card__price-new">4 500 ₴</span>
-                <span class="products-card__price-old">5 300 ₴</span>
-              </div>
-            </a>
-            <button class="btn btn--bg-red btn-buy">Купить</button>
-          </article>
-        </li>
-        <li class="products-slider__item swiper-slide">
-          <article class="products-card">
-            <div class="sale">-30%</div>
-            <a class="products-card__link" href="#">
-              <div class="images-thumb images-thumb--glasses">
-                <img class="images-img products-card__img" src="image/png"
-                  srcset="./images/glasses/image1@1x.png 1x, ./images/glasses/image1@2x.png 2x" loading="lazy"
-                  decoding="async" alt='image'>
-              </div>
-              <div class="products-card__content">
-                <h5 class="products-card__title title-h5">
-                  Riedel Extrime Riesling Wine Glasses
-                </h5>
-                <ul class="products-card__list">
-                  <li class="products-card__item products-card__item--glasses">
-                    Бокал для белого вина
-                  </li>
-                  <li class="products-card__item products-card__item--grape">
-                    Рислинг, Совиньйон Блан +
-                  </li>
-                </ul>
-              </div>
-              <div class="products-card__price">
-                <span class="products-card__price-new">4 500 ₴</span>
-                <span class="products-card__price-old">5 300 ₴</span>
-              </div>
-            </a>
-            <button class="btn btn--bg-red btn-buy">Купить</button>
-          </article>
-        </li>
-        <li class="products-slider__item swiper-slide">
-          <article class="products-card">
-            <div class="sale">-30%</div>
-            <a class="products-card__link" href="#">
-              <div class="images-thumb images-thumb--glasses">
-                <img class="images-img products-card__img" src="image/png"
-                  srcset="./images/glasses/image1@1x.png 1x, ./images/glasses/image1@2x.png 2x" loading="lazy"
-                  decoding="async" alt='image'>
-              </div>
-              <div class="products-card__content">
-                <h5 class="products-card__title title-h5">
-                  Riedel Extrime Riesling Wine Glasses
-                </h5>
-                <ul class="products-card__list">
-                  <li class="products-card__item products-card__item--glasses">
-                    Бокал для белого вина
-                  </li>
-                  <li class="products-card__item products-card__item--grape">
-                    Рислинг, Совиньйон Блан +
-                  </li>
-                </ul>
-              </div>
-              <div class="products-card__price">
-                <span class="products-card__price-new">4 500 ₴</span>
-                <span class="products-card__price-old">5 300 ₴</span>
-              </div>
-            </a>
-            <button class="btn btn--bg-red btn-buy">Купить</button>
-          </article>
-        </li>
-        <li class="products-slider__item swiper-slide">
-          <article class="products-card">
-            <div class="sale">-30%</div>
-            <a class="products-card__link" href="#">
-              <div class="images-thumb images-thumb--glasses">
-                <img class="images-img products-card__img" src="image/png"
-                  srcset="./images/glasses/image1@1x.png 1x, ./images/glasses/image1@2x.png 2x" loading="lazy"
-                  decoding="async" alt='image'>
-              </div>
-              <div class="products-card__content">
-                <h5 class="products-card__title title-h5">
-                  Riedel Extrime Riesling Wine Glasses
-                </h5>
-                <ul class="products-card__list">
-                  <li class="products-card__item products-card__item--glasses">
-                    Бокал для белого вина
-                  </li>
-                  <li class="products-card__item products-card__item--grape">
-                    Рислинг, Совиньйон Блан +
-                  </li>
-                </ul>
-              </div>
-              <div class="products-card__price">
-                <span class="products-card__price-new">4 500 ₴</span>
+                <strong class="products-card__price-new">4 500 ₴</strong>
                 <span class="products-card__price-old">5 300 ₴</span>
               </div>
             </a>
@@ -400,38 +866,825 @@
           </article>
         </li>
       </ul>
-      <div class="swiper-scrollbar"></div>
     </div>
   </div>
 </section>
-    <div class="сonsultation">
-  <div class="сonsultation__content">
-    <p class="сonsultation__text hero-text">Sommelier Choice</p>
-    <p class="сonsultation__title hero-title">НЕ&nbsp;УВЕРЕНЫ В&nbsp;ВЫБОРЕ?<br>МЫ&nbsp;ГОТОВЫ ПОМОЧЬ!</p>
-    <button class="сonsultation__btn hero-btn">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</button>
+    <section class="add-items">
+  <div class="container add-products__container">
+    <div class="your-box__top">
+      <h2 class="title-h2 choose-box__title">Добавь предметы</h2>
+      <ul class="products__list">
+        <li class="products__item">
+          <p class="products__content">
+            Форма чаши каждого бокала уникальна, благодаря этому вы&nbsp;можете ощутить самые тонкие нюансы вкуса своих
+            напитков.
+          </p>
+        </li>
+        <li class="products__item">
+          <p class="products__content">
+            Бокалы Вы&nbsp;можете приобрести как отдельно, так и&nbsp;в&nbsp;красивой подарочной упаковке.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="products__wrapper">
+      <div class="products__btn-filter filter-title">Фильтр</div>
+<form class="filter">
+  <ul class="filter__list">
+    <li class="filter__item filter__item--basic">
+      <div class="filter-title filter-title--bacis">Осн фильтр</div>
+      <div class="filter-content filter-content--bacis">
+        <div class="filter-content-box filter-content-box--bacis">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 1
+          </label>
+        </div>
+        <div class="filter-content-box filter-content-box--bacis">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 2
+          </label>
+        </div>
+        <div class="filter-content-box filter-content-box--bacis">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 3
+          </label>
+        </div>
+        <div class="filter-content-box filter-content-box--bacis">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 4
+          </label>
+        </div>
+        <div class="filter-content-box filter-content-box--bacis">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 5
+          </label>
+        </div>
+        <div class="filter-content-box filter-content-box--bacis">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 6
+          </label>
+        </div>
+        <div class="filter-content-box filter-content-box--bacis">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 7
+          </label>
+        </div>
+        <button class="filter__btn apply">применить</button>
+      </div>
+    </li>
+    <li class="filter__item">
+      <p class="filter-title title-form">Фильтр 1</p>
+      <div class="filter-content">
+        <div class="filter-content-box">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 1
+          </label>
+        </div>
+        <div class="filter-content-box">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 2
+          </label>
+        </div>
+        <div class="filter-content-box">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 3
+          </label>
+        </div>
+        <div class="filter-content-box">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 4
+          </label>
+        </div>
+        <div class="filter-content-box">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 5
+          </label>
+        </div>
+        <div class="filter-content-box">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 6
+          </label>
+        </div>
+        <div class="filter-content-box">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 7
+          </label>
+        </div>
+        <button class="filter__btn apply">применить</button>
+      </div>
+    </li>
+    <li class="filter__item">
+      <p class="filter-title title-form aside__btn title-form--active">Фильтр 2</p>
+      <div class="filter-content">
+        <div class="filter-content-box">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 1
+          </label>
+        </div>
+        <div class="filter-content-box">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 2
+          </label>
+        </div>
+        <div class="filter-content-box">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 3
+          </label>
+        </div>
+        <div class="filter-content-box">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 4
+          </label>
+        </div>
+        <button class="filter__btn apply">применить</button>
+      </div>
+    </li>
+    <li class="filter__item">
+      <p class="filter-title title-form aside__btn title-form--active">Фильтр 3</p>
+      <div class="filter-content">
+        <div class="filter-content-box">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 1
+          </label>
+        </div>
+        <div class="filter-content-box">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 2
+          </label>
+        </div>
+        <div class="filter-content-box">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 3
+          </label>
+        </div>
+        <div class="filter-content-box">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 4
+          </label>
+        </div>
+        <button class="filter__btn apply">применить</button>
+      </div>
+    </li>
+    <li class="filter__item">
+      <p class="filter-title title-form aside__btn title-form--active">Фильтр 4</p>
+      <div class="filter-content">
+        <div class="filter-content-box">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 1
+          </label>
+        </div>
+        <div class="filter-content-box">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 2
+          </label>
+        </div>
+        <div class="filter-content-box">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 3
+          </label>
+        </div>
+        <div class="filter-content-box">
+          <label class="filter-label">
+            <input class="filter-style" type="checkbox">
+            Параметр 4
+          </label>
+        </div>
+        <button class="filter__btn apply">применить</button>
+      </div>
+    </li>
+
+  </ul>
+</form>
+
+      <ul class="products-catalog">
+        <li class="products-catalog__item">
+          <article class="products-card">
+            <div class="sale">-30%</div>
+            <a class="products-card__link" href="#">
+              <div class="images-thumb images-thumb--glasses">
+                <img class="images-img products-card__img" src="image/png"
+                  srcset="./images/glasses/image1@1x.png 1x, ./images/glasses/image1@2x.png 2x" loading="lazy"
+                  decoding="async" alt='image'>
+              </div>
+              <div class="products-card__content">
+                <h5 class="products-card__title title-h5">
+                  Riedel Extrime Riesling Wine Glasses
+                </h5>
+                <ul class="products-card__list">
+                  <li class="products-card__item products-card__item--glasses">
+                    Бокал для белого вина
+                  </li>
+                  <li class="products-card__item products-card__item--grape">
+                    Рислинг, Совиньйон Блан +
+                  </li>
+                </ul>
+              </div>
+              <div class="products-card__price">
+                <strong class="products-card__price-new">4 500 ₴</strong>
+                <span class="products-card__price-old">5 300 ₴</span>
+              </div>
+            </a>
+            <button class="btn btn--bg-red btn-buy">Купить</button>
+          </article>
+        </li>
+        <li class="products-catalog__item">
+          <article class="products-card">
+            <div class="sale">-30%</div>
+            <a class="products-card__link" href="#">
+              <div class="images-thumb images-thumb--glasses">
+                <img class="images-img products-card__img" src="image/png"
+                  srcset="./images/glasses/image1@1x.png 1x, ./images/glasses/image1@2x.png 2x" loading="lazy"
+                  decoding="async" alt='image'>
+              </div>
+              <div class="products-card__content">
+                <h5 class="products-card__title title-h5">
+                  Riedel Extrime Riesling Wine Glasses
+                </h5>
+                <ul class="products-card__list">
+                  <li class="products-card__item products-card__item--glasses">
+                    Бокал для белого вина
+                  </li>
+                  <li class="products-card__item products-card__item--grape">
+                    Рислинг, Совиньйон Блан +
+                  </li>
+                </ul>
+              </div>
+              <div class="products-card__price">
+                <strong class="products-card__price-new">4 500 ₴</strong>
+                <span class="products-card__price-old">5 300 ₴</span>
+              </div>
+            </a>
+            <button class="btn btn--bg-red btn-buy">Купить</button>
+          </article>
+        </li>
+        <li class="products-catalog__item">
+          <article class="products-card">
+            <div class="sale">-30%</div>
+            <a class="products-card__link" href="#">
+              <div class="images-thumb images-thumb--glasses">
+                <img class="images-img products-card__img" src="image/png"
+                  srcset="./images/glasses/image1@1x.png 1x, ./images/glasses/image1@2x.png 2x" loading="lazy"
+                  decoding="async" alt='image'>
+              </div>
+              <div class="products-card__content">
+                <h5 class="products-card__title title-h5">
+                  Riedel Extrime Riesling Wine Glasses
+                </h5>
+                <ul class="products-card__list">
+                  <li class="products-card__item products-card__item--glasses">
+                    Бокал для белого вина
+                  </li>
+                  <li class="products-card__item products-card__item--grape">
+                    Рислинг, Совиньйон Блан +
+                  </li>
+                </ul>
+              </div>
+              <div class="products-card__price">
+                <strong class="products-card__price-new">4 500 ₴</strong>
+                <span class="products-card__price-old">5 300 ₴</span>
+              </div>
+            </a>
+            <button class="btn btn--bg-red btn-buy">Купить</button>
+          </article>
+        </li>
+        <li class="products-catalog__item">
+          <article class="products-card">
+            <div class="sale">-30%</div>
+            <a class="products-card__link" href="#">
+              <div class="images-thumb images-thumb--glasses">
+                <img class="images-img products-card__img" src="image/png"
+                  srcset="./images/glasses/image1@1x.png 1x, ./images/glasses/image1@2x.png 2x" loading="lazy"
+                  decoding="async" alt='image'>
+              </div>
+              <div class="products-card__content">
+                <h5 class="products-card__title title-h5">
+                  Riedel Extrime Riesling Wine Glasses
+                </h5>
+                <ul class="products-card__list">
+                  <li class="products-card__item products-card__item--glasses">
+                    Бокал для белого вина
+                  </li>
+                  <li class="products-card__item products-card__item--grape">
+                    Рислинг, Совиньйон Блан +
+                  </li>
+                </ul>
+              </div>
+              <div class="products-card__price">
+                <strong class="products-card__price-new">4 500 ₴</strong>
+                <span class="products-card__price-old">5 300 ₴</span>
+              </div>
+            </a>
+            <button class="btn btn--bg-red btn-buy">Купить</button>
+          </article>
+        </li>
+        <li class="products-catalog__item">
+          <article class="products-card">
+            <div class="sale">-30%</div>
+            <a class="products-card__link" href="#">
+              <div class="images-thumb images-thumb--glasses">
+                <img class="images-img products-card__img" src="image/png"
+                  srcset="./images/glasses/image1@1x.png 1x, ./images/glasses/image1@2x.png 2x" loading="lazy"
+                  decoding="async" alt='image'>
+              </div>
+              <div class="products-card__content">
+                <h5 class="products-card__title title-h5">
+                  Riedel Extrime Riesling Wine Glasses
+                </h5>
+                <ul class="products-card__list">
+                  <li class="products-card__item products-card__item--glasses">
+                    Бокал для белого вина
+                  </li>
+                  <li class="products-card__item products-card__item--grape">
+                    Рислинг, Совиньйон Блан +
+                  </li>
+                </ul>
+              </div>
+              <div class="products-card__price">
+                <strong class="products-card__price-new">4 500 ₴</strong>
+                <span class="products-card__price-old">5 300 ₴</span>
+              </div>
+            </a>
+            <button class="btn btn--bg-red btn-buy">Купить</button>
+          </article>
+        </li>
+        <li class="products-catalog__item">
+          <article class="products-card">
+            <div class="sale">-30%</div>
+            <a class="products-card__link" href="#">
+              <div class="images-thumb images-thumb--glasses">
+                <img class="images-img products-card__img" src="image/png"
+                  srcset="./images/glasses/image1@1x.png 1x, ./images/glasses/image1@2x.png 2x" loading="lazy"
+                  decoding="async" alt='image'>
+              </div>
+              <div class="products-card__content">
+                <h5 class="products-card__title title-h5">
+                  Riedel Extrime Riesling Wine Glasses
+                </h5>
+                <ul class="products-card__list">
+                  <li class="products-card__item products-card__item--glasses">
+                    Бокал для белого вина
+                  </li>
+                  <li class="products-card__item products-card__item--grape">
+                    Рислинг, Совиньйон Блан +
+                  </li>
+                </ul>
+              </div>
+              <div class="products-card__price">
+                <strong class="products-card__price-new">4 500 ₴</strong>
+                <span class="products-card__price-old">5 300 ₴</span>
+              </div>
+            </a>
+            <button class="btn btn--bg-red btn-buy">Купить</button>
+          </article>
+        </li>
+        <li class="products-catalog__item">
+          <article class="products-card">
+            <div class="sale">-30%</div>
+            <a class="products-card__link" href="#">
+              <div class="images-thumb images-thumb--glasses">
+                <img class="images-img products-card__img" src="image/png"
+                  srcset="./images/glasses/image1@1x.png 1x, ./images/glasses/image1@2x.png 2x" loading="lazy"
+                  decoding="async" alt='image'>
+              </div>
+              <div class="products-card__content">
+                <h5 class="products-card__title title-h5">
+                  Riedel Extrime Riesling Wine Glasses
+                </h5>
+                <ul class="products-card__list">
+                  <li class="products-card__item products-card__item--glasses">
+                    Бокал для белого вина
+                  </li>
+                  <li class="products-card__item products-card__item--grape">
+                    Рислинг, Совиньйон Блан +
+                  </li>
+                </ul>
+              </div>
+              <div class="products-card__price">
+                <strong class="products-card__price-new">4 500 ₴</strong>
+                <span class="products-card__price-old">5 300 ₴</span>
+              </div>
+            </a>
+            <button class="btn btn--bg-red btn-buy">Купить</button>
+          </article>
+        </li>
+        <li class="products-catalog__item">
+          <article class="products-card">
+            <div class="sale">-30%</div>
+            <a class="products-card__link" href="#">
+              <div class="images-thumb images-thumb--glasses">
+                <img class="images-img products-card__img" src="image/png"
+                  srcset="./images/glasses/image1@1x.png 1x, ./images/glasses/image1@2x.png 2x" loading="lazy"
+                  decoding="async" alt='image'>
+              </div>
+              <div class="products-card__content">
+                <h5 class="products-card__title title-h5">
+                  Riedel Extrime Riesling Wine Glasses
+                </h5>
+                <ul class="products-card__list">
+                  <li class="products-card__item products-card__item--glasses">
+                    Бокал для белого вина
+                  </li>
+                  <li class="products-card__item products-card__item--grape">
+                    Рислинг, Совиньйон Блан +
+                  </li>
+                </ul>
+              </div>
+              <div class="products-card__price">
+                <strong class="products-card__price-new">4 500 ₴</strong>
+                <span class="products-card__price-old">5 300 ₴</span>
+              </div>
+            </a>
+            <button class="btn btn--bg-red btn-buy">Купить</button>
+          </article>
+        </li>
+      </ul>
+    </div>
   </div>
-  <div class="сonsultation__images images-thumb images-thumb--сonsultation">
-    <picture>
-      <source type="image/avif" srcset="
-                  ./images/сonsultation/slide1@1x.avif 1x,
-                  ./images/сonsultation/slide1@2x.avif 2x">
-      <source type="image/webp" srcset="
-                  ./images/сonsultation/slide1@1x.webp 1x,
-                  ./images/сonsultation/slide1@2x.webp 2x">
-      <img class="images-img" src="
-                  ./images/сonsultation/slide1@1x.jpg" loading="lazy" decoding="async" alt="News cover">
-    </picture>
+</section>
+    <section class="your-order">
+  <div class="container your-order__container">
+    <div class="your-box__top">
+      <h2 class="title-h2 choose-box__title">Оформи заказ</h2>
+      <ul class="products__list">
+        <li class="products__item">
+          <p class="products__content">
+            Бокалы Вы&nbsp;можете приобрести как отдельно, так и&nbsp;в&nbsp;красивой подарочной упаковке.
+          </p>
+        </li>
+        <li class="products__item">
+          <p class="products__content">
+            Твой бокс готов.<br> Перейди в корзину и оформи заказ.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="your-order__design">
+      <div class="your-order__arrow your-order__arrow--left"></div>
+      <button class="btn btn--bg-red btn-buy your-order__btn">оформить</button>
+      <div class="your-order__arrow your-order__arrow--right"></div>
+    </div>
+  </div>
+</section>
+    <section class="gift-baskets">
+  <!-- <div class="container"> -->
+
+  <div class="gift-baskets__swiper-container">
+    <h2 class="title-h2 gift-baskets__title">Для тех, кто ищет готовые решения</h2>
+    <button class="swiper-button swiper-button-prev"></button>
+    <button class="swiper-button swiper-button-next"></button>
+    <ul class="gift-baskets__list swiper-wrapper">
+      <li class="gift-baskets__item swiper-slide">
+        <article class="gift-baskets-card">
+          <a class="gift-baskets-card__link" href="#">
+            <div class="images-thumb images-thumb--gift-baskets">
+              <picture>
+                <source type="image/avif"
+                  srcset="./images/gift-baskets/image1@1x.avif 1x, ./images/gift-baskets/image1@2x.avif 2x">
+                <source type="image/webp"
+                  srcset="./images/gift-baskets/image1@1x.webp 1x, ./images/gift-baskets/image1@2x.webp 2x">
+                <img class="images-img" src="./images/gift-baskets/image1@1x.jpg" loading="lazy" decoding="async"
+                  width="418" alt='Подарочный набор Sassicaia'>
+              </picture>
+            </div>
+            <div class="gift-baskets-card__inner">
+              <h4 class="gift-baskets-card__title title-h4">
+                Подарочный набор Sassicaia
+              </h4>
+              <ul class="compound">
+                <li class="compound__item compound__item--title">
+                  Состав:
+                </li>
+                <li class="compound__item">
+                  Вино Primitivo, Feudi di San Gregorio 0,750
+                </li>
+                <li class="compound__item">
+                  Сыр Montanari Gruzza 16 мес. выдержки 250г
+                </li>
+                <li class="compound__item">
+                  Чатни к сыру 300г, Mrs Bridges
+                </li>
+                <li class="compound__item">
+                  Печенье вафельное 200г, Belgian Butters
+                </li>
+              </ul>
+            </div>
+          </a>
+        </article>
+      </li>
+      <li class="gift-baskets__item swiper-slide">
+        <article class="gift-baskets-card">
+          <a class="gift-baskets-card__link" href="#">
+            <div class="images-thumb images-thumb--gift-baskets">
+              <picture>
+                <source type="image/avif"
+                  srcset="./images/gift-baskets/image2@1x.avif 1x, ./images/gift-baskets/image2@2x.avif 2x">
+                <source type="image/webp"
+                  srcset="./images/gift-baskets/image2@1x.webp 1x, ./images/gift-baskets/image2@2x.webp 2x">
+                <img class="images-img" src="./images/gift-baskets/image2@1x.jpg" loading="lazy" decoding="async"
+                  width="418" alt='Подарочный набор Juve Camps'>
+              </picture>
+            </div>
+            <div class="gift-baskets-card__inner">
+              <h4 class="gift-baskets-card__title title-h4">
+                Подарочный набор Juve Camps
+              </h4>
+              <ul class="compound">
+                <li class="compound__item compound__item--title">
+                  Состав:
+                </li>
+                <li class="compound__item">
+                  Вино Primitivo, Feudi di San Gregorio 0,750
+                </li>
+                <li class="compound__item">
+                  Сыр Montanari Gruzza 16 мес. выдержки 250г
+                </li>
+                <li class="compound__item">
+                  Чатни к сыру 300г, Mrs Bridges
+                </li>
+                <li class="compound__item">
+                  Печенье вафельное 200г, Belgian Butters
+                </li>
+              </ul>
+            </div>
+          </a>
+        </article>
+      </li>
+      <li class="gift-baskets__item swiper-slide">
+        <article class="gift-baskets-card">
+          <a class="gift-baskets-card__link" href="#">
+            <div class="images-thumb images-thumb--gift-baskets">
+              <picture>
+                <source type="image/avif"
+                  srcset="./images/gift-baskets/image3@1x.avif 1x, ./images/gift-baskets/image3@2x.avif 2x">
+                <source type="image/webp"
+                  srcset="./images/gift-baskets/image3@1x.webp 1x, ./images/gift-baskets/image3@2x.webp 2x">
+                <img class="images-img" src="./images/gift-baskets/image3@1x.jpg" loading="lazy" decoding="async"
+                  width="418" alt='Подарочный набор Cesari'>
+              </picture>
+            </div>
+            <div class="gift-baskets-card__inner">
+              <h4 class="gift-baskets-card__title title-h4">
+                Подарочный набор Cesari
+              </h4>
+              <ul class="compound">
+                <li class="compound__item compound__item--title">
+                  Состав:
+                </li>
+                <li class="compound__item">
+                  Вино Primitivo, Feudi di San Gregorio 0,750
+                </li>
+                <li class="compound__item">
+                  Сыр Montanari Gruzza 16 мес. выдержки 250г
+                </li>
+                <li class="compound__item">
+                  Чатни к сыру 300г, Mrs Bridges
+                </li>
+                <li class="compound__item">
+                  Печенье вафельное 200г, Belgian Butters
+                </li>
+              </ul>
+            </div>
+          </a>
+        </article>
+      </li>
+      <li class="gift-baskets__item swiper-slide">
+        <article class="gift-baskets-card">
+          <a class="gift-baskets-card__link" href="#">
+            <div class="images-thumb images-thumb--gift-baskets">
+              <picture>
+                <source type="image/avif"
+                  srcset="./images/gift-baskets/image1@1x.avif 1x, ./images/gift-baskets/image1@2x.avif 2x">
+                <source type="image/webp"
+                  srcset="./images/gift-baskets/image1@1x.webp 1x, ./images/gift-baskets/image1@2x.webp 2x">
+                <img class="images-img" src="./images/gift-baskets/image1@1x.jpg" loading="lazy" decoding="async"
+                  width="418" alt='Подарочный набор P.V. Restituta'>
+              </picture>
+            </div>
+            <div class="gift-baskets-card__inner">
+              <h4 class="gift-baskets-card__title title-h4">
+                Подарочный набор P.V. Restituta
+              </h4>
+              <ul class="compound">
+                <li class="compound__item compound__item--title">
+                  Состав:
+                </li>
+                <li class="compound__item">
+                  Вино Primitivo, Feudi di San Gregorio 0,750
+                </li>
+                <li class="compound__item">
+                  Сыр Montanari Gruzza 16 мес. выдержки 250г
+                </li>
+                <li class="compound__item">
+                  Чатни к сыру 300г, Mrs Bridges
+                </li>
+                <li class="compound__item">
+                  Печенье вафельное 200г, Belgian Butters
+                </li>
+              </ul>
+            </div>
+          </a>
+        </article>
+      </li>
+      <li class="gift-baskets__item swiper-slide">
+        <article class="gift-baskets-card">
+          <a class="gift-baskets-card__link" href="#">
+            <div class="images-thumb images-thumb--gift-baskets">
+              <picture>
+                <source type="image/avif"
+                  srcset="./images/gift-baskets/image1@1x.avif 1x, ./images/gift-baskets/image1@2x.avif 2x">
+                <source type="image/webp"
+                  srcset="./images/gift-baskets/image1@1x.webp 1x, ./images/gift-baskets/image1@2x.webp 2x">
+                <img class="images-img" src="./images/gift-baskets/image1@1x.jpg" loading="lazy" decoding="async"
+                  width="418" alt='Подарочный набор Sassicaia'>
+              </picture>
+            </div>
+            <div class="gift-baskets-card__inner">
+              <h4 class="gift-baskets-card__title title-h4">
+                Подарочный набор Sassicaia
+              </h4>
+              <ul class="compound">
+                <li class="compound__item compound__item--title">
+                  Состав:
+                </li>
+                <li class="compound__item">
+                  Вино Primitivo, Feudi di San Gregorio 0,750
+                </li>
+                <li class="compound__item">
+                  Сыр Montanari Gruzza 16 мес. выдержки 250г
+                </li>
+                <li class="compound__item">
+                  Чатни к сыру 300г, Mrs Bridges
+                </li>
+                <li class="compound__item">
+                  Печенье вафельное 200г, Belgian Butters
+                </li>
+              </ul>
+            </div>
+          </a>
+        </article>
+      </li>
+      <li class="gift-baskets__item swiper-slide">
+        <article class="gift-baskets-card">
+          <a class="gift-baskets-card__link" href="#">
+            <div class="images-thumb images-thumb--gift-baskets">
+              <picture>
+                <source type="image/avif"
+                  srcset="./images/gift-baskets/image2@1x.avif 1x, ./images/gift-baskets/image2@2x.avif 2x">
+                <source type="image/webp"
+                  srcset="./images/gift-baskets/image2@1x.webp 1x, ./images/gift-baskets/image2@2x.webp 2x">
+                <img class="images-img" src="./images/gift-baskets/image2@1x.jpg" loading="lazy" decoding="async"
+                  width="418" alt='Подарочный набор Juve Camps'>
+              </picture>
+            </div>
+            <div class="gift-baskets-card__inner">
+              <h4 class="gift-baskets-card__title title-h4">
+                Подарочный набор Juve Camps
+              </h4>
+              <ul class="compound">
+                <li class="compound__item compound__item--title">
+                  Состав:
+                </li>
+                <li class="compound__item">
+                  Вино Primitivo, Feudi di San Gregorio 0,750
+                </li>
+                <li class="compound__item">
+                  Сыр Montanari Gruzza 16 мес. выдержки 250г
+                </li>
+                <li class="compound__item">
+                  Чатни к сыру 300г, Mrs Bridges
+                </li>
+                <li class="compound__item">
+                  Печенье вафельное 200г, Belgian Butters
+                </li>
+              </ul>
+            </div>
+          </a>
+        </article>
+      </li>
+      <li class="gift-baskets__item swiper-slide">
+        <article class="gift-baskets-card">
+          <a class="gift-baskets-card__link" href="#">
+            <div class="images-thumb images-thumb--gift-baskets">
+              <picture>
+                <source type="image/avif"
+                  srcset="./images/gift-baskets/image3@1x.avif 1x, ./images/gift-baskets/image3@2x.avif 2x">
+                <source type="image/webp"
+                  srcset="./images/gift-baskets/image3@1x.webp 1x, ./images/gift-baskets/image3@2x.webp 2x">
+                <img class="images-img" src="./images/gift-baskets/image3@1x.jpg" loading="lazy" decoding="async"
+                  width="418" alt='Подарочный набор Cesari'>
+              </picture>
+            </div>
+            <div class="gift-baskets-card__inner">
+              <h4 class="gift-baskets-card__title title-h4">
+                Подарочный набор Cesari
+              </h4>
+              <ul class="compound">
+                <li class="compound__item compound__item--title">
+                  Состав:
+                </li>
+                <li class="compound__item">
+                  Вино Primitivo, Feudi di San Gregorio 0,750
+                </li>
+                <li class="compound__item">
+                  Сыр Montanari Gruzza 16 мес. выдержки 250г
+                </li>
+                <li class="compound__item">
+                  Чатни к сыру 300г, Mrs Bridges
+                </li>
+                <li class="compound__item">
+                  Печенье вафельное 200г, Belgian Butters
+                </li>
+              </ul>
+            </div>
+          </a>
+        </article>
+      </li>
+      <li class="gift-baskets__item swiper-slide">
+        <article class="gift-baskets-card">
+          <a class="gift-baskets-card__link" href="#">
+            <div class="images-thumb images-thumb--gift-baskets">
+              <picture>
+                <source type="image/avif"
+                  srcset="./images/gift-baskets/image1@1x.avif 1x, ./images/gift-baskets/image1@2x.avif 2x">
+                <source type="image/webp"
+                  srcset="./images/gift-baskets/image1@1x.webp 1x, ./images/gift-baskets/image1@2x.webp 2x">
+                <img class="images-img" src="./images/gift-baskets/image1@1x.jpg" loading="lazy" decoding="async"
+                  width="418" alt='Подарочный набор P.V. Restituta'>
+              </picture>
+            </div>
+            <div class="gift-baskets-card__inner">
+              <h4 class="gift-baskets-card__title title-h4">
+                Подарочный набор P.V. Restituta
+              </h4>
+              <ul class="compound">
+                <li class="compound__item compound__item--title">
+                  Состав:
+                </li>
+                <li class="compound__item">
+                  Вино Primitivo, Feudi di San Gregorio 0,750
+                </li>
+                <li class="compound__item">
+                  Сыр Montanari Gruzza 16 мес. выдержки 250г
+                </li>
+                <li class="compound__item">
+                  Чатни к сыру 300г, Mrs Bridges
+                </li>
+                <li class="compound__item">
+                  Печенье вафельное 200г, Belgian Butters
+                </li>
+              </ul>
+            </div>
+          </a>
+        </article>
+      </li>
+    </ul>
+    <div class="swiper-scrollbar"></div>
+    <button class="see-all">Смотреть все</button>
+  </div>
+  <!-- </div> -->
+</section>
+
+    <div class="assistance">
+  <div class="assistance__content hero-content">
+    <p class="hero-content__text">Sommelier Choice</p>
+    <p class="assistance__title hero-content__title">НЕ&nbsp;УВЕРЕНЫ В&nbsp;ВЫБОРЕ?<br>МЫ&nbsp;ГОТОВЫ ПОМОЧЬ!</p>
+    <button class="hero-content__link">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</button>
   </div>
 </div>
-    <section class="instagram">
+    <section class="section-instagram">
   <div class="container">
-    <div class="instagram__top">
-      <h2 class="title-h2 instagram__title" lang="en">
+    <div class="section-instagram__top">
+      <h2 class="title-h2 section-instagram__title" lang="en">
         instagram
       </h2>
-      <button class="instagram__btn">подписаться</button>
+      <button class="section-btn section-btn--instagram">подписаться</button>
     </div>
-    <ul class="instagram__list">
+    <ul class="instagram">
       <li class="instagram__item">
         <a class="instagram__link" href="">
           <div class="images-thumb images-thumb--instagram">

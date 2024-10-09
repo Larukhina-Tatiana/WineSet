@@ -18,12 +18,9 @@
     <div class="splide__track">
       <ul class="splide__list">
         <li class="splide__slide">
-          <div class="hero__content">
-            <p class="hero-text">Special offer</p>
-            <h1 class="hero-title">glasses &amp;&nbsp;сandles</h1>
-            <a class="hero-btn" href="./page-constructor.html">СОЗДАЙ СВОЙ ВИННЫЙ СЕТ</a>
-          </div>
-          <div class="hero__images images-thumb images-thumb--hero">
+          @include('hero-content.html', {
+          "h1": "glasses &amp;&nbsp;сandles", "a": "СОЗДАЙ СВОЙ ВИННЫЙ СЕТ", "href": "./page-constructor.html"})
+          <div class="images-thumb images-thumb--hero">
             <picture>
               <source type="image/avif" srcset="
                 ./images/hero/slide1@1x.avif 1x,
@@ -37,12 +34,9 @@
           </div>
         </li>
         <li class="splide__slide">
-          <div class="hero__content">
-            <p class="hero-text">Special offer</p>
-            <h1 class="hero-title">glasses &amp;&nbsp;сandles</h1>
-            <button class="hero-btn">ЗАКАЗАТЬ ПОДАРОЧНЫЙ НАБОР</button>
-          </div>
-          <div class="hero__images images-thumb images-thumb--hero">
+          @include('hero-content.html', {
+          "h1": "glasses &amp;&nbsp;сandles", "a": "ЗАКАЗАТЬ ПОДАРОЧНЫЙ НАБОР", "href": "./page-gift-sets.html"})
+          <div class="images-thumb images-thumb--hero">
             <picture>
               <source type="image/avif" srcset="
                 ./images/hero/slide2@1x.avif 1x,
@@ -56,12 +50,9 @@
           </div>
         </li>
         <li class="splide__slide">
-          <div class="hero__content">
-            <p class="hero-text">Special offer</p>
-            <h1 class="hero-title">rIEDEL WING&rsquo;S WINE SET</h1>
-            <button class="hero-btn">ЗАКАЗАТЬ БОКАЛЫ RIEDEL</button>
-          </div>
-          <div class="hero__images images-thumb images-thumb--hero">
+          @include('hero-content.html', {
+          "h1": "rIEDEL WING&rsquo;S WINE SET", "a": "ЗАКАЗАТЬ БОКАЛЫ RIEDEL", "href": "./page-glasses.html"})
+          <div class="images-thumb images-thumb--hero">
             <picture>
               <source type="image/avif" srcset="
                 ./images/hero/slide3@1x.avif 1x,
@@ -75,12 +66,9 @@
           </div>
         </li>
         <li class="splide__slide">
-          <div class="hero__content">
-            <p class="hero-text">Special offer</p>
-            <h1 class="hero-title">MAXITO&rsquo;S HAMON</h1>
-            <button class="hero-btn">ЗАКАЗАТЬ ДЕЛИКАТЕСЫ МАКСИТО</button>
-          </div>
-          <div class="hero__images images-thumb images-thumb--hero">
+          @include('hero-content.html', {
+          "h1": "MAXITO&rsquo;S HAMON", "a": "ЗАКАЗАТЬ ДЕЛИКАТЕСЫ МАКСИТО", "href": "./page-delicacies.html"})
+          <div class="images-thumb images-thumb--hero">
             <picture>
               <source type="image/avif" srcset="
                 ./images/hero/slide4@1x.avif 1x,
@@ -94,12 +82,9 @@
           </div>
         </li>
         <li class="splide__slide">
-          <div class="hero__content">
-            <p class="hero-text">Special offer</p>
-            <h1 class="hero-title">YARDEN HIGH TIER WINES</h1>
-            <button class="hero-btn">ЗАКАЗАТЬ ВИНО YARDEN</button>
-          </div>
-          <div class="hero__images images-thumb images-thumb--hero">
+          @include('hero-content.html', {
+          "h1": "YARDEN HIGH TIER WINES", "a": "ЗАКАЗАТЬ ВИНО YARDEN", "href": "./page-wine.html"})
+          <div class="images-thumb images-thumb--hero">
             <picture>
               <source type="image/avif" srcset="
                 ./images/hero/slide5@1x.avif 1x,

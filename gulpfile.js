@@ -24,7 +24,7 @@ const browserSync = require("browser-sync").create();
 const fonter = require("gulp-fonter");
 const ttf2woff2 = require("gulp-ttf2woff2");
 
-const include = require("gulp-include");
+// const include = require("gulp-include");
 
 function fonts() {
   return src("src/fonts/*.*")

@@ -2,12 +2,12 @@
   position: relative;
 
   &__list {
-    height: 312px !important;
+    // height: 312px !important;
     margin: 0 0 10px 0 !important;
   }
 
   &__pagination {
-    bottom: 40px;
+    bottom: 38px;
 
     li {
       &:not(:last-child) {

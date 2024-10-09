@@ -45,16 +45,6 @@
       height: auto;
     }
 
-    &--сonsultation {
-      background-color: $accent;
-      width: 100%;
-      // height: 424px;
-      // height: clamp(16.125rem, 14.05rem + 10.38vw, 26.5rem);
-      min-height: 320px;
-      height: 100%;
-      // width: 907px;
-      // height: 424px;
-    }
 
     &--instagram {
       max-width: 397px;
@@ -76,28 +66,24 @@
       height: auto;
     }
 
-    &--glasses {
-      // position: relative;
-      max-width: 256px;
-      // height: 303px;
-      height: 328px;
-      // height: auto;
-    }
-
-    &--delicacies {
-      // position: relative;
-      max-width: 256px;
-      height: 328px;
-      // height: 303px;
-      // height: auto;
-    }
-
+    &--glasses,
+    &--delicacies,
     &--wine {
       // position: relative;
-      max-width: 270px;
-      height: 328px;
+      max-width: 256px;
+      // height: 303px;
+      height: 302px;
+      margin-bottom: 10px;
       // height: auto;
     }
+
+
+    // &--wine {
+    //   // position: relative;
+    //   max-width: 270px;
+    //   height: 328px;
+    //   // height: auto;
+    // }
 
     &--card-secondary {
       // width: 122px;
@@ -120,3 +106,11 @@
     @include transition ($transition-property: scale);
   }
 }
+
+// .mask {
+//   // mask-image: url(../images/constructor/mask1.png);
+//   mask-image: linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+
+//   mask-repeat: no-repeat;
+//   mask-position: top left;
+// }

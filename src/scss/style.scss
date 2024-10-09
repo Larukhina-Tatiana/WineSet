@@ -25,7 +25,7 @@
 @import "./components/menu-dropdown";
 @import "./components/header-cart";
 
-
+@import "./components/page";
 @import "./components/hero";
 @import "./components/images";
 @import "./components/splide";
@@ -46,7 +46,7 @@
 @import "./components/compound";
 
 
-@import "./components/сonsultation";
+@import "./components/assistance";
 
 @import "./components/instagram";
 
@@ -55,8 +55,8 @@
 @import "./components/social";
 
 
-@import "./components/page-hero";
-@import "./components/section";
+@import "./components/section-hero";
+
 @import "./components/gift-sets";
 @import "./components/candles";
 @import "./components/filter";
@@ -80,11 +80,15 @@
 @import "./components/effect";
 @import "./components/description";
 @import "./components/reviews";
-@import "./components/page";
+
 
 
 @import "./components/your-box";
+@import "./components/choose-box";
+@import "./components/add-products";
+@import "./components/add-items";
+@import "./components/your-order";
 
-
+@import "./components/section";
 
 // @import "./components/dropdown-menu";

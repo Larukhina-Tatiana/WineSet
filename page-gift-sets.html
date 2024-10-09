@@ -4,38 +4,22 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
   <meta name="viewport" content="width=360, initial-scale=1, shrink-to-fit=no">
   <title>Интернет-магазин WiNE SET Подарочные наборы</title>
-  <!-- <link rel="stylesheet" href="libs/slick/slick.css"> -->
-  <!-- <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css"> -->
-  <!-- <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> -->
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body class="page-gift-sets">
 
   
   <main>
-    <section class="hero-gift-sets page-hero">
-  <div class="hero__content">
-    <p class="hero-text">Special offer</p>
-    <h1 class="hero-title">glasses &amp;&nbsp;сandles</h1>
-    <button class="hero-btn">ЗАКАЗАТЬ ПОДАРОЧНЫЙ НАБОР</button>
-  </div>
-  <div class="hero__images images-thumb images-thumb--hero">
-    <picture>
-      <source type="image/avif" srcset="
-                  ./images/hero/slide2@1x.avif 1x,
-                  ./images/hero/slide2@2x.avif 2x">
-      <source type="image/webp" srcset="
-                  ./images/hero/slide2@1x.webp 1x,
-                  ./images/hero/slide2@2x.webp 2x">
-      <img class="images-img" src="
-                  ./images/hero/slide2@1x.jpg" loading="lazy" decoding="async" alt="image">
-    </picture>
-  </div>
-</section>
+    <section class="section-hero">
+      <div class="hero-content">
+  <p class="hero-content__text ">Special offer</p>
+  <h1 class="hero-content__title">glasses &amp;&nbsp;сandles</h1>
+  <a class="hero-content__link" href="@href">ЗАКАЗАТЬ ПОДАРОЧНЫЙ НАБОР</a>
+</div>
+    </section>
     <section class="gift-sets">
   <div class="container">
     <div class="gift-sets__top">
@@ -142,16 +126,16 @@
 </section>
     <section class="section-slider products-slider">
   <div class="container">
+    <div class="section-slider__top">
+      <!-- <div class="container"> -->
+      <h2 class="title-h2 section-slider__title">
+        Рекомендуемые товары
+      </h2>
+
+      <button class="swiper-button swiper-button-prev"></button>
+      <button class="swiper-button swiper-button-next"></button>
+    </div>
     <div class="products__swiper-container swiper">
-      <div class="section-slider__top">
-        <h2 class="title-h2 section-slider__title">
-          Рекомендуемые товары
-        </h2>
-
-        <button class="swiper-button swiper-button-prev"></button>
-        <button class="swiper-button swiper-button-next"></button>
-
-      </div>
       <ul class="products-slider__list swiper-wrapper">
         <li class="products-slider__item swiper-slide">
           <article class="products-card">
@@ -173,10 +157,16 @@
                   <li class="products-card__item products-card__item--grape">
                     Рислинг, Совиньйон Блан +
                   </li>
+                  <li class="products-card__item products-card__item--glasses">
+                    Бокал для белого вина
+                  </li>
+                  <li class="products-card__item products-card__item--grape">
+                    Рислинг, Совиньйон Блан +
+                  </li>
                 </ul>
               </div>
               <div class="products-card__price">
-                <span class="products-card__price-new">4 500 ₴</span>
+                <strong class="products-card__price-new">4 500 ₴</strong>
                 <span class="products-card__price-old">5 300 ₴</span>
               </div>
             </a>
@@ -210,7 +200,7 @@
                 </ul>
               </div>
               <div class="products-card__price">
-                <span class="products-card__price-new products-card__price-new--no-sale">14 500 ₴</span>
+                <strong class="products-card__price-new products-card__price-new--no-sale">14 500 ₴</strong>
                 <span class="products-card__price-old"></span>
               </div>
             </a>
@@ -240,7 +230,7 @@
                 </ul>
               </div>
               <div class="products-card__price">
-                <span class="products-card__price-new">4 500 ₴</span>
+                <strong class="products-card__price-new">4 500 ₴</strong>
                 <span class="products-card__price-old">5 300 ₴</span>
               </div>
             </a>
@@ -270,7 +260,7 @@
                 </ul>
               </div>
               <div class="products-card__price">
-                <span class="products-card__price-new">4 500 ₴</span>
+                <strong class="products-card__price-new">4 500 ₴</strong>
                 <span class="products-card__price-old">5 300 ₴</span>
               </div>
             </a>
@@ -300,7 +290,7 @@
                 </ul>
               </div>
               <div class="products-card__price">
-                <span class="products-card__price-new">4 500 ₴</span>
+                <strong class="products-card__price-new">4 500 ₴</strong>
                 <span class="products-card__price-old">5 300 ₴</span>
               </div>
             </a>
@@ -330,7 +320,7 @@
                 </ul>
               </div>
               <div class="products-card__price">
-                <span class="products-card__price-new">4 500 ₴</span>
+                <strong class="products-card__price-new">4 500 ₴</strong>
                 <span class="products-card__price-old">5 300 ₴</span>
               </div>
             </a>
@@ -360,7 +350,7 @@
                 </ul>
               </div>
               <div class="products-card__price">
-                <span class="products-card__price-new">4 500 ₴</span>
+                <strong class="products-card__price-new">4 500 ₴</strong>
                 <span class="products-card__price-old">5 300 ₴</span>
               </div>
             </a>
@@ -390,7 +380,7 @@
                 </ul>
               </div>
               <div class="products-card__price">
-                <span class="products-card__price-new">4 500 ₴</span>
+                <strong class="products-card__price-new">4 500 ₴</strong>
                 <span class="products-card__price-old">5 300 ₴</span>
               </div>
             </a>
@@ -420,7 +410,7 @@
                 </ul>
               </div>
               <div class="products-card__price">
-                <span class="products-card__price-new">4 500 ₴</span>
+                <strong class="products-card__price-new">4 500 ₴</strong>
                 <span class="products-card__price-old">5 300 ₴</span>
               </div>
             </a>
@@ -450,7 +440,7 @@
                 </ul>
               </div>
               <div class="products-card__price">
-                <span class="products-card__price-new">4 500 ₴</span>
+                <strong class="products-card__price-new">4 500 ₴</strong>
                 <span class="products-card__price-old">5 300 ₴</span>
               </div>
             </a>
@@ -461,35 +451,24 @@
       <div class="swiper-scrollbar"></div>
     </div>
   </div>
+
 </section>
-    <div class="сonsultation">
-  <div class="сonsultation__content">
-    <p class="сonsultation__text hero-text">Sommelier Choice</p>
-    <p class="сonsultation__title hero-title">НЕ&nbsp;УВЕРЕНЫ В&nbsp;ВЫБОРЕ?<br>МЫ&nbsp;ГОТОВЫ ПОМОЧЬ!</p>
-    <button class="сonsultation__btn hero-btn">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</button>
-  </div>
-  <div class="сonsultation__images images-thumb images-thumb--сonsultation">
-    <picture>
-      <source type="image/avif" srcset="
-                  ./images/сonsultation/slide1@1x.avif 1x,
-                  ./images/сonsultation/slide1@2x.avif 2x">
-      <source type="image/webp" srcset="
-                  ./images/сonsultation/slide1@1x.webp 1x,
-                  ./images/сonsultation/slide1@2x.webp 2x">
-      <img class="images-img" src="
-                  ./images/сonsultation/slide1@1x.jpg" loading="lazy" decoding="async" alt="News cover">
-    </picture>
+    <div class="assistance">
+  <div class="assistance__content hero-content">
+    <p class="hero-content__text">Sommelier Choice</p>
+    <p class="assistance__title hero-content__title">НЕ&nbsp;УВЕРЕНЫ В&nbsp;ВЫБОРЕ?<br>МЫ&nbsp;ГОТОВЫ ПОМОЧЬ!</p>
+    <button class="hero-content__link">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</button>
   </div>
 </div>
-    <section class="instagram">
+    <section class="section-instagram">
   <div class="container">
-    <div class="instagram__top">
-      <h2 class="title-h2 instagram__title" lang="en">
+    <div class="section-instagram__top">
+      <h2 class="title-h2 section-instagram__title" lang="en">
         instagram
       </h2>
-      <button class="instagram__btn">подписаться</button>
+      <button class="section-btn section-btn--instagram">подписаться</button>
     </div>
-    <ul class="instagram__list">
+    <ul class="instagram">
       <li class="instagram__item">
         <a class="instagram__link" href="">
           <div class="images-thumb images-thumb--instagram">

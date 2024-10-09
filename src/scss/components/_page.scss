@@ -1,4 +1,27 @@
+.page-gift-sets {
+  .section-hero {
+    background-image: -webkit-image-set(url(../images/hero/slide2@1x.avif) type('image/avif') 1x,
+        url(../images/hero/slide2@2x.avif) type('image/avif') 2x,
+        url(../images/hero/slide2@1x.webp) type('image/webp') 1x,
+        url(../images/hero/slide2@2x.webp) type('image/webp') 2x,
+        url(../images/hero/slide2@1x.jpg) 1x,
+        url(../images/hero/slide2@2x.jpg) 2x);
+  }
+}
+
+.page-glasses {
+  .section-hero {
+    background-image: -webkit-image-set(url(../images/hero/slide3@1x.avif) type('image/avif') 1x,
+        url(../images/hero/slide3@2x.avif) type('image/avif') 2x,
+        url(../images/hero/slide3@1x.webp) type('image/webp') 1x,
+        url(../images/hero/slide3@2x.webp) type('image/webp') 2x,
+        url(../images/hero/slide3@1x.jpg) 1x,
+        url(../images/hero/slide3@2x.jpg) 2x);
+  }
+}
+
 .page-card {
+
   .section-slider {
     position: relative;
 
@@ -12,5 +35,17 @@
       z-index: -1;
       background-image: -webkit-image-set(url(../images/page/bg2@1x.png) type("image/png") 1x, url(../images/page/bg2@2x.png) type("image/png") 2x);
     }
+  }
+}
+
+
+
+.page-constructor {
+  .gift-baskets__title {
+    max-width: 485px;
+  }
+
+  .gift-baskets__list {
+    margin-top: 136px;
   }
 }

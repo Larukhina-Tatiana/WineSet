@@ -1,15 +1,15 @@
 .gift-sets {
   position: relative;
   // padding-top: 80px;
-  padding-top: clamp(2.5rem, 2rem + 2.5vw, 5rem);
+  padding-top: clamp(1.25rem, 0.5rem + 3.75vw, 5rem);
 
   &::after {
     position: absolute;
     content: '';
     width: 526px;
     height: 509px;
-    right: -20px;
-    bottom: -61px;
+    right: 0;
+    bottom: -50px;
     z-index: -1;
     background-image: -webkit-image-set(url(../images/gift-sets/bg1@1x.png) type('image/png') 1x,
         url(../images/gift-sets/bg1@2x.png) type('image/png') 2x);
@@ -17,7 +17,6 @@
 
   &__top {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     gap: 40px;
 
@@ -28,10 +27,11 @@
 
   &__text {
     max-width: 320px;
+    line-height: 140%;
 
     &:last-child {
-      margin-left: clamp(1.25rem, -0.5rem + 8.75vw, 10rem);
-      // margin-left: 160px;
+      margin-left: clamp(1.25rem, 0.025rem + 6.13vw, 7.375rem);
+      // margin-left: 118px;
     }
 
     &:not(:last-child) {
@@ -46,7 +46,7 @@
   &__list {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: clamp(1.25rem, 0.5rem + 3.75vw, 5rem);
   }
 
   &__item {

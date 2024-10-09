@@ -1,6 +1,8 @@
 .your-box {
+  position: relative;
   // padding-top: 80px;
   padding-top: clamp(2.5rem, 2rem + 2.5vw, 5rem);
+  padding-bottom: clamp(2.5rem, 2.375rem + 0.63vw, 3.125rem);
 
   &::after {
     position: absolute;
@@ -33,6 +35,7 @@
     margin-right: auto;
     display: flex;
     flex-direction: column;
+    background-color: $white;
   }
 
   &__item {

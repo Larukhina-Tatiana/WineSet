@@ -1,0 +1,20 @@
+.add-products {
+  position: relative;
+  padding-bottom: 50px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 68px;
+    height: 81px;
+    top: 126px;
+    left: 40px;
+    background-image: url('../images/constructor/decor2.svg');
+    background-repeat: no-repeat;
+  }
+
+  &__container {
+    padding-top: clamp(3.75rem, 2.775rem + 4.88vw, 8.625rem);
+    border-top: 3px solid var(--bg);
+  }
+}

@@ -20,7 +20,6 @@ if (document.querySelector(".splide")) {
 // // }
 
 const slider = document.querySelector(".partners__swiper-container");
-const slider1 = document.querySelector(".gift-baskets__swiper-container");
 
 let partnersSlider = new Swiper(slider, {
   slidesPerView: 1,
@@ -49,9 +48,10 @@ let partnersSlider = new Swiper(slider, {
   },
 });
 
+const slider1 = document.querySelector(".gift-baskets__swiper-container");
 let giftbasketsSlider = new Swiper(slider1, {
-  slidesPerView: 1,
-  spaceBetween: 5,
+  slidesPerView: 1.4,
+  spaceBetween: 12,
   loop: true,
   scrollbar: {
     el: ".swiper-scrollbar",
@@ -62,11 +62,6 @@ let giftbasketsSlider = new Swiper(slider1, {
     prevEl: ".swiper-button-prev",
   },
   breakpoints: {
-    425: {
-      navigation: false,
-      slidesPerView: 1.3,
-      spaceBetween: 10,
-    },
     484: {
       slidesPerView: 1.7,
       spaceBetween: 15,
@@ -84,7 +79,6 @@ let giftbasketsSlider = new Swiper(slider1, {
     },
     1440: {
       slidesPerView: 3.7,
-      spaceBetween: 5,
     },
   },
 });
@@ -135,14 +129,10 @@ if (document.querySelector(".gift-sets__slider-container")) {
   function mobileSlider() {
     if (window.innerWidth <= 768 && slider3.dataset.mobile == "false") {
       mySwiper = new Swiper(slider3, {
-        slidesPerView: 1,
+        slidesPerView: 1.3,
         spaceBetween: 5,
         loop: true,
         slideClass: "gift-sets__item",
-        // pagination: {
-        // 	el: '.swiper-pagination',
-        // 	clickable: true,
-        // },
       });
 
       slider3.dataset.mobile = "true";

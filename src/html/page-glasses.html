@@ -1,27 +1,23 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-  <meta name="viewport" content="width=360, initial-scale=1, shrink-to-fit=no">
-  <title>Интернет-магазин WiNE SET Бокалы</title>
-  <!-- <link rel="stylesheet" href="libs/slick/slick.css"> -->
-  <!-- <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css"> -->
-  <!-- <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> -->
-  <link rel="stylesheet" href="css/style.min.css">
-</head>
+@include('head.html', {
+"title": "Интернет-магазин WiNE SET Бокалы"
+})
 
-<body>
+
+<body class="page-glasses">
 
   <!-- @include('header.html') -->
   <main>
-    @include('hero-glasses.html')
+    <section class="section-hero">
+      @include('hero-content.html', {"h1": "RIEDEL WING&rsquo;S WINE SET", "a": "ЗАКАЗАТЬ БОКАЛЫ RIEDEL"})
+    </section>
+
     @include('glasses.html')
     @include('section-slider.html')
-    @include('сonsultation.html')
-    @include('instagram.html')
+    @include('assistance.html')
+    @include('section-instagram.html')
 
   </main>
 

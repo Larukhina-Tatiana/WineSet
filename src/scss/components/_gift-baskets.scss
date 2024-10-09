@@ -8,11 +8,13 @@
 
   &__swiper-container {
     position: relative;
-    max-width: 1930px;
+    margin-left: var(--indent);
     overflow: hidden;
   }
 
   &__list {
+    margin-top: 51px;
+
     &:not(:last-child) {
       margin-bottom: 60px;
     }
@@ -23,42 +25,41 @@
   }
 
   .swiper-wrapper {
-    margin-top: 51px;
     padding-top: 106px;
-    padding-left: 14px;
+    padding-left: 15px;
   }
 
-  .swiper-slide {
-    opacity: 0.5;
-    // background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 80%);
-    @include transition ($transition-property: (scale, box-shadow));
-  }
-
-
-  .swiper-slide-active,
-  .swiper-slide-next {
-    opacity: 1;
-  }
-
-  .swiper-slide-next + .swiper-slide {
-    opacity: 1;
+  .swiper-slide-active + .swiper-slide-next + .swiper-slide + .swiper-slide {
+    // opacity: 0.5;
+    mask-image: linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    mask-repeat: no-repeat;
+    mask-position: top left;
+    @include transition ($transition-property: (scale, box-shadow, mask-image));
   }
 
 
   @media screen and (width < 1180.99px) {
     .swiper-slide-next + .swiper-slide {
-      opacity: 0.5;
+      mask-image: linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+      mask-repeat: no-repeat;
+      mask-position: top left;
+      @include transition ($transition-property: (scale, box-shadow, mask-image));
     }
   }
 
   @media screen and (width < 672.99px) {
     .swiper-slide-next {
-      opacity: 0.5;
+      mask-image: linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+      mask-repeat: no-repeat;
+      mask-position: top left;
+      @include transition ($transition-property: (scale, box-shadow, mask-image));
     }
   }
 
   .swiper-slide-active {
     transform: scale(1.1);
+    // margin-right: 113px !important;
+    margin-right: clamp(1.25rem, 0.087rem + 5.81vw, 7.063rem) !important;
 
     .gift-baskets-card__link {
       box-shadow: 0 5px 15px 5px rgba(0, 0, 0, 0.05);
@@ -72,7 +73,7 @@
 }
 
 .gift-baskets-card {
-  max-width: 418px;
+  // max-width: 418px;
   // width: auto;
   // height: 559px;
   background-color: $white;

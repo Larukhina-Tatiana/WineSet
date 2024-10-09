@@ -1,4 +1,4 @@
-.instagram {
+.section-instagram {
   // padding-top: 151px;
   padding-top: clamp(3.75rem, 2.612rem + 5.69vw, 9.438rem);
   position: relative;
@@ -18,41 +18,31 @@
 
   &__top {
     position: relative;
-    // margin-bottom: 50px;
+    padding-top: 10px;
+    // margin-bottom: 40px;
     margin-bottom: clamp(1.563rem, 1.25rem + 1.56vw, 3.125rem);
   }
-
-  &__btn {
-    position: absolute;
-    top: -10px;
-    // right: 25px;
-    right: clamp(0.313rem, -6.611rem + 30.77vw, 1.563rem);
-    // padding: 28px 71px;
-    padding: clamp(0.625rem, 0.4rem + 1.13vw, 1.75rem) clamp(0.625rem, -0.138rem + 3.81vw, 4.438rem);
-    font-size: clamp(0.625rem, 0.55rem + 0.38vw, 1rem);
-    font-weight: 600;
-    text-transform: uppercase;
-    color: $accent;
-    border-radius: 70%;
-    border: 1px solid $accent;
-  }
+}
 
 
-  &__list {
-    display: flex;
-    gap: 4px;
-
-  }
+.instagram {
+  display: flex;
+  gap: 4px;
 
   &__item {
     flex-basis: calc((100% - 12px) / 4);
+
+    @media (any-hover: hover) {
+      &:hover {
+        .images-img {
+          scale: 1.2;
+        }
+      }
+    }
   }
 
   @media screen and (width < 768.99px) {
-
-    &__list {
-      flex-wrap: wrap;
-    }
+    flex-wrap: wrap;
 
     &__item {
       flex-basis: calc((100% - 6px) / 2);

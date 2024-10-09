@@ -29,7 +29,25 @@
   color: $accent;
   border-radius: 70%;
   border: 1px solid $accent;
+
+  &--instagram {
+    top: -10px;
+    bottom: -8px;
+    // right: 25px;
+    right: clamp(0.313rem, -6.611rem + 30.77vw, 1.563rem);
+    // padding: 28px 71px;
+    padding: clamp(0.625rem, 0.4rem + 1.13vw, 1.75rem) clamp(0.625rem, -0.138rem + 3.81vw, 4.438rem);
+  }
+
+  &--glasses {
+    position: static;
+
+    @media screen and (width >=1200px) {
+      margin-left: -60px;
+    }
+  }
 }
+
 
 @media screen and (width < 768.99px) {
   .section-box {

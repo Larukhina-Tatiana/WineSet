@@ -1,0 +1,29 @@
+.assistance {
+  position: relative;
+  margin-top: 59px;
+  color: $white;
+  // height: 454px;
+  height: clamp(20rem, 18.7rem + 6.5vw, 26.5rem);
+  background-image: -webkit-image-set(url(../images/сonsultation/slide1@1x.avif) type('image/avif') 1x,
+      url(../images/сonsultation/slide1@2x.avif) type('image/avif') 2x,
+      url(../images/сonsultation/slide1@1x.webp) type('image/webp') 1x,
+      url(../images/сonsultation/slide1@2x.webp) type('image/webp') 2x,
+      url(../images/сonsultation/slide1@1x.jpg) 1x,
+      url(../images/сonsultation/slide1@2x.jpg) 2x);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__content {
+    max-width: 893px;
+    width: 100%;
+    top: 46%;
+    right: clamp(0.313rem, -0.412rem + 3.62vw, 3.938rem);
+  }
+
+  &__title {
+    max-width: 893px;
+    letter-spacing: 0.05em;
+    line-height: 1.2;
+  }
+}

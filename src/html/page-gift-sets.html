@@ -1,28 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-  <meta name="viewport" content="width=360, initial-scale=1, shrink-to-fit=no">
-  <title>Интернет-магазин WiNE SET Подарочные наборы</title>
-  <!-- <link rel="stylesheet" href="libs/slick/slick.css"> -->
-  <!-- <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css"> -->
-  <!-- <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> -->
-  <link rel="stylesheet" href="css/style.min.css">
-</head>
+@include('head.html', {
+"title": "Интернет-магазин WiNE SET Подарочные наборы"
+})
 
-<body>
+<body class="page-gift-sets">
 
   <!-- @include('header.html') -->
   <main>
-    @include('hero-gift-sets.html')
+    <section class="section-hero">
+      @include('hero-content.html', {"h1": "glasses &amp;&nbsp;сandles", "a": "ЗАКАЗАТЬ ПОДАРОЧНЫЙ НАБОР"})
+    </section>
     @include('gift-sets.html')
     @include('candles.html')
     @include('section-slider.html')
-    @include('сonsultation.html')
-    @include('instagram.html')
+    @include('assistance.html')
+    @include('section-instagram.html')
 
   </main>
 

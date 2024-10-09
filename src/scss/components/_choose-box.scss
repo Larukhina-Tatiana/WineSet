@@ -1,0 +1,99 @@
+.choose-box {
+  position: relative;
+  padding-bottom: 50px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 411px;
+    height: 472px;
+    right: -1px;
+    bottom: 59px;
+    z-index: -1;
+    background-image: -webkit-image-set(url(../images/constructor/bg2@1x.png) type("image/png") 1x,
+        url(../images/constructor/bg2@2x.png) type("image/png") 2x,
+        url(../images/constructor/bg2@3x.png) type("image/png") 3x,
+        url(../images/constructor/bg2@4x.png) type("image/png") 4x);
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 68px;
+    height: 93px;
+    top: 121px;
+    left: 40px;
+    background-image: url('../images/constructor/decor1.svg');
+    background-repeat: no-repeat;
+  }
+
+  &__container {
+    padding-top: clamp(3.75rem, 2.65rem + 5.5vw, 9.25rem);
+    border-top: 3px solid var(--bg);
+  }
+
+  &__list {
+    margin-top: 74px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    // gap: 124px;
+    gap: clamp(1.25rem, -0.05rem + 6.5vw, 7.75rem);
+  }
+
+
+  &__item {
+    @include transition ($transition-property: (scale, box-shadow, transform));
+
+    @media (any-hover: hover) {
+      &:hover {
+        // box-shadow: var(--box-shadow);
+        box-shadow: 0 8px 15px 5px rgba(0, 0, 0, .09);
+        scale: 1.02;
+        transform: translateY(-13px);
+      }
+    }
+  }
+
+  @media screen and (width <=768px) {
+    &__list {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+
+.choose-box-card {
+  max-width: 418px;
+  padding: 17px 14px 25px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 3px solid var(--bg);
+  background-color: $white;
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &-img {
+    margin-bottom: 12px;
+    // object-fit: cover;
+    aspect-ratio: 1;
+  }
+
+  &__content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: flex-start;
+  }
+
+  &__btn {
+    max-width: 320px;
+    margin: 41px auto 0;
+  }
+}

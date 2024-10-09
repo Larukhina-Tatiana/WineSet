@@ -2,12 +2,8 @@
   // padding-top: 79px;
   padding-top: clamp(2.5rem, 2.012rem + 2.44vw, 4.938rem);
 
-  &__btn {
-    position: static;
-
-    @media screen and (width >=1200px) {
-      margin-left: -60px;
-    }
+  &__title {
+    margin-bottom: clamp(2.125rem, 1.67rem + 2.27vw, 3.375rem);
   }
 
   .filter {

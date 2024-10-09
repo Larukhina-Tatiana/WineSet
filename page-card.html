@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
   <meta name="viewport" content="width=360, initial-scale=1, shrink-to-fit=no">
   <title>Интернет-магазин WiNESET Карточка продукта</title>
   <link rel="stylesheet" href="css/style.min.css">
@@ -170,8 +169,8 @@
           <div class="products-card__price">
             <span class="products-card__price-old">7 000 ₴</span>
             <div class="card__price-inner">
-              <span class="products-card__price-new">5 454 ₴</span>
-              <!-- <span class="products-card__price-new">5 950 ₴</span> -->
+              <strong class="products-card__price-new">5 454 ₴</strong>
+              <!-- <strong class="products-card__price-new">5 950 ₴</strong> -->
               <span class="card__discount">-15%</span>
             </div>
           </div>
@@ -277,7 +276,7 @@
     </div>
     <ul class="reviews-list swiper-wrapper">
       <li class="reviews-item swiper-slide">
-        <article class="reviews" role="comment">
+        <article class="reviews">
           <header class="reviews-header">
             <picture>
               <source type="image/avif" srcset="
@@ -311,10 +310,11 @@
               dolore magna
               aliqua.
             </p>
+          </div>
         </article>
       </li>
       <li class="reviews-item swiper-slide">
-        <article class="reviews" role="comment">
+        <article class="reviews">
           <header class="reviews-header">
             <picture>
               <source type="image/avif"
@@ -348,10 +348,11 @@
               dolore magna
               aliqua.
             </p>
+          </div>
         </article>
       </li>
       <li class="reviews-item swiper-slide">
-        <article class="reviews" role="comment">
+        <article class="reviews">
           <header class="reviews-header">
             <picture>
               <source type="image/avif"
@@ -360,7 +361,6 @@
                 srcset="./images/reviews/avatar3@1x.webp 1x, ./images/reviews/avatar3@2x.webp 2x">
               <img class="reviews-avatar" src="./images/reviews/avatar3@1x.jpg" width="45" height="45" loading="lazy"
                 decoding="async" alt="Аватар">
-            </picture>
             </picture>
             <h4 class="reviews-author">Журавленко катерина</h4>
             <time class="reviews-date" datetime="2024-05-20">20 мая 2024</time>
@@ -382,10 +382,11 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna
             </p>
+          </div>
         </article>
       </li>
       <li class="reviews-item swiper-slide">
-        <article class="reviews" role="comment">
+        <article class="reviews">
           <header class="reviews-header">
             <picture>
               <source type="image/avif"
@@ -415,10 +416,11 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna
             </p>
+          </div>
         </article>
       </li>
       <li class="reviews-item swiper-slide">
-        <article class="reviews" role="comment">
+        <article class="reviews">
           <header class="reviews-header">
             <picture>
               <source type="image/avif" srcset="
@@ -452,10 +454,11 @@
               dolore magna
               aliqua.
             </p>
+          </div>
         </article>
       </li>
       <li class="reviews-item swiper-slide">
-        <article class="reviews" role="comment">
+        <article class="reviews">
           <header class="reviews-header">
             <picture>
               <source type="image/avif"
@@ -489,10 +492,11 @@
               dolore magna
               aliqua.
             </p>
+          </div>
         </article>
       </li>
       <li class="reviews-item swiper-slide">
-        <article class="reviews" role="comment">
+        <article class="reviews">
           <header class="reviews-header">
             <picture>
               <source type="image/avif"
@@ -501,7 +505,6 @@
                 srcset="./images/reviews/avatar3@1x.webp 1x, ./images/reviews/avatar3@2x.webp 2x">
               <img class="reviews-avatar" src="./images/reviews/avatar3@1x.jpg" width="45" height="45" loading="lazy"
                 decoding="async" alt="Аватар">
-            </picture>
             </picture>
             <h4 class="reviews-author">Журавленко катерина</h4>
             <time class="reviews-date" datetime="2024-05-20">20 мая 2024</time>
@@ -523,10 +526,11 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna
             </p>
+          </div>
         </article>
       </li>
       <li class="reviews-item swiper-slide">
-        <article class="reviews" role="comment">
+        <article class="reviews">
           <header class="reviews-header">
             <picture>
               <source type="image/avif"
@@ -556,6 +560,7 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna
             </p>
+          </div>
         </article>
       </li>
     </ul>
@@ -565,16 +570,16 @@
 </section>
     <section class="section-slider products-slider">
   <div class="container">
+    <div class="section-slider__top">
+      <!-- <div class="container"> -->
+      <h2 class="title-h2 section-slider__title">
+        Рекомендуемые товары
+      </h2>
+
+      <button class="swiper-button swiper-button-prev"></button>
+      <button class="swiper-button swiper-button-next"></button>
+    </div>
     <div class="products__swiper-container swiper">
-      <div class="section-slider__top">
-        <h2 class="title-h2 section-slider__title">
-          Рекомендуемые товары
-        </h2>
-
-        <button class="swiper-button swiper-button-prev"></button>
-        <button class="swiper-button swiper-button-next"></button>
-
-      </div>
       <ul class="products-slider__list swiper-wrapper">
         <li class="products-slider__item swiper-slide">
           <article class="products-card">
@@ -596,10 +601,16 @@
                   <li class="products-card__item products-card__item--grape">
                     Рислинг, Совиньйон Блан +
                   </li>
+                  <li class="products-card__item products-card__item--glasses">
+                    Бокал для белого вина
+                  </li>
+                  <li class="products-card__item products-card__item--grape">
+                    Рислинг, Совиньйон Блан +
+                  </li>
                 </ul>
               </div>
               <div class="products-card__price">
-                <span class="products-card__price-new">4 500 ₴</span>
+                <strong class="products-card__price-new">4 500 ₴</strong>
                 <span class="products-card__price-old">5 300 ₴</span>
               </div>
             </a>
@@ -633,7 +644,7 @@
                 </ul>
               </div>
               <div class="products-card__price">
-                <span class="products-card__price-new products-card__price-new--no-sale">14 500 ₴</span>
+                <strong class="products-card__price-new products-card__price-new--no-sale">14 500 ₴</strong>
                 <span class="products-card__price-old"></span>
               </div>
             </a>
@@ -663,7 +674,7 @@
                 </ul>
               </div>
               <div class="products-card__price">
-                <span class="products-card__price-new">4 500 ₴</span>
+                <strong class="products-card__price-new">4 500 ₴</strong>
                 <span class="products-card__price-old">5 300 ₴</span>
               </div>
             </a>
@@ -693,7 +704,7 @@
                 </ul>
               </div>
               <div class="products-card__price">
-                <span class="products-card__price-new">4 500 ₴</span>
+                <strong class="products-card__price-new">4 500 ₴</strong>
                 <span class="products-card__price-old">5 300 ₴</span>
               </div>
             </a>
@@ -723,7 +734,7 @@
                 </ul>
               </div>
               <div class="products-card__price">
-                <span class="products-card__price-new">4 500 ₴</span>
+                <strong class="products-card__price-new">4 500 ₴</strong>
                 <span class="products-card__price-old">5 300 ₴</span>
               </div>
             </a>
@@ -753,7 +764,7 @@
                 </ul>
               </div>
               <div class="products-card__price">
-                <span class="products-card__price-new">4 500 ₴</span>
+                <strong class="products-card__price-new">4 500 ₴</strong>
                 <span class="products-card__price-old">5 300 ₴</span>
               </div>
             </a>
@@ -783,7 +794,7 @@
                 </ul>
               </div>
               <div class="products-card__price">
-                <span class="products-card__price-new">4 500 ₴</span>
+                <strong class="products-card__price-new">4 500 ₴</strong>
                 <span class="products-card__price-old">5 300 ₴</span>
               </div>
             </a>
@@ -813,7 +824,7 @@
                 </ul>
               </div>
               <div class="products-card__price">
-                <span class="products-card__price-new">4 500 ₴</span>
+                <strong class="products-card__price-new">4 500 ₴</strong>
                 <span class="products-card__price-old">5 300 ₴</span>
               </div>
             </a>
@@ -843,7 +854,7 @@
                 </ul>
               </div>
               <div class="products-card__price">
-                <span class="products-card__price-new">4 500 ₴</span>
+                <strong class="products-card__price-new">4 500 ₴</strong>
                 <span class="products-card__price-old">5 300 ₴</span>
               </div>
             </a>
@@ -873,7 +884,7 @@
                 </ul>
               </div>
               <div class="products-card__price">
-                <span class="products-card__price-new">4 500 ₴</span>
+                <strong class="products-card__price-new">4 500 ₴</strong>
                 <span class="products-card__price-old">5 300 ₴</span>
               </div>
             </a>
@@ -884,35 +895,24 @@
       <div class="swiper-scrollbar"></div>
     </div>
   </div>
+
 </section>
-    <div class="сonsultation">
-  <div class="сonsultation__content">
-    <p class="сonsultation__text hero-text">Sommelier Choice</p>
-    <p class="сonsultation__title hero-title">НЕ&nbsp;УВЕРЕНЫ В&nbsp;ВЫБОРЕ?<br>МЫ&nbsp;ГОТОВЫ ПОМОЧЬ!</p>
-    <button class="сonsultation__btn hero-btn">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</button>
-  </div>
-  <div class="сonsultation__images images-thumb images-thumb--сonsultation">
-    <picture>
-      <source type="image/avif" srcset="
-                  ./images/сonsultation/slide1@1x.avif 1x,
-                  ./images/сonsultation/slide1@2x.avif 2x">
-      <source type="image/webp" srcset="
-                  ./images/сonsultation/slide1@1x.webp 1x,
-                  ./images/сonsultation/slide1@2x.webp 2x">
-      <img class="images-img" src="
-                  ./images/сonsultation/slide1@1x.jpg" loading="lazy" decoding="async" alt="News cover">
-    </picture>
+    <div class="assistance">
+  <div class="assistance__content hero-content">
+    <p class="hero-content__text">Sommelier Choice</p>
+    <p class="assistance__title hero-content__title">НЕ&nbsp;УВЕРЕНЫ В&nbsp;ВЫБОРЕ?<br>МЫ&nbsp;ГОТОВЫ ПОМОЧЬ!</p>
+    <button class="hero-content__link">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</button>
   </div>
 </div>
-    <section class="instagram">
+    <section class="section-instagram">
   <div class="container">
-    <div class="instagram__top">
-      <h2 class="title-h2 instagram__title" lang="en">
+    <div class="section-instagram__top">
+      <h2 class="title-h2 section-instagram__title" lang="en">
         instagram
       </h2>
-      <button class="instagram__btn">подписаться</button>
+      <button class="section-btn section-btn--instagram">подписаться</button>
     </div>
-    <ul class="instagram__list">
+    <ul class="instagram">
       <li class="instagram__item">
         <a class="instagram__link" href="">
           <div class="images-thumb images-thumb--instagram">

@@ -37,7 +37,7 @@
   }
 
   &__left {
-    padding-left: max(15px, calc((100% - 1600px) /2));
+    padding-left: var(--indent);
     display: flex;
     align-items: center;
     flex-shrink: 0;

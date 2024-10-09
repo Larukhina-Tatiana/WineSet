@@ -26,6 +26,8 @@
     --burger-line-height: 2px;
 
     --swiper-theme-color: var(--accent-color);
+    --indent: max(15px, calc((100% - 1600px) /2));
+    // --page-constructor: "Для тех, кто ищет готовые решения";
 }
 
 $accent: #7a0000;
@@ -37,6 +39,8 @@ $main-color: #121212;
 $white: #FFF;
 $wild-sand: #f4f4f4;
 $black: #000;
+
+
 
 
 
