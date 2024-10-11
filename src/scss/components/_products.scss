@@ -1,42 +1,45 @@
 .products {
   padding-top: clamp(2.5rem, 2.012rem + 2.44vw, 4.938rem);
 
-  &__top {
+  &-top {
     position: relative;
     display: flex;
     justify-content: space-between;
     gap: 20px;
-  }
 
-  &__btn {
-    position: static;
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      gap: clamp(2.5rem, 1.6rem + 4.5vw, 7rem);
 
-    @media screen and (width >=1200px) {
-      margin-left: -60px;
+      // gap: 112px;
+      @media screen and (width >=768px) {
+        margin-left: auto;
+      }
+    }
+
+    &__item {
+      max-width: 320px;
+      line-height: 140%;
+    }
+
+    &__content {
+      &:not(:last-child) {
+        margin-bottom: 50px;
+      }
+    }
+
+    @media screen and (width <=767px) {
+      flex-direction: column;
+
+      &__list {
+        width: 100%;
+        flex-direction: column;
+      }
     }
   }
 
-  &__list {
-    display: flex;
-    justify-content: space-between;
-    gap: clamp(2.5rem, 1.6rem + 4.5vw, 7rem);
 
-    // gap: 112px;
-    @media screen and (width >=768px) {
-      margin-left: auto;
-    }
-  }
-
-  &__item {
-    max-width: 320px;
-    line-height: 140%;
-  }
-
-  &__content {
-    &:not(:last-child) {
-      margin-bottom: 50px;
-    }
-  }
 
   &__filter {
     margin-top: 101px;

@@ -1,25 +1,25 @@
 <section class="products">
   <div class="container">
-    <div class="products__top">
-      <div class="products__top-inner">
-        <h2 class="title-h2 section-slider__title">
-          ВИНО
-        </h2>
+    <!-- @include('products-top.html', {"h2": "Вино", "p": "Форма чаши каждого бокала уникальна, благодаря этому
+    вы можете ощутить самые тонкие нюансы вкуса своих напитков.", "p": "Бокалы Вы можете приобрести как отдельно, так и
+    в красивой подарочной упаковке."}) -->
+    <div class="products-top">
+      <div class="products-top__inner">
+        <h2 class="title-h2 section-slider__title">Вино</h2>
       </div>
-      <ul class="products__list">
-        <li class="products__item">
-          <p class="products__content">
-            Форма чаши каждого бокала уникальна, благодаря этому вы&nbsp;можете ощутить самые тонкие нюансы вкуса своих
-            напитков.
-          </p>
+      <ul class="products-top__list">
+        <li class="products-top__item">
+          <p class="products-top__content">Форма чаши каждого бокала уникальна, благодаря этому вы&nbsp;можете ощутить
+            самые тонкие нюансы вкуса своих
+            напитков.</p>
         </li>
-        <li class="products__item">
-          <p class="products__content">
-            Бокалы Вы&nbsp;можете приобрести как отдельно, так и&nbsp;в&nbsp;красивой подарочной упаковке.
-          </p>
+        <li class="products-top__item">
+          <p class="products-top__content">Бокалы Вы можете приобрести как отдельно, так и в красивой подарочной
+            упаковке.</p>
         </li>
       </ul>
     </div>
+
     <div class="products__wrapper">
       @include('filter.html')
 

@@ -1,8 +1,18 @@
-.section-hero {
+.section-hero,
+.hero-constructor {
   position: relative;
   color: $white;
   height: clamp(20rem, 18.7rem + 6.5vw, 26.5rem);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.hero-constructor {
+  background-image: -webkit-image-set(url(../images/constructor/image1@1x.avif) type('image/avif') 1x,
+      url(../images/constructor/image1@2x.avif) type('image/avif') 2x,
+      url(../images/constructor/image1@1x.webp) type('image/webp') 1x,
+      url(../images/constructor/image1@2x.webp) type('image/webp') 2x,
+      url(../images/constructor/image1@1x.jpg) 1x,
+      url(../images/constructor/image1@2x.jpg) 2x);
 }

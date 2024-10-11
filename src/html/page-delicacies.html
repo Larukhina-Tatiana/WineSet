@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-@include('head.html', {
-"title": "Интернет-магазин WiNE SET Деликатесы"
-})
+@include('head.html', {"title": "Интернет-магазин WiNE SET Деликатесы"})
 
-<body>
+<body class="page-delicacies">
 
   <!-- @include('header.html') -->
   <main>
-    @include('hero-delicacies.html')
+    <section class="section-hero">
+      @include('hero-content.html', {"h1": "MAXITO&rsquo;S HAMON", "a": "ЗАКАЗАТЬ ДЕЛИКАТЕСЫ МАКСИТО"})
+    </section>
     @include('delicacies.html')
     @include('section-slider.html')
     @include('assistance.html')

@@ -1,0 +1,16 @@
+.section-blog {
+
+  &__container {
+    border-bottom: 3px solid $bg;
+    padding-bottom: 47px;
+  }
+
+  &__top {
+    margin-top: 80px;
+    margin-bottom: 95px;
+  }
+
+  &__title {
+    max-width: 551px;
+  }
+}

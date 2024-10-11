@@ -1,0 +1,22 @@
+.author {
+  padding-left: var(--indent);
+
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    // gap: 5px;
+  }
+
+  &__title {
+    margin-top: 84px;
+    grid-column: 1 / 3;
+  }
+
+  &__img-one {
+    grid-column: 4/8;
+  }
+
+  &__img-two {
+    grid-column: 8/12;
+  }
+}

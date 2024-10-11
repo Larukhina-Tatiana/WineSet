@@ -1,0 +1,74 @@
+.blog {
+  color: $white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  // grid-template-columns: 100px 200px 300px;
+  // grid-template-rows: repeat(4, 1fr);
+  gap: 30px;
+
+
+
+
+  &__item {
+    padding: 38px 10px 19px;
+    // display: grid;
+    // grid-template-rows: subgrid;
+    // grid-row: 1 / 4;
+    // width: 540px;
+    // height: 304px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    text-align: center;
+    gap: 26px;
+    @include transition ($transition-property: (scale, transform, color));
+
+    @media (any-hover: hover) {
+      &:hover {
+        // color: $accent;
+        scale: 1.05;
+        transform: translateY(-15px);
+        // box-shadow: var(--box-shadow);
+        box-shadow: 5px 5px 2.5px 0px rgba(39, 38, 38, 0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(39, 8, 8, 0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      }
+    }
+  }
+
+  &__text {
+    @extend %second-family-400;
+    font-size: 46px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 32px;
+    text-wrap: balance;
+  }
+
+
+  &__link {
+    margin-top: 54px;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.25em;
+    text-decoration: underline;
+    text-transform: uppercase;
+  }
+
+  &__btn {
+    margin-top: 40px;
+  }
+
+  @media screen and (width <=1023px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (width <=767px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
