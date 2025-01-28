@@ -1,0 +1,54 @@
+<div class="reach">
+  <div class="reach__container">
+    <div class="reach__inner">
+      <form action="#" class="reach-form form" id="reachForm" name="reachForm" data-js-form>
+        <fieldset class="reach-form__fieldset">
+          <p class="reach-form__title">связаться с нами</p>
+          <label class="reach-form__label form-label" for="firstName">
+            <span class="form-label-legend">Имя</span>
+            <input class="reach-form__input  form-input" type="text" inputmode="text" name="firstName" id="firstName"
+              placeholder="Введите своe имя..." autocomplete="name" required minlength="2" maxlength="15"
+              title="Имя должно содержать от 2 до 15 символов, быть одним словом, не содержать других символов, кроме букв"
+              aria-errormessage="firstName-errors" pattern="^[a-zA-Z[А-Я][а-яё][а-щА-ЩЬьЮюЯяЇїІіЄєҐґ]]+$">
+            <span class="form-errors" id="firstName-errors" data-js-form-field-errors aria-live="polite"></span>
+          </label>
+          <label class="reach-form__label form-label" for="phone-mask">
+            <span class="form-label-legend">Номер телефона</span>
+            <input class="reach-form__input form-input" type="tel-area-code" inputmode="tel" name="phone"
+              id="phone-mask" autocomplete="tel" placeholder="+38 (000) 000-00-00" required
+              pattern="^\+\d{2} \(\d{3}\) \d{3}-\d{2}-\d{2}$" minlength="19" pattern="^\+380-\d{3}-\d{2}-\d{2}$"
+              title="Введите номер телефона в формате +38 (000) 000-00-00" aria-errormessage="phone-errors"
+              autocorrect="off">
+            <div class="progress-line"></div>
+            <span class="form-errors" id="phone-errors" data-js-form-field-errors aria-live="polite"></span>
+          </label>
+          <label class="reach-form__label form-label" for="email">
+            <span class="form-label-legend">Email</span>
+            <input class="reach-form__input form-input" type="email" name="email" id="email" inputmode="email"
+              placeholder="Введите свой email..." autocomplete="email" required pattern="^\S+@\S+\.\S+$"
+              aria-errormessage="email-errors" title="Укажите в формате: user@example.com"
+              oninvalid="this.setCustomValidity('Пожалуйста, введите корректный адрес электронной почты.')"
+              onchange="this.setCustomValidity('') ">
+            <span class="form-errors" id="email-errors" data-js-form-field-errors aria-live="polite"></span>
+          </label>
+          <label class="reach-form__label form-label" for="comment">
+            <textarea class="reach-form__textarea form-input" id="comment" name="comment"
+              placeholder="Ваше сообщение..." type="text" inputmode="text" required
+              data-pattern="^(?:(?![\s\n]+$)[\s\S])+$" data-symbols title="Поле должно быть заполнено" minlength="10"
+              maxlength=300 aria-errormessage="comment-errors"></textarea>
+            <span class="form-errors" id="comment-errors" data-js-form-field-errors aria-live="polite"></span>
+            <output class="output" name="output"></output>
+          </label>
+        </fieldset>
+        <button class="reach-form__btn btn btn--bg-red" type="submit" js-submit>Отправить</button>
+      </form>
+      <div class="reach__images images-thumb images-thumb--reach">
+        <picture>
+          <source type="image/avif" srcset="./images/reach/image1@1x.avif 1x, ./images/reach/image1@2x.avif 2x">
+          <source type="image/webp" srcset="./images/reach/image1@1x.webp 1x, ./images/reach/image1@2x.webp 2x">
+          <img class="images-img" src="./images/reach/image1@1x.jpg" loading="lazy" decoding="async" alt="image">
+        </picture>
+      </div>
+    </div>
+  </div>
+</div>

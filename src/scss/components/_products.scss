@@ -33,8 +33,13 @@
       flex-direction: column;
 
       &__list {
-        width: 100%;
+
         flex-direction: column;
+      }
+
+      &__item {
+        width: 100%;
+        max-width: none;
       }
     }
   }

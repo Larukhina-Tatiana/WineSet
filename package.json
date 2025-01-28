@@ -24,6 +24,7 @@
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-uglify-es": "^3.0.0",
     "gulp-webp": "^4.0.1",
+    "imask": "^7.6.1",
     "jquery": "^3.7.1",
     "js-quantities": "^1.8.0",
     "mixitup": "^3.3.1",

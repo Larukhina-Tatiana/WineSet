@@ -12,11 +12,13 @@
     background: linear-gradient(135deg, #7a0000 0%, #900 100%);
     @include transition ($transition-property: (background-color, color, border));
 
-    @media (any-hover: hover) {
-      &:hover {
-        color: var(--solid);
-        background: $white;
-        border: 1px solid var(--solid);
+    &:not(:disabled) {
+      @media (any-hover: hover) {
+        &:hover {
+          color: var(--solid);
+          background: $white;
+          border: 1px solid var(--solid);
+        }
       }
     }
   }

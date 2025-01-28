@@ -18,6 +18,7 @@
 
 @import "./components/header";
 @import "./general/logo";
+
 @import "./components/search";
 @import "./general/_buttons";
 @import "./components/phone";
@@ -53,7 +54,6 @@
 @import "./components/footer";
 @import "./components/address";
 @import "./components/social";
-
 
 @import "./components/section-hero";
 
@@ -94,7 +94,9 @@
 @import "./components/blog";
 
 @import "./components/author";
+@import "./components/article";
 
 @import "./components/section";
+@import "./general/form";
 
 // @import "./components/dropdown-menu";

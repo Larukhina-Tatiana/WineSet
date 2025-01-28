@@ -15,11 +15,6 @@
     background-image: -webkit-image-set(url(../images/your-box/bg1@1x.png) type("image/png") 1x, url(../images/your-box/bg1@2x.png) type("image/png") 2x);
   }
 
-  &__top {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-  }
 
   &__title {
     width: 340px;

@@ -200,3 +200,36 @@ button {
 .lowercase {
     text-transform: lowercase;
 }
+
+
+// .form-errors {
+//     display: flex;
+//     flex-direction: column;
+//     row-gap: 0.4em;
+//     margin-top: 0.5em;
+//     font-size: 0.8em;
+//     color: red;
+//     line-height: 1.25;
+// }
+
+// .form-errors:empty {
+//     display: none;
+// }
+
+.progress-line {
+    width: 5px;
+    height: 3px;
+    background-color: rgb(255, 137, 0);
+    border-radius: 4px;
+}
+
+#input__phone-mask {
+    margin-bottom: 5px;
+    // text-align: center;
+}
+
+button:disabled,
+button[disabled] {
+    opacity: .6;
+    cursor: not-allowed;
+}

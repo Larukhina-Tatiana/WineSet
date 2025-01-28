@@ -1,23 +1,95 @@
 <div class="reach">
   <div class="reach__container">
     <div class="reach__inner">
-      <form action="#" class="reach-form">
+      <form action="#"
+      class="reach-form form"
+      id="reachForm"
+      name="reachForm"
+      data-js-form>
         <fieldset class="reach-form__fieldset">
           <p class="reach-form__title">связаться с нами</p>
-          <label class="reach-form__label" for="first-name">
-            <input class="reach-form__input" type="text" name="first-name" id="first-name"
-              placeholder="Введите своe имя...">
+          <label class="reach-form__label form-label" for="input__name">
+            <span class="form-label-legend">Имя</span>
+            <input class="reach-form__input form-input form__type-input"
+            type="text"
+            inputmode="text"
+            name="firstName"
+            id="input__name"
+            placeholder="Введите своe имя..." 
+            autocomplete="name"
+            minlength="2"
+            maxlength="15"
+            title="Имя должно содержать от 2 до 15 символов, быть одним словом, не содержать других символов, кроме букв"
+            data-error-message="Имя должно содержать от 2 до 15 символов, быть одним словом, не содержать других символов, кроме букв"
+            aria-describedby="name-error"
+            required
+            pattern="^[a-zA-Z[А-Я][а-яё][а-щА-ЩЬьЮюЯяЇїІіЄєҐґ]]+$">
+            <span class="form__error input__name-error"
+            id="name-error"
+            aria-live="polite"></span>
           </label>
-          <label class="reach-form__label" for="e-mail">
-            <input class="reach-form__input" type="email" name="e-mail" id="e-mail" placeholder="Введите свой email..."
-              required>
+          <label class="reach-form__label form-label" for="input__phone">
+            <span class="form-label-legend">Номер телефона</span>
+            <input class="reach-form__input form-input form__type-input"
+            type="tel-area-code"
+            inputmode="tel"
+            name="phone"
+            id="input__phone"
+            autocomplete="tel"
+            placeholder="+38 (000) 000-00-00"
+            required
+            pattern="^\+\d{2} \(\d{3}\) \d{3}-\d{2}-\d{2}$"
+            minlength="19"
+            title="Введите номер телефона в формате +38 (000) 000-00-00"
+            data-error-message="Введите номер телефона в формате +38 (000) 000-00-00"
+            aria-describedby="phone-error">
+            <div class="progress-line"></div>
+            <span class="form__error input__phone-error" id="phone-error" aria-live="polite"></span>
           </label>
-          <label class="reach-form__label" for="comment">
-            <textarea class="reach-form__textarea form__input" id="comment" placeholder="Ваше сообщение..."
-              required></textarea>
+          <label class="reach-form__label form-label" for="input__email">
+            <span class="form-label-legend">Email</span>
+            <input class="reach-form__input form-input form__type-input"
+            type="email"
+            inputmode="email"
+            name="email"
+            id="input__email"
+            placeholder="Введите свой email..."
+            autocomplete="email"
+            required
+            pattern="^\S+@\S+\.\S+$"
+            aria-describedby="email-error"
+            title="Укажите в формате: user@example.com"
+            data-error-message="Укажите в формате: user@example.com"
+            oninvalid="this.setCustomValidity('Пожалуйста, введите корректный адрес электронной почты.')"
+            onchange="this.setCustomValidity('') ">
+            <span class="form__error input__email-error" id="email-error" aria-live="polite"></span>
+          </label>
+          <label class="reach-form__label form-label" for="input__comment">
+            <textarea class="reach-form__textarea form-input form__type-input"
+            id="input__comment"
+            name="comment"
+            placeholder="Ваше сообщение..."
+              type="text"
+              inputmode="text"
+              required
+              pattern="^(?:(?![\s\n]+$)[\s\S])+$"
+              data-symbols
+              title="Поле должно быть заполнено без пробелов в начале и конце сообщения!"
+              data-error-message="Поле должно быть заполнено без пробелов в начале и конце сообщения!"
+              minlength="5"
+              maxlength="250"
+              aria-errormessage="comment-error"
+              autocomplete="off"></textarea>
+            <span class="form__error input__comment-error" id="comment-error" aria-live="polite"></span>
+            <output class="output" name="output"></output>
           </label>
         </fieldset>
-        <button class="reach-form__btn btn btn--bg-red" type="submit">Отправить</button>
+        <button class="reach-form__btn btn btn--bg-red"
+        type="submit"
+        aria-describedby="empty-error"
+        js-submit>Отправить</button>
+        <span class="form__empty-error" id="empty-error" aria-live="assertive">
+        </span>
       </form>
       <div class="reach__images images-thumb images-thumb--reach">
         <picture>
