@@ -1,0 +1,31 @@
+.graph-modal {
+  width: 1083px;
+  height: 559px;
+  border-radius: none;
+
+  &__container {
+    width: 1083px;
+  }
+
+    .fade {
+      opacity: 0;
+      transition: opacity var(--transition-time);
+    }
+  
+    .fade.animate-open {
+      opacity: 1;
+      transition: opacity var(--transition-time);
+    }
+  
+    .fadeInUp {
+      opacity: 0;
+      transform: translateY(-100px);
+      transition: opacity var(--transition-time), transform var(--transition-time);
+    }
+  
+    .fadeInUp.animate-open {
+      opacity: 1;
+      transform: translateY(0);
+      transition: opacity var(--transition-time), transform var(--transition-time);
+    }
+}

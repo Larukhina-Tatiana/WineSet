@@ -161,6 +161,7 @@ function scripts() {
       "node_modules/imask/dist/imask.min.js",
       // "node_modules/mixitup/dist/mixitup.js",
       "libs/splide/splide.min.js",
+      "libs/graph-modal/graph-modal.min.js",
       // "https://unpkg.com/imask",
       // "https://unpkg.com/imask@7.6.1/dist/imask.js",
       // "libs/mixitup3/mixitup.min.js",
@@ -173,6 +174,7 @@ function scripts() {
       // "node_modules/siema/dist/siema.min.js",
       // "node_modules/aos/dist/aos.js",
       "libs/formstyler/jquery.formstyler.min.js",
+      "./src/js/modals.js",
       // "libs/tooltip/uikit.min.js",
       // "js/ion.rangeSlider.min.js",
       // "js/jquery.rateyo.js",
@@ -220,7 +222,7 @@ function images() {
       .pipe(newer("images"))
       .pipe(imagemin())
 
-      .pipe(dest("images/article"))
+      .pipe(dest("images/confirm"))
   );
 }
 

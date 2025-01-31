@@ -2,7 +2,7 @@ const form = document.forms.reachForm;
 
 // const form = document.querySelector(".form");
 const inputList = Array.from(form.querySelectorAll(".form-input"));
-const textArea = document.querySelector("#input__comment"); 
+const textArea = form.querySelector("#input__comment");
 // textArea.addEventListener("keyup", validityTextArea);
 // console.log(form.querySelector("#input__comment"));
 
@@ -12,11 +12,13 @@ const formErrorElement = form.querySelector(".form__empty-error");
 // console.log(formErrorElement);
 toggleButton();
 startValidation();
+
+// Проверка TextArea
 // validityTextArea();
 
 // function validityTextArea() {
 //   console.log(textArea.value.trim()<=0);
-  
+
 //   // textArea.addEventListener("change", () => {
 //   if (textArea.value.trim() <= 0) {
 //     toggleErrorSpan();
@@ -26,7 +28,6 @@ startValidation();
 //       formError();
 //     }
 //   };
-
 
 function startValidation() {
   toggleButton();
@@ -40,12 +41,14 @@ function startValidation() {
       });
       // toggleInputError(checkboxElement);
     }
+
+
     // Очистка LS
     resetLs();
     // Очистка output в comment
     resetOutput();
     toggleButton();
-    alert("Форма отправлена");
+    shouNotification();
   });
   inputList.forEach((inputElement) => {
     inputElement.addEventListener("input", () => {
@@ -68,7 +71,7 @@ function startValidation() {
 // При любых изменениях в полях ввода активируются функции checkInputValidity()
 function checkInputValidity(inputElement) {
   console.log(inputElement.validity);
-  
+
   if (inputElement.validity.patternMismatch) {
     inputElement.setCustomValidity(inputElement.dataset.errorMessage);
   } else {
@@ -142,8 +145,8 @@ function formError() {
   const errorMessage = "Заполните все поля для отправки формы.";
   formErrorElement.textContent = errorMessage;
 }
-// Сохранение LS
 
+// Сохранение LS
 const STORAGE_KEY = "reach-form";
 const formLs = document.forms.reachForm;
 formLs.addEventListener("input", onFormInput);
@@ -185,4 +188,27 @@ function resetOutput() {
   const fieldСheckOutput = document.querySelector(".output");
   fieldСheckOutput.textContent = null;
   fieldСheckOutput.style.setProperty("--emoji", "");
+}
+    // Вывод сообщения об отправке
+const NOTIFICATION_DELAY = 5000;
+let timeoutId = null;
+
+const notification = document.querySelector(".js-alert");
+
+notification.addEventListener("click", onNotificationClick);
+
+function onNotificationClick() {
+  hideNotification();
+  clearTimeout(timeoutId);
+}
+
+function shouNotification() {
+  timeoutId = notification.classList.remove("visually-hidden");
+  setTimeout(() => {
+    hideNotification();
+  }, NOTIFICATION_DELAY);
+}
+
+function hideNotification() {
+  notification.classList.add("visually-hidden");
 }

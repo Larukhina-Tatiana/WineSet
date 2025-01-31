@@ -1,4 +1,4 @@
-// @import "././libs/graph-modal/graph-modal.min";
+@import "././libs/graph-modal/graph-modal.min";
 @import "./modern-normalize.min";
 @import "././libs/swiper/swiper-bundle.min";
 @import "././libs/splide/splide.min";
@@ -16,6 +16,7 @@
 
 // @import "./components/_mixins";
 
+@import "./components/confirm-age";
 @import "./components/header";
 @import "./general/logo";
 
@@ -25,6 +26,7 @@
 @import "./components/nav";
 @import "./components/menu-dropdown";
 @import "./components/header-cart";
+@import "./general/modal";
 
 @import "./components/page";
 @import "./components/hero";
